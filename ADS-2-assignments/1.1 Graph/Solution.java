@@ -81,9 +81,9 @@ class Solution {
 			String str = "";
 			str = tokens[i] + ":";
 			for (int k : gph.adj(i)) {
-				str = str + tokens[k] + ",";
+				str = str + tokens[k] + " ";
 			}
-			System.out.println(str.substring(0, str.length() - 2));
+			System.out.println(str);
 		}
 	}
 }
