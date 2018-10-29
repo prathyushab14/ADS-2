@@ -11,16 +11,6 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:9:5: Redundant 'public' modifier. [RedundantModifier]
 [ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:10:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:10:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:19:9: Variable 'v' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:23:9: Variable 'e' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:27:20: Variable 'adj' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:38:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:38:24: Parameter v1 should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:72:25: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:113: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:115: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:118: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:139: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:142: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] D:\ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:137: Line is longer than 80 characters (found 97). [LineLength]
 Audit done.
-Checkstyle ends with 23 errors.
+Checkstyle ends with 13 errors.

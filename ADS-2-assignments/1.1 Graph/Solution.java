@@ -16,15 +16,15 @@ class GraphTheory implements Graph {
     /**
      * vertices.
      */
-    int v;
+    private int v;
     /**
      * edges.
      */
-    int e;
+    private int e;
     /**
      * array of bag type.
      */
-    Bag<Integer>[] adj;
+    private Bag<Integer>[] adj;
     /**
      * Constructs the object.
      */
@@ -35,13 +35,37 @@ class GraphTheory implements Graph {
      *
      * @param      v1    The v1
      */
-    public GraphTheory(int v1) {
+    GraphTheory(final int v1) {
         this.v = v1;
         this.e = 0;
         adj = (Bag<Integer>[]) new Bag[v1];
         for (int i = 0; i < v; i++) {
             adj[i] = new Bag<Integer>();
         }
+    }
+    /**
+     * Gets the v.
+     *
+     * @return     The v.
+     */
+    public int getV() {
+        return v;
+    }
+    /**
+     * Gets the e.
+     *
+     * @return     The e.
+     */
+    public int getE() {
+        return e;
+    }
+    /**
+     * get bag array.
+     *
+     * @return     list
+     */
+    public Bag<Integer>[] getadj() {
+        return adj;
     }
     /**
      * returns number of vertices.
@@ -69,7 +93,7 @@ class GraphTheory implements Graph {
         if (v1 == w1) {
             return;
         }
-        if (!hasEdge(v1,w1)) {
+        if (!hasEdge(v1, w1)) {
             e++;
         }
         adj[v1].add(w1);
@@ -112,10 +136,12 @@ class GraphTheory implements Graph {
      */
     public void listdisplay(final int v1, final int e1, final String[] tokens) throws Exception {
         if (e1 <= 1 && v1 <= 1) {
-            System.out.println(vertices() + " vertices" + ", " + edges() + " edges");
+            System.out.println(vertices() + " vertices" + ", "
+                + edges() + " edges");
             throw new Exception("No edges");
         } else {
-            System.out.println(vertices() + " vertices" + ", " + edges() + " edges");
+            System.out.println(vertices() + " vertices" + ", "
+                + edges() + " edges");
             for (int i = 0; i < tokens.length; i++) {
             String str = "";
             str = tokens[i] + ": ";
@@ -136,10 +162,12 @@ class GraphTheory implements Graph {
      */
     public void matrixdisplay(final int v1, final int e1) throws Exception {
         if (e1 <= 1 && v1 <= 1) {
-            System.out.println(vertices() + " vertices" + ", " + edges() + " edges");
+            System.out.println(vertices() + " vertices" + ", "
+                + edges() + " edges");
             throw new Exception("No edges");
         } else {
-            System.out.println(vertices() + " vertices" + ", " + edges() + " edges");
+            System.out.println(vertices() + " vertices" + ", "
+                + edges() + " edges");
             int[][] disp = new int[v1][v1];
             for (int i = 0; i  < v1; i++) {
                 for (int j = 0; j < v1; j++) {
