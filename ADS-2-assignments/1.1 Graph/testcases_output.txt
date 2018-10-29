@@ -224,7 +224,7 @@ Expected Output:
 No edges
 Your Output: 
 1 vertices, 1 edges
-Hyderabad: Hyderabad Hyderabad
+No edges
 ----------------------------------------
 ########## Testcase 5: Failed ##########
 Expected Output: 
@@ -232,7 +232,7 @@ Expected Output:
 No edges
 Your Output: 
 1 vertices, 1 edges
-Hyderabad: Hyderabad Hyderabad
+No edges
 ----------------------------------------
 ########## Testcase 6: Passed ##########
 Expected Output: 
