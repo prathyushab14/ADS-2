@@ -3,10 +3,41 @@ import java.util.Scanner;
  * Interface for graph.
  */
 interface Graph {
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     int vertices();
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     int edges();
+    /**
+     * Adds an edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
     void addEdge(int v, int w);
+    /**
+     * { function_description }
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     Iterable<Integer> adj(int v);
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *
+     * @return     True if has edge, False otherwise.
+     */
     boolean hasEdge(int v, int w);
 }
 /**
