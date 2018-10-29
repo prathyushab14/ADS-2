@@ -51,7 +51,7 @@ class GraphTheory implements Graph {
 		}
 		return false;
     }
-    public void display(int v, int e, String[] tokens) throws Exception {
+    public void listdisplay(int v, int e, String[] tokens) throws Exception {
     	if (e <= 1 && v <= 1) {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
     		throw new Exception("No edges");
@@ -67,6 +67,30 @@ class GraphTheory implements Graph {
 			}
     	}
     }
+
+    public void matrixdisplay(int v, int e) throws Exception {
+    	if (e <= 1 && v <= 1) {
+    		System.out.println(V() + " vertices" + ", " + E() + " edges");
+    		throw new Exception("No edges");
+    	} else {
+    		int[][] disp = new int[v][v];
+    		for (int i = 0; i  < v; i++) {
+    			for (int j = 0; j < v; j++) {
+    				if (hasEdge(i, j)) {
+    					disp[i][j] = 1;
+		    		}
+    			}
+    		}
+
+    		for (int i = 0; i < v; i++) {
+    			for (int j = 0; j < v; j++) {
+    				System.out.print(disp[i][j]);
+    			}
+    			System.out.println();
+    		}
+    		
+    	}
+    }
 }
 class Solution {
 	Solution() {
@@ -76,12 +100,7 @@ class Solution {
 		Scanner sc = new Scanner(System.in);
 		GraphTheory gph = new GraphTheory();
 		String input = sc.nextLine();
-		switch (input) {
-			case "List":
-			break;
-			case "Matrix":
-			break;
-		}
+		
 		int v = Integer.parseInt(sc.nextLine());
 		int e = Integer.parseInt(sc.nextLine());
 		String keynames = sc.nextLine();
@@ -95,11 +114,24 @@ class Solution {
 		}
 		//String str = "";
 
-		try {
-			gph.display(v, e, tokens);
-		} catch (Exception p) {
-			System.out.println(p.getMessage());
+		switch (input) {
+			case "List":
+			try {
+				gph.listdisplay(v, e, tokens);
+			} catch (Exception p) {
+				System.out.println(p.getMessage());
+			}
+			break;
+			case "Matrix":
+			try {
+				gph.matrixdisplay(v, e);
+			} catch (Exception p) {
+				System.out.println(p.getMessage());
+			}
+			break;
 		}
+
+		
 		
 	}
 }
