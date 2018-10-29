@@ -1,4 +1,7 @@
 import java.util.*;
+/**
+ * Interface for graph.
+ */
 interface Graph {
     public int V();
     public int E();
@@ -6,13 +9,32 @@ interface Graph {
     public Iterable<Integer> adj(int v);
     public boolean hasEdge(int v, int w);
 }
+/**
+ * Class for graph theory.
+ */
 class GraphTheory implements Graph {
+    /**
+     * vertices.
+     */
     int v;
+    /**
+     * edges.
+     */
     int e;
+    /**
+     * array of bag type.
+     */
     Bag<Integer>[] adj;
+    /**
+     * Constructs the object.
+     */
     GraphTheory() {
-
     }
+    /**
+     * Constructs the object.
+     *
+     * @param      v1    The v1
+     */
     public GraphTheory(int v1) {
         this.v = v1;
         this.e = 0;
@@ -21,28 +43,56 @@ class GraphTheory implements Graph {
             adj[i] = new Bag<Integer>();
         }
     }
+    /**
+     * returns number of vertices.
+     *
+     * @return    no of vertices
+     */
     public int V() {
         return v;
     }
+    /**
+     * returns number of edges.
+     *
+     * @return    no of edges
+     */
     public int E() {
         return e;
     }
-    public void addEdge(int v, int w) {
-        if (v == w) {
+    /**
+     * Adds an edge.
+     *
+     * @param      v1    integer
+     * @param      w1     integer
+     */
+    public void addEdge(int v1, int w1) {
+        if (v1 == w1) {
             return;
         }
-        if (!hasEdge(v,w)) {
+        if (!hasEdge(v1,w1)) {
             e++;
-            
         }
-        
-        adj[v].add(w);
-        adj[w].add(v);
+        adj[v1].add(w1);
+        adj[w1].add(v1);
     }
+    /**
+     * returns all the values in list.
+     *
+     * @param      v     integer
+     *
+     * @return   list.
+     */
     public Iterable<Integer> adj(int v) {
-        
         return adj[v];
     }
+    /**
+     * Determines if it has edge.
+     *
+     * @param      v     integer
+     * @param      w     integer
+     *
+     * @return     True if has edge, False otherwise.
+     */
     public boolean hasEdge(int v, int w) {
         for(int k :adj[v]) {
                 if (k==w) {
@@ -51,8 +101,17 @@ class GraphTheory implements Graph {
         }
         return false;
     }
-    public void listdisplay(int v, int e, String[] tokens) throws Exception {
-        if (e <= 1 && v <= 1) {
+    /**
+     * display function of adjacency list.
+     *
+     * @param      v1         The v 1
+     * @param      e1         The e 1
+     * @param      tokens     The tokens
+     *
+     * @throws     Exception  { exception_description }
+     */
+    public void listdisplay(int v1, int e1, String[] tokens) throws Exception {
+        if (e1 <= 1 && v1 <= 1) {
             System.out.println(V() + " vertices" + ", " + E() + " edges");
             throw new Exception("No edges");
         } else {
@@ -67,29 +126,35 @@ class GraphTheory implements Graph {
             }
         }
     }
-
-    public void matrixdisplay(int v, int e) throws Exception {
-        if (e <= 1 && v <= 1) {
+    /**
+     * display function of adjacency matrix list.
+     *
+     * @param      v1         The v 1
+     * @param      e1         The e 1
+     *
+     * @throws     Exception  No edges
+     */
+    public void matrixdisplay(final int v1, final int e1) throws Exception {
+        if (e1 <= 1 && v1 <= 1) {
             System.out.println(V() + " vertices" + ", " + E() + " edges");
             throw new Exception("No edges");
         } else {
             System.out.println(V() + " vertices" + ", " + E() + " edges");
-            int[][] disp = new int[v][v];
-            for (int i = 0; i  < v; i++) {
-                for (int j = 0; j < v; j++) {
+            int[][] disp = new int[v1][v1];
+            for (int i = 0; i  < v1; i++) {
+                for (int j = 0; j < v1; j++) {
                     if (hasEdge(i, j)) {
                         disp[i][j] = 1;
                     }
                 }
             }
 
-            for (int i = 0; i < v; i++) {
-                for (int j = 0; j < v; j++) {
+            for (int i = 0; i < v1; i++) {
+                for (int j = 0; j < v1; j++) {
                     System.out.print(disp[i][j] + " ");
                 }
                 System.out.println();
             }
-            
         }
     }
 }
