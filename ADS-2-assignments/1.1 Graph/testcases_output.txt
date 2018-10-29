@@ -15,6 +15,7 @@ Goa: Delhi
 Gujarat: Delhi Haryana 
 Haryana: Gujarat Delhi
 Your Output: 
+13vertices, 13edges
 Andaman and Nicobar:Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh 
 Andhra Pradesh:Andaman and Nicobar 
 Arunachal Pradesh:Andaman and Nicobar 
@@ -46,6 +47,7 @@ Expected Output:
 0 0 0 0 0 0 0 0 0 1 0 0 1 
 0 0 0 0 0 0 0 0 0 1 0 1 0
 Your Output: 
+13vertices, 13edges
 Andaman and Nicobar:Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh 
 Andhra Pradesh:Andaman and Nicobar 
 Arunachal Pradesh:Andaman and Nicobar 
@@ -100,6 +102,7 @@ Uttar Pradesh: West Bengal
 Uttarakhand: Assam 
 West Bengal: Uttar Pradesh Bihar
 Your Output: 
+36vertices, 78edges
 Andaman and Nicobar:Puducherry Meghalaya Manipur Odisha Karnataka Haryana Gujarat Jharkhand Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh 
 Andhra Pradesh:Tamil Nadu Maharashtra Goa Andaman and Nicobar 
 Arunachal Pradesh:Tamil Nadu Maharashtra Goa Andaman and Nicobar 
@@ -177,6 +180,7 @@ Expected Output:
 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
 Your Output: 
+36vertices, 78edges
 Andaman and Nicobar:Puducherry Meghalaya Manipur Odisha Karnataka Haryana Gujarat Jharkhand Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh 
 Andhra Pradesh:Tamil Nadu Maharashtra Goa Andaman and Nicobar 
 Arunachal Pradesh:Tamil Nadu Maharashtra Goa Andaman and Nicobar 
@@ -219,6 +223,7 @@ Expected Output:
 1 vertices, 0 edges
 No edges
 Your Output: 
+1vertices, 1edges
 Hyderabad:Hyderabad Hyderabad
 ----------------------------------------
 ########## Testcase 5: Failed ##########
@@ -226,6 +231,7 @@ Expected Output:
 1 vertices, 0 edges
 No edges
 Your Output: 
+1vertices, 1edges
 Hyderabad:Hyderabad Hyderabad
 ----------------------------------------
 ########## Testcase 6: Failed ##########
@@ -233,6 +239,7 @@ Expected Output:
 0 vertices, 0 edges
 No edges
 Your Output: 
+0vertices, 0edges
 :
 ----------------------------------------
 ########## Testcase 7: Failed ##########
@@ -240,5 +247,6 @@ Expected Output:
 0 vertices, 0 edges
 No edges
 Your Output: 
+0vertices, 0edges
 :
 ----------------------------------------
