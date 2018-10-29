@@ -73,6 +73,7 @@ class GraphTheory implements Graph {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
     		throw new Exception("No edges");
     	} else {
+    		System.out.println(V() + " vertices" + ", " + E() + " edges");
     		int[][] disp = new int[v][v];
     		for (int i = 0; i  < v; i++) {
     			for (int j = 0; j < v; j++) {
