@@ -106,16 +106,13 @@ class Solution {
 		int e = Integer.parseInt(sc.nextLine());
 		String keynames = sc.nextLine();
 		String[] tokens = keynames.split(",");
-		//BinarySearchST<Integer, String> bst = new BinarySearchST<Integer, String>();
 		gph = new GraphTheory(v);
 		while(sc.hasNext()) {
 			String connect = sc.nextLine();
 			String[] connections = connect.split(" ");
 			gph.addEdge(Integer.parseInt(connections[0]), Integer.parseInt(connections[1]));
 		}
-		//String str = "";
-
-		switch (input) {
+        switch (input) {
 			case "List":
 			try {
 				gph.listdisplay(v, e, tokens);
@@ -131,9 +128,6 @@ class Solution {
 			}
 			break;
 		}
-
-		
-		
-	}
+    }
 }
 
