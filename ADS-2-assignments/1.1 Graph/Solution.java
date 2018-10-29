@@ -71,7 +71,7 @@ class Solution {
 		String keynames = sc.nextLine();
 		String[] tokens = keynames.split(",");
 		//BinarySearchST<Integer, String> bst = new BinarySearchST<Integer, String>();
-		gph = new GraphTheory(tokens.length);
+		gph = new GraphTheory(v);
 		while(sc.hasNext()) {
 			String connect = sc.nextLine();
 			String[] connections = connect.split(" ");

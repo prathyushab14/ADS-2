@@ -239,14 +239,18 @@ Expected Output:
 0 vertices, 0 edges
 No edges
 Your Output: 
-1 vertices, 0 edges
-:
+0 vertices, 0 edges
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at GraphTheory.adj(Solution.java:39)
+	at Solution.main(Solution.java:85)
 ----------------------------------------
 ########## Testcase 7: Failed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 Your Output: 
-1 vertices, 0 edges
-:
+0 vertices, 0 edges
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at GraphTheory.adj(Solution.java:39)
+	at Solution.main(Solution.java:85)
 ----------------------------------------
