@@ -4,15 +4,15 @@ import java.util.Scanner;
  */
 interface Graph {
     /**
-     * { function_description }
+     * no of vertices.
      *
-     * @return     { description_of_the_return_value }
+     * @return    integer
      */
     int vertices();
     /**
-     * { function_description }
+     * no of edges.
      *
-     * @return     { description_of_the_return_value }
+     * @return    integer
      */
     int edges();
     /**
@@ -23,7 +23,7 @@ interface Graph {
      */
     void addEdge(int v, int w);
     /**
-     * { function_description }
+     * adds two vertices.
      *
      * @param      v     { parameter_description }
      *
