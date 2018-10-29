@@ -3,8 +3,8 @@ import java.util.*;
  * Interface for graph.
  */
 interface Graph {
-    public int V();
-    public int E();
+    public int vertices();
+    public int edges();
     public void addEdge(int v, int w);
     public Iterable<Integer> adj(int v);
     public boolean hasEdge(int v, int w);
@@ -48,7 +48,7 @@ class GraphTheory implements Graph {
      *
      * @return    no of vertices
      */
-    public int V() {
+    public int vertices() {
         return v;
     }
     /**
@@ -56,7 +56,7 @@ class GraphTheory implements Graph {
      *
      * @return    no of edges
      */
-    public int E() {
+    public int edges() {
         return e;
     }
     /**
@@ -65,7 +65,7 @@ class GraphTheory implements Graph {
      * @param      v1    integer
      * @param      w1     integer
      */
-    public void addEdge(int v1, int w1) {
+    public void addEdge(final int v1, final int w1) {
         if (v1 == w1) {
             return;
         }
@@ -78,24 +78,24 @@ class GraphTheory implements Graph {
     /**
      * returns all the values in list.
      *
-     * @param      v     integer
+     * @param      v1     integer
      *
      * @return   list.
      */
-    public Iterable<Integer> adj(int v) {
-        return adj[v];
+    public Iterable<Integer> adj(final int v1) {
+        return adj[v1];
     }
     /**
      * Determines if it has edge.
      *
-     * @param      v     integer
-     * @param      w     integer
+     * @param      v1     integer
+     * @param      w1     integer
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w) {
-        for(int k :adj[v]) {
-                if (k==w) {
+    public boolean hasEdge(final int v1, final int w1) {
+        for (int k : adj[v1]) {
+                if (k == w1) {
                     return true;
                 }
         }
@@ -110,12 +110,12 @@ class GraphTheory implements Graph {
      *
      * @throws     Exception  { exception_description }
      */
-    public void listdisplay(int v1, int e1, String[] tokens) throws Exception {
+    public void listdisplay(final int v1, final int e1, final String[] tokens) throws Exception {
         if (e1 <= 1 && v1 <= 1) {
-            System.out.println(V() + " vertices" + ", " + E() + " edges");
+            System.out.println(vertices() + " vertices" + ", " + edges() + " edges");
             throw new Exception("No edges");
         } else {
-            System.out.println(V() + " vertices" + ", " + E() + " edges");
+            System.out.println(vertices() + " vertices" + ", " + edges() + " edges");
             for (int i = 0; i < tokens.length; i++) {
             String str = "";
             str = tokens[i] + ": ";
@@ -136,10 +136,10 @@ class GraphTheory implements Graph {
      */
     public void matrixdisplay(final int v1, final int e1) throws Exception {
         if (e1 <= 1 && v1 <= 1) {
-            System.out.println(V() + " vertices" + ", " + E() + " edges");
+            System.out.println(vertices() + " vertices" + ", " + edges() + " edges");
             throw new Exception("No edges");
         } else {
-            System.out.println(V() + " vertices" + ", " + E() + " edges");
+            System.out.println(vertices() + " vertices" + ", " + edges() + " edges");
             int[][] disp = new int[v1][v1];
             for (int i = 0; i  < v1; i++) {
                 for (int j = 0; j < v1; j++) {
