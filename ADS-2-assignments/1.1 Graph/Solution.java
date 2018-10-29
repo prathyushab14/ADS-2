@@ -36,6 +36,7 @@ class GraphTheory implements Graph {
         adj[w].add(v);
     }
 	public Iterable<Integer> adj(int v) {
+		
         return adj[v];
     }
 	public boolean hasEdge(int v, int w) {
@@ -46,11 +47,22 @@ class GraphTheory implements Graph {
 		}
 		return false;
     }
-    // public String toString() {
-    // 	for (int i = 0; i < adj.length; i++) {
-    // 		System.out.println();
-    // 	}
-    // }
+    public void display(int v, int e, String[] tokens) throws Exception {
+    	if (e == 0 && v == 0) {
+    		System.out.println(V() + " vertices" + ", " + E() + " edges");
+    		throw new Exception("No edges");
+    	} else {
+    		System.out.println(V() + " vertices" + ", " + E() + " edges");
+    		for (int i = 0; i < tokens.length; i++) {
+			String str = "";
+			str = tokens[i] + ": ";
+			for (int k : adj(i)) {
+				str = str + tokens[k] + " ";
+			}
+			System.out.println(str);
+			}
+    	}
+    }
 }
 class Solution {
 	Solution() {
@@ -78,15 +90,13 @@ class Solution {
 			gph.addEdge(Integer.parseInt(connections[0]), Integer.parseInt(connections[1]));
 		}
 		//String str = "";
-		System.out.println(gph.V() + " vertices" + ", " + gph.E() + " edges");
-		for (int i = 0; i < tokens.length; i++) {
-			String str = "";
-			str = tokens[i] + ": ";
-			for (int k : gph.adj(i)) {
-				str = str + tokens[k] + " ";
-			}
-			System.out.println(str);
+
+		try {
+			gph.display(v, e, tokens);
+		} catch (Exception p) {
+			System.out.println(p.getMessage());
 		}
+		
 	}
 }
 

@@ -234,23 +234,19 @@ Your Output:
 1 vertices, 1 edges
 Hyderabad: Hyderabad Hyderabad
 ----------------------------------------
-########## Testcase 6: Failed ##########
+########## Testcase 6: Passed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 Your Output: 
 0 vertices, 0 edges
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at GraphTheory.adj(Solution.java:39)
-	at Solution.main(Solution.java:85)
+No edges
 ----------------------------------------
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 0 vertices, 0 edges
 No edges
 Your Output: 
 0 vertices, 0 edges
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at GraphTheory.adj(Solution.java:39)
-	at Solution.main(Solution.java:85)
+No edges
 ----------------------------------------
