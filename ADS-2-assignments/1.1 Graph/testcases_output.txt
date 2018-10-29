@@ -1,0 +1,250 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+13 vertices, 13 edges
+Andaman and Nicobar: Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh 
+Andhra Pradesh: Andaman and Nicobar 
+Arunachal Pradesh: Andaman and Nicobar 
+Assam: Chandigarh Bihar 
+Bihar: Chandigarh Chhattisgarh Assam 
+Chandigarh: Assam Bihar Andaman and Nicobar 
+Chhattisgarh: Andaman and Nicobar Bihar 
+Dadra and Nagar Haveli: Daman and Diu 
+Daman and Diu: Dadra and Nagar Haveli 
+Delhi: Gujarat Goa Haryana 
+Goa: Delhi 
+Gujarat: Delhi Haryana 
+Haryana: Gujarat Delhi
+Your Output: 
+Andaman and Nicobar:Chhattisgarh,Arunachal Pradesh,Andhra Pradesh,Chandigar
+Andhra Pradesh:Andaman and Nicoba
+Arunachal Pradesh:Andaman and Nicoba
+Assam:Chandigarh,Biha
+Bihar:Chandigarh,Chhattisgarh,Assa
+Chandigarh:Assam,Bihar,Andaman and Nicoba
+Chhattisgarh:Andaman and Nicobar,Biha
+Dadra and Nagar Haveli:Daman and Di
+Daman and Diu:Dadra and Nagar Havel
+Delhi:Gujarat,Goa,Haryan
+Goa:Delh
+Gujarat:Delhi,Haryan
+Haryana:Gujarat,Delh
+----------------------------------------
+########## Testcase 1: Failed ##########
+Expected Output: 
+13 vertices, 13 edges
+0 1 1 0 0 1 1 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 1 1 0 0 0 0 0 0 0 
+0 0 0 1 0 1 1 0 0 0 0 0 0 
+1 0 0 1 1 0 0 0 0 0 0 0 0 
+1 0 0 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 0 0 0 0 
+0 0 0 0 0 0 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 1 1 
+0 0 0 0 0 0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 1 0 0 1 
+0 0 0 0 0 0 0 0 0 1 0 1 0
+Your Output: 
+Andaman and Nicobar:Chhattisgarh,Arunachal Pradesh,Andhra Pradesh,Chandigar
+Andhra Pradesh:Andaman and Nicoba
+Arunachal Pradesh:Andaman and Nicoba
+Assam:Chandigarh,Biha
+Bihar:Chandigarh,Chhattisgarh,Assa
+Chandigarh:Assam,Bihar,Andaman and Nicoba
+Chhattisgarh:Andaman and Nicobar,Biha
+Dadra and Nagar Haveli:Daman and Di
+Daman and Diu:Dadra and Nagar Havel
+Delhi:Gujarat,Goa,Haryan
+Goa:Delh
+Gujarat:Delhi,Haryan
+Haryana:Gujarat,Delh
+----------------------------------------
+########## Testcase 2: Failed ##########
+Expected Output: 
+36 vertices, 72 edges
+Andaman and Nicobar: Puducherry Meghalaya Manipur Odisha Karnataka Haryana Gujarat Jharkhand Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh 
+Andhra Pradesh: Tamil Nadu Maharashtra Goa Andaman and Nicobar 
+Arunachal Pradesh: Tamil Nadu Maharashtra Goa Andaman and Nicobar 
+Assam: Uttarakhand Odisha Nagaland Jharkhand Jammu and Kashmir Chandigarh Bihar 
+Bihar: West Bengal Puducherry Mizoram Odisha Puducherry Himachal Pradesh Jharkhand Karnataka Chandigarh Chhattisgarh Assam 
+Chandigarh: Tamil Nadu Mizoram Nagaland Maharashtra Himachal Pradesh Jammu and Kashmir Goa Assam Bihar Andaman and Nicobar 
+Chhattisgarh: Tamil Nadu Nagaland Maharashtra Jammu and Kashmir Goa Andaman and Nicobar Bihar 
+Dadra and Nagar Haveli: Rajasthan Lakshadweep Daman and Diu 
+Daman and Diu: Punjab Punjab Kerala Dadra and Nagar Haveli 
+Delhi: Telangana Tamil Nadu Tripura Manipur Maharashtra Meghalaya Gujarat Goa Haryana 
+Goa: Sikkim Sikkim Chhattisgarh Madhya Pradesh Arunachal Pradesh Andhra Pradesh Chandigarh Delhi 
+Gujarat: Sikkim Tripura Sikkim Meghalaya Andaman and Nicobar Madhya Pradesh Delhi Haryana 
+Haryana: Telangana Sikkim Telangana Sikkim Andaman and Nicobar Manipur Madhya Pradesh Gujarat Delhi 
+Himachal Pradesh: Chandigarh Bihar 
+Jammu and Kashmir: Chandigarh Chhattisgarh Assam 
+Jharkhand: Andaman and Nicobar Assam Bihar 
+Karnataka: Andaman and Nicobar Bihar 
+Kerala: Daman and Diu 
+Lakshadweep: Dadra and Nagar Haveli 
+Madhya Pradesh: Gujarat Goa Haryana 
+Maharashtra: Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh Delhi 
+Manipur: Andaman and Nicobar Delhi Haryana 
+Meghalaya: Andaman and Nicobar Gujarat Delhi 
+Mizoram: Chandigarh Bihar 
+Nagaland: Chandigarh Chhattisgarh Assam 
+Odisha: Andaman and Nicobar Assam Bihar 
+Puducherry: Bihar Andaman and Nicobar Bihar 
+Punjab: Daman and Diu Daman and Diu 
+Rajasthan: Dadra and Nagar Haveli 
+Sikkim: Gujarat Goa Haryana Gujarat Goa Haryana 
+Tamil Nadu: Chhattisgarh Arunachal Pradesh Andhra Pradesh Chandigarh Delhi 
+Telangana: Haryana Delhi Haryana 
+Tripura: Gujarat Delhi 
+Uttar Pradesh: West Bengal 
+Uttarakhand: Assam 
+West Bengal: Uttar Pradesh Bihar
+Your Output: 
+Andaman and Nicobar:Puducherry,Meghalaya,Manipur,Odisha,Karnataka,Haryana,Gujarat,Jharkhand,Chhattisgarh,Arunachal Pradesh,Andhra Pradesh,Chandigar
+Andhra Pradesh:Tamil Nadu,Maharashtra,Goa,Andaman and Nicoba
+Arunachal Pradesh:Tamil Nadu,Maharashtra,Goa,Andaman and Nicoba
+Assam:Uttarakhand,Odisha,Nagaland,Jharkhand,Jammu and Kashmir,Chandigarh,Biha
+Bihar:West Bengal,Mizoram,Odisha,Puducherry,Himachal Pradesh,Jharkhand,Karnataka,Chandigarh,Chhattisgarh,Assa
+Chandigarh:Tamil Nadu,Mizoram,Nagaland,Maharashtra,Himachal Pradesh,Jammu and Kashmir,Goa,Assam,Bihar,Andaman and Nicoba
+Chhattisgarh:Tamil Nadu,Nagaland,Maharashtra,Jammu and Kashmir,Goa,Andaman and Nicobar,Biha
+Dadra and Nagar Haveli:Rajasthan,Lakshadweep,Daman and Di
+Daman and Diu:Punjab,Kerala,Dadra and Nagar Havel
+Delhi:Telangana,Tamil Nadu,Tripura,Manipur,Maharashtra,Meghalaya,Gujarat,Goa,Haryan
+Goa:Sikkim,Chhattisgarh,Madhya Pradesh,Arunachal Pradesh,Andhra Pradesh,Chandigarh,Delh
+Gujarat:Tripura,Sikkim,Meghalaya,Andaman and Nicobar,Madhya Pradesh,Delhi,Haryan
+Haryana:Telangana,Sikkim,Andaman and Nicobar,Manipur,Madhya Pradesh,Gujarat,Delh
+Himachal Pradesh:Chandigarh,Biha
+Jammu and Kashmir:Chandigarh,Chhattisgarh,Assa
+Jharkhand:Andaman and Nicobar,Assam,Biha
+Karnataka:Andaman and Nicobar,Biha
+Kerala:Daman and Di
+Lakshadweep:Dadra and Nagar Havel
+Madhya Pradesh:Gujarat,Goa,Haryan
+Maharashtra:Chhattisgarh,Arunachal Pradesh,Andhra Pradesh,Chandigarh,Delh
+Manipur:Andaman and Nicobar,Delhi,Haryan
+Meghalaya:Andaman and Nicobar,Gujarat,Delh
+Mizoram:Chandigarh,Biha
+Nagaland:Chandigarh,Chhattisgarh,Assa
+Odisha:Andaman and Nicobar,Assam,Biha
+Puducherry:Andaman and Nicobar,Biha
+Punjab:Daman and Di
+Rajasthan:Dadra and Nagar Havel
+Sikkim:Gujarat,Goa,Haryan
+Tamil Nadu:Chhattisgarh,Arunachal Pradesh,Andhra Pradesh,Chandigarh,Delh
+Telangana:Delhi,Haryan
+Tripura:Gujarat,Delh
+Uttar Pradesh:West Benga
+Uttarakhand:Assa
+West Bengal:Uttar Pradesh,Biha
+----------------------------------------
+########## Testcase 3: Failed ##########
+Expected Output: 
+36 vertices, 72 edges
+0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 1 1 0 0 1 1 0 0 0 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 
+0 0 0 0 1 1 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 1 0 
+0 0 0 1 0 1 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 1 
+1 0 0 1 1 0 0 0 0 0 1 0 0 1 1 0 0 0 0 0 1 0 0 1 1 0 0 0 0 0 1 0 0 0 0 0 
+1 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 1 1 1 0 0 0 
+0 1 1 0 0 1 1 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 
+1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 
+0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 1 1 0 0 1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 1 1 0 0 1 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0
+Your Output: 
+Andaman and Nicobar:Puducherry,Meghalaya,Manipur,Odisha,Karnataka,Haryana,Gujarat,Jharkhand,Chhattisgarh,Arunachal Pradesh,Andhra Pradesh,Chandigar
+Andhra Pradesh:Tamil Nadu,Maharashtra,Goa,Andaman and Nicoba
+Arunachal Pradesh:Tamil Nadu,Maharashtra,Goa,Andaman and Nicoba
+Assam:Uttarakhand,Odisha,Nagaland,Jharkhand,Jammu and Kashmir,Chandigarh,Biha
+Bihar:West Bengal,Mizoram,Odisha,Puducherry,Himachal Pradesh,Jharkhand,Karnataka,Chandigarh,Chhattisgarh,Assa
+Chandigarh:Tamil Nadu,Mizoram,Nagaland,Maharashtra,Himachal Pradesh,Jammu and Kashmir,Goa,Assam,Bihar,Andaman and Nicoba
+Chhattisgarh:Tamil Nadu,Nagaland,Maharashtra,Jammu and Kashmir,Goa,Andaman and Nicobar,Biha
+Dadra and Nagar Haveli:Rajasthan,Lakshadweep,Daman and Di
+Daman and Diu:Punjab,Kerala,Dadra and Nagar Havel
+Delhi:Telangana,Tamil Nadu,Tripura,Manipur,Maharashtra,Meghalaya,Gujarat,Goa,Haryan
+Goa:Sikkim,Chhattisgarh,Madhya Pradesh,Arunachal Pradesh,Andhra Pradesh,Chandigarh,Delh
+Gujarat:Tripura,Sikkim,Meghalaya,Andaman and Nicobar,Madhya Pradesh,Delhi,Haryan
+Haryana:Telangana,Sikkim,Andaman and Nicobar,Manipur,Madhya Pradesh,Gujarat,Delh
+Himachal Pradesh:Chandigarh,Biha
+Jammu and Kashmir:Chandigarh,Chhattisgarh,Assa
+Jharkhand:Andaman and Nicobar,Assam,Biha
+Karnataka:Andaman and Nicobar,Biha
+Kerala:Daman and Di
+Lakshadweep:Dadra and Nagar Havel
+Madhya Pradesh:Gujarat,Goa,Haryan
+Maharashtra:Chhattisgarh,Arunachal Pradesh,Andhra Pradesh,Chandigarh,Delh
+Manipur:Andaman and Nicobar,Delhi,Haryan
+Meghalaya:Andaman and Nicobar,Gujarat,Delh
+Mizoram:Chandigarh,Biha
+Nagaland:Chandigarh,Chhattisgarh,Assa
+Odisha:Andaman and Nicobar,Assam,Biha
+Puducherry:Andaman and Nicobar,Biha
+Punjab:Daman and Di
+Rajasthan:Dadra and Nagar Havel
+Sikkim:Gujarat,Goa,Haryan
+Tamil Nadu:Chhattisgarh,Arunachal Pradesh,Andhra Pradesh,Chandigarh,Delh
+Telangana:Delhi,Haryan
+Tripura:Gujarat,Delh
+Uttar Pradesh:West Benga
+Uttarakhand:Assa
+West Bengal:Uttar Pradesh,Biha
+----------------------------------------
+########## Testcase 4: Failed ##########
+Expected Output: 
+1 vertices, 0 edges
+No edges
+Your Output: 
+Hyderabad:Hyderabad,Hyderaba
+----------------------------------------
+########## Testcase 5: Failed ##########
+Expected Output: 
+1 vertices, 0 edges
+No edges
+Your Output: 
+Hyderabad:Hyderabad,Hyderaba
+----------------------------------------
+########## Testcase 6: Failed ##########
+Expected Output: 
+0 vertices, 0 edges
+No edges
+Your Output: 
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 1
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at Solution.main(Solution.java:86)
+----------------------------------------
+########## Testcase 7: Failed ##########
+Expected Output: 
+0 vertices, 0 edges
+No edges
+Your Output: 
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 1
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3319)
+	at java.base/java.lang.String.substring(String.java:1874)
+	at Solution.main(Solution.java:86)
+----------------------------------------
