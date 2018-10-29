@@ -1,13 +1,13 @@
-import java.util.*;
+import java.util.Scanner;
 /**
  * Interface for graph.
  */
 interface Graph {
-    public int vertices();
-    public int edges();
-    public void addEdge(int v, int w);
-    public Iterable<Integer> adj(int v);
-    public boolean hasEdge(int v, int w);
+    int vertices();
+    int edges();
+    void addEdge(int v, int w);
+    Iterable<Integer> adj(int v);
+    boolean hasEdge(int v, int w);
 }
 /**
  * Class for graph theory.
@@ -134,7 +134,8 @@ class GraphTheory implements Graph {
      *
      * @throws     Exception  { exception_description }
      */
-    public void listdisplay(final int v1, final int e1, final String[] tokens) throws Exception {
+    public void listdisplay(final int v1, final int e1,
+        final String[] tokens) throws Exception {
         if (e1 <= 1 && v1 <= 1) {
             System.out.println(vertices() + " vertices" + ", "
                 + edges() + " edges");
