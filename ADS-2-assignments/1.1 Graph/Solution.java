@@ -77,7 +77,7 @@ class Solution {
 			gph.addEdge(Integer.parseInt(connections[0]), Integer.parseInt(connections[1]));
 		}
 		//String str = "";
-		System.out.println(v + "vertices" + ", " + e + "edges");
+		System.out.println(v + " vertices" + ", " + e + " edges");
 		for (int i = 0; i < tokens.length; i++) {
 			String str = "";
 			str = tokens[i] + ":";
