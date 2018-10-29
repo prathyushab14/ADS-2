@@ -126,9 +126,9 @@ class GraphTheory implements Graph {
         }
         if (!hasEdge(v1, w1)) {
             e++;
-        }
         adj[v1].add(w1);
         adj[w1].add(v1);
+        }
     }
     /**
      * returns all the values in list.
