@@ -49,7 +49,7 @@ class GraphTheory implements Graph {
     }
     public void display(int v, int e, String[] tokens) throws Exception {
     	if (e <= 1 && v <= 1) {
-    		System.out.println(v + " vertices" + ", " + e + " edges");
+    		System.out.println(V() + " vertices" + ", " + E() + " edges");
     		throw new Exception("No edges");
     	} else {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
