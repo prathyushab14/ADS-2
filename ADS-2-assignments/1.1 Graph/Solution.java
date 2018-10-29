@@ -32,6 +32,9 @@ class GraphTheory implements Graph {
             e++;
             
         }
+        if (v == w) {
+        	return;
+        }
         adj[v].add(w);
         adj[w].add(v);
     }
