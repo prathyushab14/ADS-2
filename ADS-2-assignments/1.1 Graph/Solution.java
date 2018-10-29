@@ -116,6 +116,7 @@ class GraphTheory implements Graph {
     }
     /**
      * Adds an edge.
+     * complexity of method is O(1)
      *
      * @param      v1    integer
      * @param      w1     integer
@@ -132,6 +133,7 @@ class GraphTheory implements Graph {
     }
     /**
      * returns all the values in list.
+     * complexity of this method is O(1)
      *
      * @param      v1     integer
      *
@@ -142,6 +144,7 @@ class GraphTheory implements Graph {
     }
     /**
      * Determines if it has edge.
+     * complexity of this method is O(N)
      *
      * @param      v1     integer
      * @param      w1     integer
@@ -158,6 +161,7 @@ class GraphTheory implements Graph {
     }
     /**
      * display function of adjacency list.
+     * complexity of this method is O(N^2)
      *
      * @param      v1         The v 1
      * @param      e1         The e 1
@@ -186,6 +190,7 @@ class GraphTheory implements Graph {
     }
     /**
      * display function of adjacency matrix list.
+     * complexity of this method is O(N^2)
      *
      * @param      v1         The v 1
      * @param      e1         The e 1
