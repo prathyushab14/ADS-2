@@ -97,10 +97,9 @@ class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		Graph gph = new Graph(n);
 		Percolation p = new Percolation(n);
         while (sc.hasNext()) {
-            gph.addEdge(sc.nextInt(), sc.nextInt());
+            p.open(sc.nextInt(), sc.nextInt());
         }
         System.out.println(p.percolates());
     }
