@@ -20,6 +20,9 @@ class Percolation {
      * variable for weighted quick union.
      */
     private Graph gph;
+    /**
+     * { var_description }
+     */
     private CC connect;
 
     /**
