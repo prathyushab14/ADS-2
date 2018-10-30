@@ -8,16 +8,10 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:12:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:12:41: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:19:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:19:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:49:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:17:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:21:34: Expected @param tag for 'gp'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Graph.java:1:8: Unused import - java.util.Scanner. [UnusedImports]

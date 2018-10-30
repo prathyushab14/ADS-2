@@ -1,5 +1,14 @@
+/**
+ * Class for depth first search.
+ */
 class DepthFirstSearch {
-    private boolean[] marked;    // marked[v] = is there an s-v path?
+    /**
+     * marked array of boolean type.
+     */
+    private boolean[] marked;
+    /**
+     * count.
+     */// marked[v] = is there an s-v path?
     private int count;           // number of vertices connected to s
 
     /**
@@ -9,19 +18,23 @@ class DepthFirstSearch {
      * @param s the source vertex
      * @throws IllegalArgumentException unless {@code 0 <= s < V}
      */
-    public DepthFirstSearch(final Graph G, final int s) {
-        marked = new boolean[G.vertices()];
+    DepthFirstSearch(final Graph gp, final int s) {
+        marked = new boolean[gp.vertices()];
         validateVertex(s);
-        dfs(G, s);
+        dfs(gp, s);
     }
-
-    // depth first search from v
-    private void dfs(final Graph G, final int v) {
+    /**
+     * depth first search.
+     *
+     * @param      gp    { parameter_description }
+     * @param      v     { parameter_description }
+     */
+    private void dfs(final Graph gp, final int v) {
         count++;
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : gp.adj(v)) {
             if (!marked[w]) {
-                dfs(G, w);
+                dfs(gp, w);
             }
         }
     }
@@ -44,8 +57,11 @@ class DepthFirstSearch {
     public int count() {
         return count;
     }
-
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     * validate vertex function.
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(final int v) {
         int m = marked.length;
         if (v < 0 || v >= m) {
