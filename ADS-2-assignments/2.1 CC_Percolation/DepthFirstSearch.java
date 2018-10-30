@@ -9,14 +9,14 @@ class DepthFirstSearch {
      * @param s the source vertex
      * @throws IllegalArgumentException unless {@code 0 <= s < V}
      */
-    public DepthFirstSearch(Graph G, int s) {
-        marked = new boolean[G.V()];
+    public DepthFirstSearch(final Graph G, final int s) {
+        marked = new boolean[G.vertices()];
         validateVertex(s);
         dfs(G, s);
     }
 
     // depth first search from v
-    private void dfs(Graph G, int v) {
+    private void dfs(final Graph G, final int v) {
         count++;
         marked[v] = true;
         for (int w : G.adj(v)) {
@@ -32,7 +32,7 @@ class DepthFirstSearch {
      * @return {@code true} if there is a path, {@code false} otherwise
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public boolean marked(int v) {
+    public boolean marked(final int v) {
         validateVertex(v);
         return marked[v];
     }
@@ -46,9 +46,11 @@ class DepthFirstSearch {
     }
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+    private void validateVertex(final int v) {
+        int m = marked.length;
+        if (v < 0 || v >= m) {
+            throw new IllegalArgumentException("vertex " + v
+                + " is not between 0 and " + (m - 1));
+        }
     }
 }

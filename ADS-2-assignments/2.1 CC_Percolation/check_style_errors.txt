@@ -12,23 +12,12 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:2:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:3:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:12:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:12:29: Parameter G should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:12:35: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:12:38: Parameter s should be final. [FinalParameters]
+[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:12:41: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:19:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:19:22: Parameter G should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:19:28: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:19:31: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:35:27: Parameter v should be final. [FinalParameters]
+[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:19:34: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:49:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:49:33: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:50:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:51: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:52: Line is longer than 80 characters (found 97). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:52:93: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:52:94: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 9 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Graph.java:1:8: Unused import - java.util.Scanner. [UnusedImports]
@@ -36,6 +25,5 @@ Audit done.
 Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:101:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
