@@ -39,8 +39,7 @@ class Percolation {
      * open method for percolation class.
      */
     public void open(int i, int j) {
-    	i=i-1;
-    	j=j-1;
+    	grid[i -1][j - 1] = true;
         grid[i][j] = true;
         if (i == 1) {
             gph.addEdge(component(i, j), top);

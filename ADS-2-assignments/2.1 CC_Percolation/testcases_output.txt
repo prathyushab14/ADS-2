@@ -1,9 +1,11 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 25 out of bounds for length 25
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -11,10 +13,9 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 13
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:52)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 13 out of bounds for length 13
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -22,10 +23,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:55)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
@@ -41,10 +41,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 2
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:55)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -52,10 +51,9 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 2
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:55)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -63,10 +61,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 3
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:52)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -74,10 +71,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 4
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:58)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -85,10 +81,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 5
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:55)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 5
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -96,10 +91,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 6
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:52)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 6
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -107,10 +101,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 7
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:58)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -118,10 +111,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 8
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:52)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 8
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -129,10 +121,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 8
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:52)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 8 out of bounds for length 8
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -140,10 +131,9 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 13
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:52)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 13 out of bounds for length 13
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -151,21 +141,17 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 10
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:52)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
-########## Testcase 15: Failed ##########
+########## Testcase 15: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 50
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:52)
-	at Solution.main(Solution.java:102)
+false
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -173,10 +159,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 20
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:55)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 20 out of bounds for length 20
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########
@@ -184,10 +169,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 50
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:58)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 50 out of bounds for length 50
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -195,10 +179,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 60
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:52)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 60 out of bounds for length 60
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 19: Failed ##########
@@ -206,10 +189,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 47
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:52)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 47 out of bounds for length 47
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -217,10 +199,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 60
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:58)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 60 out of bounds for length 60
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -228,10 +209,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 13
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:58)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 13 out of bounds for length 13
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -239,10 +219,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 101
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:58)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 101 out of bounds for length 101
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -250,9 +229,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 98
-	at Percolation.isOpen(Solution.java:83)
-	at Percolation.open(Solution.java:52)
-	at Solution.main(Solution.java:102)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 98 out of bounds for length 98
+	at Percolation.open(Solution.java:43)
+	at Solution.main(Solution.java:101)
 ----------------------------------------
 
