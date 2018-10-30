@@ -8,15 +8,12 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:17:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\DepthFirstSearch.java:21:34: Expected @param tag for 'gp'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 3 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Graph.java:1:8: Unused import - java.util.Scanner. [UnusedImports]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.

@@ -14,7 +14,7 @@ class DepthFirstSearch {
     /**
      * Computes the vertices in graph {@code G} that are
      * connected to the source vertex {@code s}.
-     * @param G the graph
+     * @param gp the graph
      * @param s the source vertex
      * @throws IllegalArgumentException unless {@code 0 <= s < V}
      */
