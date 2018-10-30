@@ -72,10 +72,10 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:41:22: Parameter i should be final. [FinalParameters]
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:41:29: Parameter j should be final. [FinalParameters]
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:42:17: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:93: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:93:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:94:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:96:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:96:33: Parameter args should be final. [FinalParameters]
+[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:92: Missing a Javadoc comment. [JavadocType]
+[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:92:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:93:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:95:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:95:33: Parameter args should be final. [FinalParameters]
 Audit done.
 Checkstyle ends with 12 errors.

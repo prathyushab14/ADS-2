@@ -40,7 +40,6 @@ class Percolation {
      */
     public void open(int i, int j) {
     	grid[i -1][j - 1] = true;
-        grid[i][j] = true;
         if (i == 1) {
             gph.addEdge(component(i, j), top);
         }
