@@ -1,6 +1,9 @@
 import java.util.Scanner;
+/**
+ * Class for percolation.
+ */
 class Percolation {
-	/**
+/**
  * grid matrix.
  */
     private boolean[][] grid;
@@ -21,7 +24,7 @@ class Percolation {
      */
     private Graph gph;
     /**
-     * { var_description }
+     * object for CC.
      */
     private CC connect;
 
@@ -41,8 +44,8 @@ class Percolation {
      * @param j integer variable.
      * open method for percolation class.
      */
-    public void open(int i, int j) {
-    	grid[i -1][j - 1] = true;
+    public void open(final int i, final int j) {
+        grid[i - 1][j - 1] = true;
         if (i == 1) {
             gph.addEdge(component(i, j), top);
         }
@@ -88,17 +91,28 @@ class Percolation {
      * @return returns true if percolation is possible.
      */
     public boolean percolates() {
-    	connect = new CC(gph);
+        connect = new CC(gph);
         return connect.connected(top, bottom);
     }
 }
-class Solution {
-	Solution() {
+/**
+ * solution class.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    Solution() {
     }
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		Percolation p = new Percolation(n);
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        Percolation p = new Percolation(n);
         while (sc.hasNext()) {
             p.open(sc.nextInt(), sc.nextInt());
         }

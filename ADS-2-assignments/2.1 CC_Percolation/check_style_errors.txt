@@ -36,16 +36,6 @@ Audit done.
 Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:23: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:44:22: Parameter i should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:44:29: Parameter j should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:45:17: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:95: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:95:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:96:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:98:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:98:33: Parameter args should be final. [FinalParameters]
+[ERROR] D:\ADS-2\ADS-2-assignments\2.1 CC_Percolation\Solution.java:101:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 2 errors.
