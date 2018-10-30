@@ -38,8 +38,10 @@ class Percolation {
      * @param j integer variable.
      * open method for percolation class.
      */
-    public void open(final int i, final int j) {
-        grid[i - 1][j - 1] = true;
+    public void open(int i, int j) {
+    	i=i-1;
+    	j=j-1;
+        grid[i][j] = true;
         if (i == 1) {
             gph.addEdge(component(i, j), top);
         }
