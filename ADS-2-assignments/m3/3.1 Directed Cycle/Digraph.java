@@ -1,25 +1,25 @@
 public class Digraph {
     private static final String NEWLINE = System.getProperty("line.separator");
 
-    private final int v;           // number of vertices in this digraph
-    private int e;                 // number of edges in this digraph
+    private final int V;           // number of vertices in this digraph
+    private int E;                 // number of edges in this digraph
     private Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
     private int[] indegree;        // indegree[v] = indegree of vertex v
     
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
      *
-     * @param  v the number of vertices
+     * @param  V the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public Digraph(int v) {
-        if (v < 0) throw new IllegalArgumentException("Number of vertices in a Digraph must be nonnegative");
-        this.v = v;
-        this.e = 0;
-        indegree = new int[v];
-        adj = (Bag<Integer>[]) new Bag[v];
-        for (int i = 0; i < v; i++) {
-            adj[i] = new Bag<Integer>();
+    public Digraph(int V) {
+        if (V < 0) throw new IllegalArgumentException("Number of vertices in a Digraph must be nonnegative");
+        this.V = V;
+        this.E = 0;
+        indegree = new int[V];
+        adj = (Bag<Integer>[]) new Bag[V];
+        for (int v = 0; v < V; v++) {
+            adj[v] = new Bag<Integer>();
         }
     }
     /**
@@ -27,15 +27,15 @@ public class Digraph {
      *
      * @param  G the digraph to copy
      */
-    public Digraph(Digraph gp) {
-        this(gp.vertices());
-        this.e = gp.edges();
-        for (int i = 0; i < v; i++)
-            this.indegree[i] = gp.indegree(i);
-        for (int j = 0; j < gp.vertices(); j++) {
+    public Digraph(Digraph G) {
+        this(G.V());
+        this.E = G.E();
+        for (int v = 0; v < V; v++)
+            this.indegree[v] = G.indegree(v);
+        for (int v = 0; v < G.V(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Integer> reverse = new Stack<Integer>();
-            for (int w : gp.adj[v]) {
+            for (int w : G.adj[v]) {
                 reverse.push(w);
             }
             for (int w : reverse) {
@@ -49,26 +49,26 @@ public class Digraph {
      *
      * @return the number of vertices in this digraph
      */
-    public int vertices() {
-        return v;
+    public int V() {
+        return V;
     }
     /**
      * Returns the number of edges in this digraph.
      *
      * @return the number of edges in this digraph
      */
-    public int edges() {
-        return e;
+    public int E() {
+        return E;
     }
     /**
      * { function_description }
      *
      * @param      v     { parameter_description }
      */
-    private void validateVertex(final int v1) {
-        if (v1 < 0 || v1 >= v) {
-            throw new IllegalArgumentException("vertex " + v1
-                + " is not between 0 and " + (v - 1));
+    private void validateVertex(final int v) {
+        if (v < 0 || v >= V) {
+            throw new IllegalArgumentException("vertex " + v
+                + " is not between 0 and " + (V - 1));
         }
     }
 
@@ -84,7 +84,7 @@ public class Digraph {
         validateVertex(w);
         adj[v].add(w);
         indegree[w]++;
-        e++;
+        E++;
     }
 
     /**
