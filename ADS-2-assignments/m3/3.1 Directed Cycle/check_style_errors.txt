@@ -74,7 +74,6 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:18: First sentence should end with a period. [JavadocStyle]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:21:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:22: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:25: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:30: First sentence should end with a period. [JavadocStyle]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:34: First sentence should end with a period. [JavadocStyle]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:49: Expected @return tag. [JavadocMethod]
@@ -86,18 +85,5 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:83: Expected @return tag. [JavadocMethod]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:84: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:90: Expected @return tag. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:92: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:97: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:99: Expected @return tag. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:99: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:100: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:102: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:103: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:112: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:113: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:115: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:118: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:119: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:121: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 32 errors.
+Checkstyle ends with 18 errors.
