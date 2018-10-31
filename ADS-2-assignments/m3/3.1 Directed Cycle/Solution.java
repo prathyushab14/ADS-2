@@ -13,7 +13,7 @@ class Solution {
     	gph.addEdge(Integer.parseInt(tok[0]), Integer.parseInt(tok[1]));
     	// System.out.println(c.hasCycle());
     	if (c.hasCycle() || c.hasParallelEdges(gph) || c.hasSelfLoop(gph)) {
-            System.out.println("Cycle exists");
+            System.out.println("Cycle exists.");
     	} else {
     		System.out.println("Cycle doesn't exists.");
     	}
