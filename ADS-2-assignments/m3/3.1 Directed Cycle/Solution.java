@@ -13,11 +13,10 @@ class Solution {
     	    gph.addEdge(Integer.parseInt(tok[0]), Integer.parseInt(tok[1]));
     	}
     	Cycle c = new Cycle(gph);
-    	// System.out.println(c.hasCycle());
-    	if (c.hasCycle()) {
-            System.out.println("Cycle exists.");
+    	if (!c.hasCycle()) {
+            System.out.println("Cycle doesn't exists");
     	} else {
-    		System.out.println("Cycle doesn't exists.");
+    		System.out.println("Cycle exists.");
     	}
     }
 }

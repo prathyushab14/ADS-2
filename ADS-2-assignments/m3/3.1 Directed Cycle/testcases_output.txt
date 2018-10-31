@@ -59,6 +59,6 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Cycle doesn't exists.
+Cycle doesn't exists
 ----------------------------------------
 
