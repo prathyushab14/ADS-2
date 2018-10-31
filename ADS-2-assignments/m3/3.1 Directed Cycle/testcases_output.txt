@@ -19,15 +19,15 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Cycle doesn't exists.
+
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-Cycle doesn't exists.
+Cycle exists.
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -43,7 +43,7 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Cycle doesn't exists.
+
 ----------------------------------------
 
 ########## Testcase 6: Passed ##########
