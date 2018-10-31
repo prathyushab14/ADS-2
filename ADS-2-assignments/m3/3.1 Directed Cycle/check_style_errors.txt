@@ -35,10 +35,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 29 errors.
 Starting audit...
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DepthFirstSearch.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-Audit done.
-Checkstyle ends with 1 errors.
-Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:4: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:8: Line has trailing spaces. [RegexpSingleline]
@@ -85,18 +81,19 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:162:26: Parameter v should be final. [FinalParameters]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:172: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:175:25: Parameter v should be final. [FinalParameters]
+[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:195:5: Class 'Digraph' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Digraph' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
+[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:195:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 46 errors.
+Checkstyle ends with 48 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:5:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:5:29: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:7: Line has trailing spaces. [RegexpSingleline]
