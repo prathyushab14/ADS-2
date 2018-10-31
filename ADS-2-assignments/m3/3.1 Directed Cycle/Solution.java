@@ -15,7 +15,6 @@ class Solution {
         //System.out.println(gph);
         //DepthFirstSearch dfs = new DepthFirstSearch(gph, 0);
         Cycle c = new Cycle(gph);
-        System.out.println(c);
         if (c.hasCycle()) {
             System.out.println("Cycle exists.");
         } else {
