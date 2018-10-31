@@ -42,7 +42,7 @@ public class Cycle {
 
     // does this graph have a self loop?
     // side effect: initialize cycle to be self loop
-    private boolean hasSelfLoop(Digraph G) {
+    boolean hasSelfLoop(Digraph G) {
         for (int v = 0; v < G.V(); v++) {
             for (int w : G.adj(v)) {
                 if (v == w) {
@@ -58,7 +58,7 @@ public class Cycle {
 
     // does this graph have two parallel edges?
     // side effect: initialize cycle to be two parallel edges
-    private boolean hasParallelEdges(Digraph G) {
+    boolean hasParallelEdges(Digraph G) {
         marked = new boolean[G.V()];
 
         for (int v = 0; v < G.V(); v++) {

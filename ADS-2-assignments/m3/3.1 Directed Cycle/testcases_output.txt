@@ -27,7 +27,7 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Cycle doesn't exists.
+Cycle exists
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
