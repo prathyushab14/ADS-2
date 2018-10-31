@@ -22,6 +22,7 @@ public class Cycle {
     private boolean[] marked;
     private int[] edgeTo;
     private Stack<Integer> cycle;
+    Digraph G;
 
     /**
      * Determines whether the undirected graph {@code G} has a cycle and,
@@ -30,7 +31,8 @@ public class Cycle {
      * @param G the undirected graph
      */
     public Cycle(Digraph G) {
-        if (hasSelfLoop(G)) return;
+       this.G = G; 
+       if (hasSelfLoop(G)) return;
         if (hasParallelEdges(G)) return;
         marked = new boolean[G.V()];
         edgeTo = new int[G.V()];
@@ -89,6 +91,8 @@ public class Cycle {
      * @return {@code true} if the graph has a cycle; {@code false} otherwise
      */
     public boolean hasCycle() {
+        if (hasSelfLoop(G)) return true;
+        if (hasParallelEdges(G)) return true;
         return cycle != null;
     }
 
