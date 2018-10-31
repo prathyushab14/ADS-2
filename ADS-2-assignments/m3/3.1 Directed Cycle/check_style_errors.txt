@@ -41,12 +41,5 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:35: Expected @return tag. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:41: Expected @return tag. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:47:33: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:58: Expected @return tag. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:71: Expected @return tag. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:80: Expected @return tag. [JavadocMethod]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 1 errors.

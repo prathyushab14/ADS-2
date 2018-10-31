@@ -1,5 +1,10 @@
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+/**
+ * List of .
+ *
+ * @param      <Item>  The item
+ */
 public class Stack<Item> implements Iterable<Item> {
     /**
      * { var_description.
@@ -30,19 +35,25 @@ public class Stack<Item> implements Iterable<Item> {
         n = 0;
     }
     /**
-     * Is the stack empty?
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
      */
     public boolean isEmpty() {
         return first == null;
     }
     /**
-     * Return the number of items in the stack.
+     * { function_description.
+     *
+     * @return     { description_of_the_return_value }
      */
     public int size() {
         return n;
     }
     /**
-     * Add the item to the stack.
+     * { function_description.
+     *
+     * @param      item  The item
      */
     public void push(final Item item) {
         Node oldfirst = first;
@@ -52,8 +63,9 @@ public class Stack<Item> implements Iterable<Item> {
         n++;
     }
     /**
-     * Delete and return the item most recently added to the stack.
-     * Throw an exception if no such item exists because the stack is empty.
+     * { function_description.
+     *
+     * @return     { description_of_the_return_value }
      */
     public Item pop() {
         if (isEmpty()) {
@@ -65,8 +77,9 @@ public class Stack<Item> implements Iterable<Item> {
         return item;                   // return the saved item
     }
     /**
-     * Return the item most recently added to the stack.
-     * Throw an exception if no such item exists because the stack is empty.
+     * { function_description.
+     *
+     * @return     { description_of_the_return_value }
      */
     public Item peek() {
         if (isEmpty()) {
@@ -75,7 +88,9 @@ public class Stack<Item> implements Iterable<Item> {
         return first.item;
     }
     /**
-     * Return string representation.
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
