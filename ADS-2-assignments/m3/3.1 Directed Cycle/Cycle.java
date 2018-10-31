@@ -31,6 +31,7 @@ public class Cycle {
      * @param G the undirected graph
      */
     public Cycle(Digraph G) {
+        System.out.println("PPPP");
        this.G = G; 
        if (hasSelfLoop(G)) return;
         if (hasParallelEdges(G)) return;
