@@ -1,7 +1,18 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 class Solution {
+    /**
+     * Constructs the object.
+     */
     Solution() {
     }
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int v = Integer.parseInt(sc.nextLine());
@@ -12,8 +23,6 @@ class Solution {
             String[] tok = tokens.split(" ");
             gph.addEdge(Integer.parseInt(tok[0]), Integer.parseInt(tok[1]));
         }
-        //System.out.println(gph);
-        //DepthFirstSearch dfs = new DepthFirstSearch(gph, 0);
         Cycle c = new Cycle(gph);
         if (c.hasCycle()) {
             System.out.println("Cycle exists.");

@@ -1,24 +1,3 @@
-/**
- *  The {@code Digraph} class represents a directed graph of vertices
- *  named 0 through <em>V</em> - 1.
- *  It supports the following two primary operations: add an edge to the digraph,
- *  iterate over all of the vertices adjacent from a given vertex.
- *  Parallel edges and self-loops are permitted.
- *  <p>
- *  This implementation uses an adjacency-lists representation, which 
- *  is a vertex-indexed array of {@link Bag} objects.
- *  All operations take constant time (in the worst case) except
- *  iterating over the vertices adjacent from a given vertex, which takes
- *  time proportional to the number of such vertices.
- *  <p>
- *  For additional documentation,
- *  see <a href="https://algs4.cs.princeton.edu/42digraph">Section 4.2</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *
- *  @author Robert Sedgewick
- *  @author Kevin Wayne
- */
-
 public class Digraph {
     private static final String NEWLINE = System.getProperty("line.separator");
 
@@ -43,40 +22,6 @@ public class Digraph {
             adj[v] = new Bag<Integer>();
         }
     }
-
-    // /**  
-    //  * Initializes a digraph from the specified input stream.
-    //  * The format is the number of vertices <em>V</em>,
-    //  * followed by the number of edges <em>E</em>,
-    //  * followed by <em>E</em> pairs of vertices, with each entry separated by whitespace.
-    //  *
-    //  * @param  in the input stream
-    //  * @throws IllegalArgumentException if the endpoints of any edge are not in prescribed range
-    //  * @throws IllegalArgumentException if the number of vertices or edges is negative
-    //  * @throws IllegalArgumentException if the input stream is in the wrong format
-    //  */
-    // public Digraph(In in) {
-    //     try {
-    //         this.V = in.readInt();
-    //         if (V < 0) throw new IllegalArgumentException("number of vertices in a Digraph must be nonnegative");
-    //         indegree = new int[V];
-    //         adj = (Bag<Integer>[]) new Bag[V];
-    //         for (int v = 0; v < V; v++) {
-    //             adj[v] = new Bag<Integer>();
-    //         }
-    //         int E = in.readInt();
-    //         if (E < 0) throw new IllegalArgumentException("number of edges in a Digraph must be nonnegative");
-    //         for (int i = 0; i < E; i++) {
-    //             int v = in.readInt();
-    //             int w = in.readInt();
-    //             addEdge(v, w); 
-    //         }
-    //     }
-    //     catch (NoSuchElementException e) {
-    //         throw new IllegalArgumentException("invalid input format in Digraph constructor", e);
-    //     }
-    // }
-
     /**
      * Initializes a new digraph that is a deep copy of the specified digraph.
      *
@@ -175,33 +120,5 @@ public class Digraph {
     public int indegree(int v) {
         validateVertex(v);
         return indegree[v];
-    }
-
-    /**
-     * Returns the reverse of the digraph.
-     *
-     * @return the reverse of the digraph
-     */
-    public Digraph reverse() {
-        Digraph reverse = new Digraph(V);
-        for (int v = 0; v < V; v++) {
-            for (int w : adj(v)) {
-                reverse.addEdge(w, v);
-            }
-        }
-        return reverse;
-    }
-
-    public String toString() {
-        StringBuilder s = new StringBuilder();
-        s.append(V + " vertices, " + E + " edges " + NEWLINE);
-        for (int v = 0; v < V; v++) {
-            s.append(String.format("%d: ", v));
-            for (int w : adj[v]) {
-                s.append(String.format("%d ", w));
-            }
-            s.append(NEWLINE);
-        }
-        return s.toString();
     }
 }

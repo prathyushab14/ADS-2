@@ -116,25 +116,12 @@ public class Stack<Item> implements Iterable<Item> {
         public void remove()      { throw new UnsupportedOperationException();  }
 
         public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }
-
-
-   /**
-     * A test client.
-     */
-/*    public static void main(String[] args) {
-        Stack<String> s = new Stack<String>();
-        while (!StdIn.isEmpty()) {
-            String item = StdIn.readString();
-            if (!item.equals("-")) s.push(item);
-            else if (!s.isEmpty()) StdOut.print(s.pop() + " ");
-        }
-        StdOut.println("(" + s.size() + " left on stack)");
-    }*/
 }
-
