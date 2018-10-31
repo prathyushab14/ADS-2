@@ -18,8 +18,6 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:33:26: 'G' hides a field. [HiddenField]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:33:26: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:35: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:36: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:37: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:40: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:41: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:48:5: Class 'Cycle' looks like designed for extension (can be subclassed), but the method 'hasSelfLoop' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Cycle' final or making the method 'hasSelfLoop' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
@@ -43,7 +41,7 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:114: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:119:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 39 errors.
+Checkstyle ends with 37 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:4: Line is longer than 80 characters (found 81). [LineLength]

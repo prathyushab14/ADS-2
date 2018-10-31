@@ -60,8 +60,6 @@ Cycle doesn't exists.
 
 Your Output: 
 PPPP
-Cycle@3cb5cdba
-Cycle exists.
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########

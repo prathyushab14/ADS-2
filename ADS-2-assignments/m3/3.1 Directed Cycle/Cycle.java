@@ -33,8 +33,8 @@ public class Cycle {
     public Cycle(Digraph G) {
         System.out.println("PPPP");
        this.G = G; 
-       if (hasSelfLoop(G)) return;
-        if (hasParallelEdges(G)) return;
+       // if (hasSelfLoop(G)) return;
+       //  if (hasParallelEdges(G)) return;
         marked = new boolean[G.V()];
         edgeTo = new int[G.V()];
         for (int v = 0; v < G.V(); v++)
