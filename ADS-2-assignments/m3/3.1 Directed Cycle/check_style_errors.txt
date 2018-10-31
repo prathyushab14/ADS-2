@@ -35,6 +35,10 @@ Starting audit...
 Audit done.
 Checkstyle ends with 29 errors.
 Starting audit...
+[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\DepthFirstSearch.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Checkstyle ends with 1 errors.
+Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:4: Line is longer than 80 characters (found 81). [LineLength]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:8: Line has trailing spaces. [RegexpSingleline]
