@@ -15,7 +15,7 @@ class Solution {
     	if (c.hasCycle()) {
     		System.out.println("Cycle exists");
     	} else {
-    		System.out.println("Cycle doesn't exists");
+    		System.out.println("Cycle doesn't exists.");
     	}
     }
 }
