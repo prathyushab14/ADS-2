@@ -9,7 +9,7 @@ final class Solution {
     private Solution() {
     }
     /**
-     * main function.
+     * main method to handle the input.
      *
      * @param      args  The arguments
      */
@@ -19,12 +19,12 @@ final class Solution {
         Digraph gph = new Digraph(v);
         int e = Integer.parseInt(sc.nextLine());
         while (sc.hasNext()) {
-            String tokens = sc.nextLine();
-            String[] tok = tokens.split(" ");
-            gph.addEdge(Integer.parseInt(tok[0]), Integer.parseInt(tok[1]));
+            String[] tokens = sc.nextLine().split(" ");
+            gph.addEdge(Integer.parseInt(tokens[0]),
+                Integer.parseInt(tokens[1]));
         }
-        DirectedCycle c = new DirectedCycle(gph);
-        if (c.hasCycle()) {
+        DirectedCycle cycle = new DirectedCycle(gph);
+        if (cycle.hasCycle()) {
             System.out.println("Cycle exists.");
         } else {
             System.out.println("Cycle doesn't exists.");
