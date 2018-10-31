@@ -16,11 +16,11 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 public class Stack<Item> implements Iterable<Item> {
     /**
-     * { var_description }
+     * { var_description.
      */
-    private int N;
+    private int n;
     /**
-     * { var_description }
+     * { var_description.
      */
     private Node first;
     /**
@@ -28,11 +28,11 @@ public class Stack<Item> implements Iterable<Item> {
      */
     private class Node {
         /**
-         * { var_description }
+         * { var_description.
          */
         private Item item;
         /**
-         * { var_description }
+         * { var_description.
          */
         private Node next;
     }
@@ -41,7 +41,7 @@ public class Stack<Item> implements Iterable<Item> {
      */
     public Stack() {
         first = null;
-        N = 0;
+        n = 0;
     }
     /**
      * Is the stack empty?
@@ -53,27 +53,29 @@ public class Stack<Item> implements Iterable<Item> {
      * Return the number of items in the stack.
      */
     public int size() {
-        return N;
+        return n;
     }
     /**
      * Add the item to the stack.
      */
-    public void push(Item item) {
+    public void push(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        n++;
     }
     /**
      * Delete and return the item most recently added to the stack.
      * Throw an exception if no such item exists because the stack is empty.
      */
     public Item pop() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
+        if (isEmpty()) {
+            throw new RuntimeException("Stack underflow");
+        }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
-        N--;
+        n--;
         return item;                   // return the saved item
     }
     /**
@@ -81,7 +83,9 @@ public class Stack<Item> implements Iterable<Item> {
      * Throw an exception if no such item exists because the stack is empty.
      */
     public Item peek() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
+        if (isEmpty()) {
+            throw new RuntimeException("Stack underflow");
+        }
         return first.item;
     }
     /**
