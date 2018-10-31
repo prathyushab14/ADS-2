@@ -3,19 +3,19 @@
  */
 public class Cycle {
     /**
-     * { var_description }
+     * { var_description.
      */
-    private boolean[] marked;// marked[v] = has vertex v been marked?
+    private boolean[] marked; // marked[v] = has vertex v been marked?
     /**
-     * { item_description }
+     * { item_description.
      */
     private int[] edgeTo;
     /**
-     * { var_description }
+     * { var_description.
      */
     private boolean[] onStack;
     /**
-     * { var_description }
+     * { var_description.
      */
     private Stack<Integer> cycle;
     /**
@@ -23,28 +23,32 @@ public class Cycle {
      * finds such a cycle.
      * @param G the digraph
      */
-    public Cycle(Digraph G) {
-        marked  = new boolean[G.V()];
-        onStack = new boolean[G.V()];
-        edgeTo  = new int[G.V()];
-        for (int v = 0; v < G.V(); v++) {
+    public Cycle(final Digraph gp) {
+        marked  = new boolean[gp.V()];
+        onStack = new boolean[gp.V()];
+        edgeTo  = new int[gp.V()];
+        for (int v = 0; v < gp.V(); v++) {
             if (!marked[v] && cycle == null) {
-                dfs(G, v);
+                dfs(gp, v);
             }
         }
     }
-    private void dfs(Digraph G, int v) {
+    /**
+     * { function_description.
+     *
+     * @param      gp    { parameter_description }
+     * @param      v     { parameter_description }
+     */
+    private void dfs(final Digraph gp, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : gp.adj(v)) {
             if (cycle != null) {
                 return;
-            }
-            else if (!marked[w]) {
+            } else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
-            }
-            else if (onStack[w]) {
+                dfs(gp, w);
+            } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
@@ -63,7 +67,7 @@ public class Cycle {
         return cycle != null;
     }
     /**
-     * Returns a directed cycle if the digraph has a directed cycle, and {@code null} otherwise.
+     * Returns a directed cycle if the digraph has a directed cycle
      *
      */
     public Iterable<Integer> cycle() {

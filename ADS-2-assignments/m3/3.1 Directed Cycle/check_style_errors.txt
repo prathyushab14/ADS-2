@@ -4,23 +4,12 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:5: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:8:30: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:9: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:13: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:17: First sentence should end with a period. [JavadocStyle]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:26:18: Parameter G should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:26:26: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:36:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:36:22: Parameter G should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:36:30: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:36:33: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:42:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:46:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:66: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:69: Expected @return tag. [JavadocMethod]
+[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:24:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:26:32: Expected @param tag for 'gp'. [JavadocMethod]
+[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:69: First sentence should end with a period. [JavadocStyle]
+[ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:73: Expected @return tag. [JavadocMethod]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Digraph.java:1: Missing a Javadoc comment. [JavadocType]
