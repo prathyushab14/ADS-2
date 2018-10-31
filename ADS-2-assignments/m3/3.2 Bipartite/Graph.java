@@ -1,120 +1,70 @@
 /**
- * Class for graph theory.
+ * Class for graph.
  */
-class Graph {
+public class Graph {
     /**
-     * vertices.
+     * {Vertex}.
      */
-    private int v;
+    private int vertices;
     /**
-     * edges.
+     * {Edges}.
      */
-    private int e;
+    private int edges;
     /**
-     * array of bag type.
+     * {Declaring a bag array of type integer}.
      */
     private Bag<Integer>[] adj;
+
     /**
-     * Constructs the object.
+     * Create an empty graph with V vertices.
+     * @param     v     {Vertex}
      */
-    Graph() {
-    }
-    /**
-     * Constructs the object.
-     *
-     * @param      v1    The v1
-     */
-    Graph(final int v1) {
-        this.v = v1;
-        this.e = 0;
-        adj = (Bag<Integer>[]) new Bag[v1];
-        for (int i = 0; i < v; i++) {
+    public Graph(final int v) {
+        if (v < 0) {
+            throw new RuntimeException(
+                "Number of vertices must be nonnegative");
+        }
+        this.vertices = v;
+        this.edges = 0;
+        adj = (Bag<Integer>[]) new Bag[vertices];
+        for (int i = 0; i < vertices; i++) {
             adj[i] = new Bag<Integer>();
         }
     }
+
     /**
-     * Gets the v.
-     *
-     * @return     The v.
-     */
-    public int getV() {
-        return v;
-    }
-    /**
-     * Gets the e.
-     *
-     * @return     The e.
-     */
-    public int getE() {
-        return e;
-    }
-    /**
-     * get bag array.
-     *
-     * @return     list
-     */
-    public Bag<Integer>[] getadj() {
-        return adj;
-    }
-    /**
-     * returns number of vertices.
-     *
-     * @return    no of vertices
+     * Return the number of vertices in the graph.
+     * @return      {Integer}
      */
     public int vertices() {
-        return v;
+        return vertices;
     }
+
     /**
-     * returns number of edges.
-     *
-     * @return    no of edges
+     * Return the number of edges in the graph.
+     * @return      {Integer}
      */
     public int edges() {
-        return e;
+        return edges;
     }
+
     /**
-     * Adds an edge.
-     * complexity of method is O(1)
-     *
-     * @param      v1    integer
-     * @param      w1     integer
+     * Add the edge v-w to graph.
+     * @param      v       {Vertex v}
+     * @param       w      {Vertex w}
      */
-    public void addEdge(final int v1, final int w1) {
-        if (v1 == w1) {
-            return;
-        }
-        if (!hasEdge(v1, w1)) {
-            e++;
-        adj[v1].add(w1);
-        adj[w1].add(v1);
-        }
+    public void addEdge(final int v, final int w) {
+        edges++;
+        adj[v].add(w);
+        adj[w].add(v);
     }
+
     /**
-     * returns all the values in list.
-     * complexity of this method is O(1)
-     *
-     * @param      v1     integer
-     *
-     * @return   list.
+     * Return the list of neighbors of vertex v as in Iterable.
+     * @param      v    {Vertex}
+     * @return     {Iterable}
      */
-    public Iterable<Integer> adj(final int v1) {
-        return adj[v1];
-    }
-    /**
-     * Determines if it has edge.
-     * complexity of this method is O(N)
-     *
-     * @param      v1     integer
-     * @param      w1     integer
-     *
-     * @return     True if has edge, False otherwise.
-     */
-    public boolean hasEdge(final int v1, final int w1) {
-        for (int k : adj[v1]) {
-            if (k == w1) {
-                return true;
-            }
-        }
-        return false;
+    public Iterable<Integer> adj(final int v) {
+        return adj[v];
     }
 }
