@@ -14,35 +14,39 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
+Cycle@3cb5cdba
 Cycle exists.
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
+Cycle@3cb5cdba
 Cycle exists.
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
+Cycle@3cb5cdba
 Cycle exists.
 ----------------------------------------
 
-########## Testcase 5: Passed ##########
+########## Testcase 5: Failed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
+Cycle@3cb5cdba
 Cycle exists.
 ----------------------------------------
 
@@ -51,6 +55,7 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
+Cycle@3cb5cdba
 Cycle exists.
 ----------------------------------------
 
@@ -59,6 +64,7 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
+Cycle@2c8d66b2
 Cycle doesn't exists
 ----------------------------------------
 
