@@ -1,9 +1,23 @@
+/**
+ * Class for cycle.
+ */
 public class Cycle {
-    private boolean[] marked;        // marked[v] = has vertex v been marked?
-    private int[] edgeTo;            // edgeTo[v] = previous vertex on path to v
-    private boolean[] onStack;       // onStack[v] = is vertex on the stack?
-    private Stack<Integer> cycle;    // directed cycle (or null if no such cycle)
-
+    /**
+     * { var_description }
+     */
+    private boolean[] marked;// marked[v] = has vertex v been marked?
+    /**
+     * { item_description }
+     */
+    private int[] edgeTo;
+    /**
+     * { var_description }
+     */
+    private boolean[] onStack;
+    /**
+     * { var_description }
+     */
+    private Stack<Integer> cycle;
     /**
      * Determines whether the digraph {@code G} has a directed cycle and, if so,
      * finds such a cycle.
@@ -13,26 +27,23 @@ public class Cycle {
         marked  = new boolean[G.V()];
         onStack = new boolean[G.V()];
         edgeTo  = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
-            if (!marked[v] && cycle == null) dfs(G, v);
+        for (int v = 0; v < G.V(); v++) {
+            if (!marked[v] && cycle == null) {
+                dfs(G, v);
+            }
+        }
     }
-
-    // check that algorithm computes either the topological order or finds a directed cycle
     private void dfs(Digraph G, int v) {
         onStack[v] = true;
         marked[v] = true;
         for (int w : G.adj(v)) {
-
-            // short circuit if directed cycle found
-            if (cycle != null) return;
-
-            // found new vertex, so recur
+            if (cycle != null) {
+                return;
+            }
             else if (!marked[w]) {
                 edgeTo[w] = v;
                 dfs(G, w);
             }
-
-            // trace back directed cycle
             else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
@@ -44,19 +55,16 @@ public class Cycle {
         }
         onStack[v] = false;
     }
-
     /**
      * Does the digraph have a directed cycle?
-     * @return {@code true} if the digraph has a directed cycle, {@code false} otherwise
+     * @return true or false
      */
     public boolean hasCycle() {
         return cycle != null;
     }
-
     /**
      * Returns a directed cycle if the digraph has a directed cycle, and {@code null} otherwise.
-     * @return a directed cycle (as an iterable) if the digraph has a directed cycle,
-     *    and {@code null} otherwise
+     *
      */
     public Iterable<Integer> cycle() {
         return cycle;
