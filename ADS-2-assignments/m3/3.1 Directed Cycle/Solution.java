@@ -23,7 +23,7 @@ final class Solution {
             String[] tok = tokens.split(" ");
             gph.addEdge(Integer.parseInt(tok[0]), Integer.parseInt(tok[1]));
         }
-        Cycle c = new Cycle(gph);
+        DirectedCycle c = new DirectedCycle(gph);
         if (c.hasCycle()) {
             System.out.println("Cycle exists.");
         } else {
