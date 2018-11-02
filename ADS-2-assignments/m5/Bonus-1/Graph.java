@@ -11,6 +11,8 @@ class Graph {
      * array of bag type.
      */
     private Bag<Integer>[] adj;
+    //private Stack<Integer> cycle;
+    private boolean[] marked;
     /**
      * Constructs the object.
      */
@@ -77,14 +79,9 @@ class Graph {
      * @param      w1     integer
      */
     public void addEdge(final int v1, final int w1) {
-        if (v1 == w1) {
-            return;
-        }
-        if (!hasEdge(v1, w1)) {
-            e++;
+        e++;
         adj[v1].add(w1);
         adj[w1].add(v1);
-        }
     }
     /**
      * returns all the values in list.
@@ -112,6 +109,32 @@ class Graph {
                     return true;
                 }
         }
+        return false;
+    }
+    // does this graph have a self loop?
+    // side effect: initialize cycle to be self loop
+    public boolean hasSelfLoop(int v) {
+        for (int w : adj(v)) {
+            if (v == w) {
+                return true;
+            }
+        }
+        return false;
+    }
+    // does this graph have two parallel edges?
+    // side effect: initialize cycle to be two parallel edges
+    public boolean hasParallelEdges(int v) {
+        marked = new boolean[vertices()];
+        for (int w : adj(v)) {
+            if (marked[w]) {
+                return true;
+            }
+            marked[w] = true;
+        }
+
+        // for (int w : adj(v)) {
+        //     marked[w] = false;
+        // }
         return false;
     }
 }
