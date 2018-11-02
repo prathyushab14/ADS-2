@@ -11,7 +11,9 @@ class Graph {
      * array of bag type.
      */
     private Bag<Integer>[] adj;
-    //private Stack<Integer> cycle;
+    /**
+     * marked array.
+     */
     private boolean[] marked;
     /**
      * Constructs the object.
@@ -131,10 +133,6 @@ class Graph {
             }
             marked[w] = true;
         }
-
-        // for (int w : adj(v)) {
-        //     marked[w] = false;
-        // }
         return false;
     }
 }

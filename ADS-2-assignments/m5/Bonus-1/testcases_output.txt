@@ -6,12 +6,12 @@ Your Output:
 0
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 3
 
 Your Output: 
-1
+3
 ----------------------------------------
 
 ########## Testcase 2: Passed ##########

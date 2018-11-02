@@ -19,30 +19,26 @@ class Solution {
 			gph.addEdge(Integer.parseInt(connects[0]), Integer.parseInt(connects[1]));
         }
         CC connected = new CC(gph);
-        int count = 0;
-        
-        int finalcnt = 0;
+        int parallelcount = 0;
+        int maxcount = 0;
         int id = 0;
-        int[] idarr = connected.idarray();
-        //System.out.println(Arrays.toString(idarr));
+        int[] idar = connected.idarray();
         for (int i = 0; i < gph.vertices(); i++) {
         	if (gph.hasParallelEdges(i)) {
-        		count++;
+        		parallelcount++;
         	}
-        	int idcnt = 0;
-        	id = idarr[i];
-        	//System.out.println(id);
-        	for (int j = 0; j < idarr.length; j++) {
-        		if (id == idarr[j]) {
-        			idcnt++;
+        	int idcount = 0;
+        	id = idar[i];
+        	for (int j = 0; j < idar.length; j++) {
+        		if (id == idar[j]) {
+        			idcount++;
         		}
         	}
-        	if (finalcnt < idcnt) {
-        	    finalcnt = idcnt;	
+        	if (maxcount < idcount) {
+        	    maxcount = idcount;	
         	}
         }
-        System.out.println(finalcnt);
+        System.out.println(parallelcount + maxcount);
 		}
-		
 	}
 } 
