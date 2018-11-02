@@ -1,0 +1,33 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+0
+
+Your Output: 
+
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+3
+
+Your Output: 
+1
+1
+1
+2
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+7
+
+Your Output: 
+17
+5
+18
+5
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 20 out of bounds for length 20
+	at Graph.addEdge(Graph.java:86)
+	at Solution.main(Solution.java:16)
+----------------------------------------
+
