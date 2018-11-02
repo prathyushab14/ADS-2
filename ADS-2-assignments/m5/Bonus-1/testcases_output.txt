@@ -26,8 +26,11 @@ Your Output:
 5
 18
 5
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 20 out of bounds for length 20
-	at Graph.addEdge(Graph.java:86)
-	at Solution.main(Solution.java:16)
+5
+9
+12
+20
+1
+10
 ----------------------------------------
 
