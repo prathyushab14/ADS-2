@@ -310,9 +310,7 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:27:38: '/' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:31:41: '1000' is a magic number. [MagicNumber]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:38:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:40:56: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:40:60: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:40:61: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:40:61: '+' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:51: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:56: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:56:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
@@ -329,7 +327,7 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:85: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:90: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 45 errors.
+Checkstyle ends with 43 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

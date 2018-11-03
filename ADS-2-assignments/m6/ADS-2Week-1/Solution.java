@@ -37,7 +37,7 @@ class PageRank {
     }
 	public String toString() {
 		String str = "";
-		System.out.println(no_v + " vertices" +", "+no_e + " edges");
+		System.out.println(no_v + " vertices" + ", "+ no_e + " edges");
         for (int i = 0; i < no_v; i++) {
             str = i + ": ";
             for (int k : graph.adj(i)) {
