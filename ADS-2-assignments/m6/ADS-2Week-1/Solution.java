@@ -15,6 +15,7 @@ class PageRank {
     }
 	public double getPR(int v1) {
 		od = graph.outdegree(v1);
+		double pr = 0.0;
 		if (od == 0) {
 			return 0.0;
 		}
@@ -22,21 +23,18 @@ class PageRank {
 		for (int i = 0; i < no_v; i++) {
 			for (int v : graph.adj(i)) {
 				if (v == v1) {
-					odarr[l++] = v;
-				}
-		    }
-		}
-		double initialPR = 1/no_e;
-		double pr = initialPR;
-		double newPR;
-		for (int k = 0; k < odarr.length; k++) {
-		    for (int i = 0; i < 1000; i++) {
-			newPR = pr / graph.outdegree(odarr[k++]);
-			pr = newPR;
-		}
+				    double initialPR = 1/no_e;
+		            pr = initialPR;
+		            double newPR;
+		            for (int m = 0; m < 1000; m++) {
+			            newPR = pr / graph.outdegree(v);
+			            pr = newPR;
+		            }
+		        }
+			}
 		}
 		return pr;
-    }
+	}
 	public String toString() {
 		String str = "";
 		System.out.println(no_v + " vertices" + ", "+ no_e + " edges");
