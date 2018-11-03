@@ -46,6 +46,10 @@ class PageRank {
             System.out.println(str);
         }
         System.out.println();
+        String rstr = "";
+        for (int i = 0; i < no_v; i++) {
+        	rstr += i + "-" + getPR(i);
+        }
         return "";
 	}
 }
