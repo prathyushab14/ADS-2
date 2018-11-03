@@ -19,12 +19,11 @@ class PageRank {
 			return 0.0;
 		}
 		int l = 0;
-		double pr = 0.0;
+		double initialPR = 1/no_e;
+		double pr = initialPR;
 		for (int i = 0; i < no_v; i++) {
 			for (int v : graph.adj(i)) {
 				if (v == v1) {
-				    double initialPR = 1/no_e;
-		            pr = initialPR;
 		            double newPR;
 		            for (int m = 0; m < 1000; m++) {
 			            newPR = pr / graph.outdegree(v);
