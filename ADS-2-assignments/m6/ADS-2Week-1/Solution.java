@@ -36,14 +36,18 @@ class PageRank {
 		return pr;
     }
 	public String toString() {
-		String str = "";
-		System.out.println(no_v + "vertices" +", "+no_e + "edges");
-		for (int i = 0; i < no_v; i++) {
-			str += i +":"+ graph.adj(i);
-		}
+		System.out.println(no_v + " vertices" +", "+no_e + " edges");
+        for (int i = 0; i < no_v; i++) {
+            String str = "";
+            str = i + ": ";
+            for (int k : graph.adj(i)) {
+                str = str + k + " ";
+            }
+            return str;
+        }
 		return null;
 	}
-	}
+}
 class WebSearch {
 
 }

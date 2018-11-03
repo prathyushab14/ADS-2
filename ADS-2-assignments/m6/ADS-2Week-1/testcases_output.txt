@@ -12,8 +12,8 @@ Expected Output:
 3 - 0.0
 
 Your Output: 
-4vertices, 5edges
-null
+4 vertices, 5 edges
+0: 2 1
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -30,8 +30,8 @@ Expected Output:
 3 - 0.09090909090909086
 
 Your Output: 
-4vertices, 6edges
-null
+4 vertices, 6 edges
+0: 1
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -48,8 +48,8 @@ Expected Output:
 3 - 0.07692307692307687
 
 Your Output: 
-4vertices, 8edges
-null
+4 vertices, 8 edges
+0: 1
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -74,8 +74,8 @@ Expected Output:
 7 - 0.02941176470588232
 
 Your Output: 
-8vertices, 14edges
-null
+8 vertices, 14 edges
+0: 3 2 1
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -96,8 +96,8 @@ Expected Output:
 5 - 0.07936507936507975
 
 Your Output: 
-6vertices, 8edges
-null
+6 vertices, 8 edges
+0: 3 2 1
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -122,8 +122,8 @@ Expected Output:
 7 - 0.051470588235294074
 
 Your Output: 
-8vertices, 10edges
-null
+8 vertices, 10 edges
+0: 3 2 1
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -140,8 +140,8 @@ Expected Output:
 3 - 0.25
 
 Your Output: 
-4vertices, 4edges
-null
+4 vertices, 4 edges
+0: 1
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -162,8 +162,8 @@ Expected Output:
 5 - 0.12499999999999999
 
 Your Output: 
-6vertices, 6edges
-null
+6 vertices, 6 edges
+0: 1
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -180,8 +180,8 @@ Expected Output:
 3 - 0.25
 
 Your Output: 
-4vertices, 12edges
-null
+4 vertices, 12 edges
+0: 3 2 1
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -202,8 +202,8 @@ Expected Output:
 5 - 0.060240963855421686
 
 Your Output: 
-6vertices, 14edges
-null
+6 vertices, 14 edges
+0: 3 2 1
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -216,8 +216,8 @@ Expected Output:
 1 - 0.5
 
 Your Output: 
-2vertices, 2edges
-null
+2 vertices, 2 edges
+0: 1
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -255,7 +255,7 @@ Expected Output:
 0
 
 Your Output: 
-12vertices, 22edges
-null
+12 vertices, 22 edges
+0: 3 2 1
 ----------------------------------------
 
