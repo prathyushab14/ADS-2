@@ -37,14 +37,13 @@ class PageRank {
     }
 	public String toString() {
 		String str = "";
+		System.out.println(no_v + "vertices" +", "+no_e + "edges");
 		for (int i = 0; i < no_v; i++) {
-			str += i;
-            return str + "-" + getPR(i);
+			str += i +":"+ graph.adj(i);
 		}
 		return null;
 	}
-	
-}
+	}
 class WebSearch {
 
 }
