@@ -8,6 +8,7 @@ class PageRank {
 	int[] odarr;
 	double[] pagerank;
 	double[] newpagerank;
+	double initialPR;
 	PageRank() {
     }
 	PageRank(Digraph gr) {
@@ -17,26 +18,19 @@ class PageRank {
     }
 	public double getPR(int v1) {
 		od = graph.outdegree(v1);
+		double pr = 0.0;
 		if (od == 0) {
 			return 0.0;
 		}
-		double initialPR = 1 / no_e;
-		for (int k = 0; k < no_v; k++) {
-			pagerank[k] = initialPR;
-			newpagerank[k] = pagerank[k];
-			pagerank[k] = 0;
-			for (int v : graph.adj(k)) {
-				for (int u : graph.adj(v)) {
-				    if (u == v1) {
-		            for (int m = 0; m < 1000; m++) {
-			            pagerank[k] += newpagerank[k] / graph.outdegree(v);
-			            return pagerank[k]; 
-		            }
-		        }
+		initialPR = 1 / no_e;
+		for (int u : graph.adj(v1)) {
+			for (int v : graph.adj(u)) {
+				if (v == v1) {
+					pr = initialPR / graph.outdegree(v);
+				}
 			}
 		}
-	}
-		return 0.0;
+		return pr;
 	}
 	public String toString() {
 		String str = "";
