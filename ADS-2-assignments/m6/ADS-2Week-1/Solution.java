@@ -18,11 +18,11 @@ class PageRank {
     }
 	public double getPR(int v1) {
 		od = graph.outdegree(v1);
-		double pr = 0.0;
 		if (od == 0) {
 			return 0.0;
 		}
 		initialPR = 1 / no_e;
+		double pr = initialPR;
 		for (int u : graph.adj(v1)) {
 			for (int v : graph.adj(u)) {
 				if (v == v1) {
@@ -45,7 +45,7 @@ class PageRank {
         System.out.println();
         String rstr = "";
         for (int i = 0; i < no_v; i++) {
-        	rstr += i + "-" + getPR(i);
+        	rstr += i + "-" + getPR(i) +"\n";
         }
         System.out.println(rstr);
         return "";

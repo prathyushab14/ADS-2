@@ -313,6 +313,7 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:19:29: Parameter v1 should be final. [FinalParameters]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:35:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:37:61: '+' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:48:45: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:54: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:59: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:59:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
@@ -329,7 +330,7 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:88: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:93: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 45 errors.
+Checkstyle ends with 46 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
