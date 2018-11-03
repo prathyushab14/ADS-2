@@ -320,12 +320,12 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:64: Line is longer than 80 characters (found 86). [LineLength]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:66: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:67: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:70: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:72: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:75: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:77: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:78: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:83: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:71: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:73: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:76: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:78: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:79: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:84: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 43 errors.
 Starting audit...

@@ -12,7 +12,12 @@ Expected Output:
 3 - 0.0
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at PageRank.getPR(Solution.java:24)
+	at PageRank.toString(Solution.java:39)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.io.PrintStream.println(PrintStream.java:897)
+	at Solution.main(Solution.java:70)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -29,7 +34,12 @@ Expected Output:
 3 - 0.09090909090909086
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at PageRank.getPR(Solution.java:24)
+	at PageRank.toString(Solution.java:39)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.io.PrintStream.println(PrintStream.java:897)
+	at Solution.main(Solution.java:70)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -46,7 +56,12 @@ Expected Output:
 3 - 0.07692307692307687
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at PageRank.getPR(Solution.java:24)
+	at PageRank.toString(Solution.java:39)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.io.PrintStream.println(PrintStream.java:897)
+	at Solution.main(Solution.java:70)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -71,7 +86,12 @@ Expected Output:
 7 - 0.02941176470588232
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at PageRank.getPR(Solution.java:24)
+	at PageRank.toString(Solution.java:39)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.io.PrintStream.println(PrintStream.java:897)
+	at Solution.main(Solution.java:70)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -92,7 +112,12 @@ Expected Output:
 5 - 0.07936507936507975
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at PageRank.getPR(Solution.java:24)
+	at PageRank.toString(Solution.java:39)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.io.PrintStream.println(PrintStream.java:897)
+	at Solution.main(Solution.java:70)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -117,7 +142,12 @@ Expected Output:
 7 - 0.051470588235294074
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at PageRank.getPR(Solution.java:24)
+	at PageRank.toString(Solution.java:39)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.io.PrintStream.println(PrintStream.java:897)
+	at Solution.main(Solution.java:70)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -134,7 +164,12 @@ Expected Output:
 3 - 0.25
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at PageRank.getPR(Solution.java:24)
+	at PageRank.toString(Solution.java:39)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.io.PrintStream.println(PrintStream.java:897)
+	at Solution.main(Solution.java:70)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -155,7 +190,12 @@ Expected Output:
 5 - 0.12499999999999999
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at PageRank.getPR(Solution.java:24)
+	at PageRank.toString(Solution.java:39)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.io.PrintStream.println(PrintStream.java:897)
+	at Solution.main(Solution.java:70)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -172,7 +212,12 @@ Expected Output:
 3 - 0.25
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at PageRank.getPR(Solution.java:24)
+	at PageRank.toString(Solution.java:39)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.io.PrintStream.println(PrintStream.java:897)
+	at Solution.main(Solution.java:70)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -193,7 +238,12 @@ Expected Output:
 5 - 0.060240963855421686
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at PageRank.getPR(Solution.java:24)
+	at PageRank.toString(Solution.java:39)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.io.PrintStream.println(PrintStream.java:897)
+	at Solution.main(Solution.java:70)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -206,7 +256,12 @@ Expected Output:
 1 - 0.5
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at PageRank.getPR(Solution.java:24)
+	at PageRank.toString(Solution.java:39)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.io.PrintStream.println(PrintStream.java:897)
+	at Solution.main(Solution.java:70)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -244,6 +299,11 @@ Expected Output:
 0
 
 Your Output: 
-
+Exception in thread "main" java.lang.NullPointerException
+	at PageRank.getPR(Solution.java:24)
+	at PageRank.toString(Solution.java:39)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.io.PrintStream.println(PrintStream.java:897)
+	at Solution.main(Solution.java:70)
 ----------------------------------------
 
