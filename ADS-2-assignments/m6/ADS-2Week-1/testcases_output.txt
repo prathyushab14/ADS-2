@@ -19,11 +19,11 @@ Your Output:
 3: 2 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:24)
-	at PageRank.toString(Solution.java:51)
+	at PageRank.getPR(Solution.java:25)
+	at PageRank.toString(Solution.java:53)
 	at java.base/java.lang.String.valueOf(String.java:2951)
 	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:81)
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -47,11 +47,11 @@ Your Output:
 3: 0 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:24)
-	at PageRank.toString(Solution.java:51)
+	at PageRank.getPR(Solution.java:25)
+	at PageRank.toString(Solution.java:53)
 	at java.base/java.lang.String.valueOf(String.java:2951)
 	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:81)
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -75,11 +75,11 @@ Your Output:
 3: 2 0 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:24)
-	at PageRank.toString(Solution.java:51)
+	at PageRank.getPR(Solution.java:25)
+	at PageRank.toString(Solution.java:53)
 	at java.base/java.lang.String.valueOf(String.java:2951)
 	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:81)
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -115,11 +115,11 @@ Your Output:
 7: 0 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:24)
-	at PageRank.toString(Solution.java:51)
+	at PageRank.getPR(Solution.java:25)
+	at PageRank.toString(Solution.java:53)
 	at java.base/java.lang.String.valueOf(String.java:2951)
 	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:81)
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -149,11 +149,11 @@ Your Output:
 5: 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:24)
-	at PageRank.toString(Solution.java:51)
+	at PageRank.getPR(Solution.java:25)
+	at PageRank.toString(Solution.java:53)
 	at java.base/java.lang.String.valueOf(String.java:2951)
 	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:81)
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -189,11 +189,11 @@ Your Output:
 7: 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:24)
-	at PageRank.toString(Solution.java:51)
+	at PageRank.getPR(Solution.java:25)
+	at PageRank.toString(Solution.java:53)
 	at java.base/java.lang.String.valueOf(String.java:2951)
 	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:81)
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -217,11 +217,11 @@ Your Output:
 3: 0 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:24)
-	at PageRank.toString(Solution.java:51)
+	at PageRank.getPR(Solution.java:25)
+	at PageRank.toString(Solution.java:53)
 	at java.base/java.lang.String.valueOf(String.java:2951)
 	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:81)
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -251,11 +251,11 @@ Your Output:
 5: 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:24)
-	at PageRank.toString(Solution.java:51)
+	at PageRank.getPR(Solution.java:25)
+	at PageRank.toString(Solution.java:53)
 	at java.base/java.lang.String.valueOf(String.java:2951)
 	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:81)
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -279,11 +279,11 @@ Your Output:
 3: 2 1 0 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:24)
-	at PageRank.toString(Solution.java:51)
+	at PageRank.getPR(Solution.java:25)
+	at PageRank.toString(Solution.java:53)
 	at java.base/java.lang.String.valueOf(String.java:2951)
 	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:81)
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -313,11 +313,11 @@ Your Output:
 5: 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:24)
-	at PageRank.toString(Solution.java:51)
+	at PageRank.getPR(Solution.java:25)
+	at PageRank.toString(Solution.java:53)
 	at java.base/java.lang.String.valueOf(String.java:2951)
 	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:81)
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -335,11 +335,11 @@ Your Output:
 1: 0 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:24)
-	at PageRank.toString(Solution.java:51)
+	at PageRank.getPR(Solution.java:25)
+	at PageRank.toString(Solution.java:53)
 	at java.base/java.lang.String.valueOf(String.java:2951)
 	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:81)
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -392,10 +392,10 @@ Your Output:
 11: 0 
 
 Exception in thread "main" java.lang.NullPointerException
-	at PageRank.getPR(Solution.java:24)
-	at PageRank.toString(Solution.java:51)
+	at PageRank.getPR(Solution.java:25)
+	at PageRank.toString(Solution.java:53)
 	at java.base/java.lang.String.valueOf(String.java:2951)
 	at java.base/java.io.PrintStream.println(PrintStream.java:897)
-	at Solution.main(Solution.java:81)
+	at Solution.main(Solution.java:83)
 ----------------------------------------
 

@@ -18,10 +18,12 @@ class PageRank {
 		if (od == 0) {
 			return 0.0;
 		}
+		int l = 0;
 		for (int i = 0; i < no_v; i++) {
 			for (int v : graph.adj(i)) {
-				if (v == v1)
-                odarr[i++] = v;
+				if (v == v1) {
+					odarr[l++] = v;
+				}
 		    }
 		}
 		double initialPR = 1/no_e;
