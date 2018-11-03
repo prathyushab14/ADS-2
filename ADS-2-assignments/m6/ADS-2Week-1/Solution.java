@@ -50,6 +50,7 @@ class PageRank {
         for (int i = 0; i < no_v; i++) {
         	rstr += i + "-" + getPR(i);
         }
+        System.out.println(rstr);
         return "";
 	}
 }
