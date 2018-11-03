@@ -15,11 +15,11 @@ class PageRank {
     }
 	public double getPR(int v1) {
 		od = graph.outdegree(v1);
-		double pr = 0.0;
 		if (od == 0) {
 			return 0.0;
 		}
 		int l = 0;
+		double pr = 0.0;
 		for (int i = 0; i < no_v; i++) {
 			for (int v : graph.adj(i)) {
 				if (v == v1) {
