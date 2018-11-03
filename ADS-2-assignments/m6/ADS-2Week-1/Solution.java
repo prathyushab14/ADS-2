@@ -27,10 +27,11 @@ class PageRank {
 		double initialPR = 1/no_e;
 		double pr = initialPR;
 		double newPR;
-		int j = 0;
-		for (int i = 0; i < 1000; i++) {
-			newPR = pr / graph.outdegree(j);
+		for (int k = 0; k < odarr.length; k++) {
+		    for (int i = 0; i < 1000; i++) {
+			newPR = pr / graph.outdegree(odarr[k++]);
 			pr = newPR;
+		}
 		}
 		return pr;
     }
