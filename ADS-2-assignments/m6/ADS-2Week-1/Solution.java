@@ -45,7 +45,8 @@ class PageRank {
             }
             System.out.println(str);
         }
-        return null;
+        System.out.println();
+        return "";
 	}
 }
 class WebSearch {
