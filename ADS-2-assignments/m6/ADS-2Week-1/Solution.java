@@ -20,13 +20,14 @@ class PageRank {
 		if (od == 0) {
 			return 0.0;
 		}
-		double initialPR = 1/no_e;
+		double initialPR = 1 / no_e;
 		for (int k = 0; k < no_v; k++) {
 			pagerank[k] = initialPR;
 			newpagerank[k] = pagerank[k];
 			pagerank[k] = 0;
 			for (int v : graph.adj(k)) {
-				if (v == v1) {
+				for (int u : graph.adj(v)) {
+				    if (u == v1) {
 		            for (int m = 0; m < 1000; m++) {
 			            pagerank[k] += newpagerank[k] / graph.outdegree(v);
 			            return pagerank[k]; 
@@ -34,6 +35,7 @@ class PageRank {
 		        }
 			}
 		}
+	}
 		return 0.0;
 	}
 	public String toString() {
