@@ -42,9 +42,10 @@ class PageRank {
             str = i + ": ";
             for (int k : graph.adj(i)) {
                 str = str + k + " ";
+                System.out.println(str);
             }
         }
-        return str;
+        return null;
 	}
 }
 class WebSearch {
