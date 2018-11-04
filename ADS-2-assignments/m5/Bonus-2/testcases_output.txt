@@ -1,9 +1,9 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 5 Bridges
 
 Your Output: 
-5Bridges
+5 Bridges
 ----------------------------------------
 
 ########## Testcase 1: Passed ##########
@@ -22,11 +22,11 @@ Your Output:
 No Bridge
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 2 Bridges
 
 Your Output: 
-2Bridges
+2 Bridges
 ----------------------------------------
 
