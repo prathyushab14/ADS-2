@@ -124,7 +124,7 @@ class Graph {
     * @param v1 integer
     * @return true if has self loop, false otherwise.
     **/
-    public boolean hasSelfLoop(int v1) {
+    public boolean hasSelfLoop(final int v1) {
         for (int w : adj(v1)) {
             if (v1 == w) {
                 return true;

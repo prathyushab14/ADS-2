@@ -2,71 +2,56 @@
  * Class for cc.
  */
 public class CC {
-    private boolean[] marked;   // marked[v] = has vertex v been marked?
-    private int[] id;           // id[v] = id of connected component containing v
-    private int[] size;         // size[id] = number of vertices in given component
-    private int count;          // number of connected components
-
+    /**
+     * marked array of boolean type.
+     */
+    private boolean[] marked;// marked[v] = has vertex v been marked?
+    /**
+     * id array of integer type.
+     */
+    private int[] id;// id[v] = id of connected component containing v
+    /**
+     * size array.
+     */
+    private int[] size;// size[id] = number of vertices in given component
+    /**
+     * count variable.
+     */
+    private int count;// number of connected components
     /**
      * Computes the connected components of the undirected graph {@code G}.
      *
      * @param G the undirected graph
      */
-    public CC(Graph G) {
-        marked = new boolean[G.vertices()];
-        id = new int[G.vertices()];
-        size = new int[G.vertices()];
-        for (int v = 0; v < G.vertices(); v++) {
+    public CC(final Graph gp) {
+        marked = new boolean[gp.vertices()];
+        id = new int[gp.vertices()];
+        size = new int[gp.vertices()];
+        for (int v = 0; v < gp.vertices(); v++) {
             if (!marked[v]) {
-                dfs(G, v);
+                dfs(gp, v);
                 count++;
             }
         }
     }
-
-    // /**
-    //  * Computes the connected components of the edge-weighted graph {@code G}.
-    //  *
-    //  * @param G the edge-weighted graph
-    //  */
-    // public CC(EdgeWeightedGraph G) {
-    //     marked = new boolean[G.V()];
-    //     id = new int[G.V()];
-    //     size = new int[G.V()];
-    //     for (int v = 0; v < G.V(); v++) {
-    //         if (!marked[v]) {
-    //             dfs(G, v);
-    //             count++;
-    //         }
-    //     }
-    // }
-
     // depth-first search for a Graph
-    private void dfs(Graph G, int v) {
+    /**
+    * depth first search method.
+    *
+    * @param gp graph
+    * @param v integer
+    *
+    **/
+    private void dfs(final Graph gp, final int v) {
         marked[v] = true;
         id[v] = count;
         size[count]++;
-        for (int w : G.adj(v)) {
+        for (int w : gp.adj(v)) {
             if (!marked[w]) {
-                dfs(G, w);
+                dfs(gp, w);
             }
         }
     }
-
-    // // depth-first search for an EdgeWeightedGraph
-    // private void dfs(EdgeWeightedGraph G, int v) {
-    //     marked[v] = true;
-    //     id[v] = count;
-    //     size[count]++;
-    //     for (Edge e : G.adj(v)) {
-    //         int w = e.other(v);
-    //         if (!marked[w]) {
-    //             dfs(G, w);
-    //         }
-    //     }
-    // }
-
-
     /**
      * Returns the component id of the connected component containing vertex {@code v}.
      *
@@ -74,11 +59,10 @@ public class CC {
      * @return the component id of the connected component containing vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int id(int v) {
+    public int id(final int v) {
         validateVertex(v);
         return id[v];
     }
-
     /**
      * Returns the number of vertices in the connected component containing vertex {@code v}.
      *
@@ -86,11 +70,10 @@ public class CC {
      * @return the number of vertices in the connected component containing vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int size(int v) {
+    public int size(final int v) {
         validateVertex(v);
         return size[id[v]];
     }
-
     /**
      * Returns the number of connected components in the graph {@code G}.
      *
@@ -99,7 +82,6 @@ public class CC {
     public int count() {
         return count;
     }
-
     /**
      * Returns true if vertices {@code v} and {@code w} are in the same
      * connected component.
@@ -111,12 +93,11 @@ public class CC {
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      * @throws IllegalArgumentException unless {@code 0 <= w < V}
      */
-    public boolean connected(int v, int w) {
+    public boolean connected(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
         return id(v) == id(w);
     }
-
     /**
      * Returns true if vertices {@code v} and {@code w} are in the same
      * connected component.
@@ -130,19 +111,27 @@ public class CC {
      * @deprecated Replaced by {@link #connected(int, int)}.
      */
     @Deprecated
-    public boolean areConnected(int v, int w) {
+    public boolean areConnected(final int v, final int w) {
         validateVertex(v);
         validateVertex(w);
         return id(v) == id(w);
     }
-
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+    * validates vertex.
+    *
+    *
+    **/
     private void validateVertex(int v) {
         int V = marked.length;
         if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
     }
-
+    /**
+     * returns id array.
+     *
+     * @return     integer array
+     */
     public int[] idarray() {
         return id;
     }
