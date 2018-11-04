@@ -4,27 +4,12 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Graph.java:1:8: Unused import - java.util.Scanner. [UnusedImports]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:9:15: Variable 'bridges' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:13:11: Variable 'count' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:17:11: Variable 'preord' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:21:11: Variable 'lowpre' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:48:5: '{' at column 5 should be on the previous line. [LeftCurly]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:58:22: Parameter gph should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:58:33: Parameter u should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:58:40: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:59:5: '{' at column 5 should be on the previous line. [LeftCurly]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:63:9: '{' at column 9 should be on the previous line. [LeftCurly]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:65:13: '{' at column 13 should be on the previous line. [LeftCurly]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:69:17: '{' at column 17 should be on the previous line. [LeftCurly]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:72:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:82:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:93:33: Parameter args should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:100: Line is longer than 80 characters (found 94). [LineLength]
+[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:21: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:67:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:73:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 18 errors.
+Checkstyle ends with 4 errors.
