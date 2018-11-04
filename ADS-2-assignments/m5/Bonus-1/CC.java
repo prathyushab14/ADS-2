@@ -5,7 +5,7 @@ public class CC {
     /**
      * marked array of boolean type.
      */
-    private boolean[] marked;// marked[v] = has vertex v been marked?
+    private boolean[] marked; // marked[v] = has vertex v been marked?
     /**
      * id array of integer type.
      */
