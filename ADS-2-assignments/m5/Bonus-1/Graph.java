@@ -1,3 +1,6 @@
+/**
+ * Class for graph.
+ */
 class Graph {
     /**
      * vertices.
@@ -115,9 +118,15 @@ class Graph {
     }
     // does this graph have a self loop?
     // side effect: initialize cycle to be self loop
-    public boolean hasSelfLoop(int v) {
-        for (int w : adj(v)) {
-            if (v == w) {
+    /**
+    * determines if it has self loop.
+    * complexity of this method is O(E).
+    * @param v1 integer
+    * @return true if has self loop, false otherwise.
+    **/
+    public boolean hasSelfLoop(int v1) {
+        for (int w : adj(v1)) {
+            if (v1 == w) {
                 return true;
             }
         }
@@ -125,9 +134,15 @@ class Graph {
     }
     // does this graph have two parallel edges?
     // side effect: initialize cycle to be two parallel edges
-    public boolean hasParallelEdges(int v) {
+    /**
+    * determies if it has parallel edges.
+    * complexity of this method is O(E).
+    * @param v1 integer
+    * @return true if it has parallel edges, false otherwise.
+    **/
+    public boolean hasParallelEdges(final int v1) {
         marked = new boolean[vertices()];
-        for (int w : adj(v)) {
+        for (int w : adj(v1)) {
             if (marked[w]) {
                 return true;
             }
