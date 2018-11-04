@@ -21,14 +21,12 @@ class PageRank {
 			hm.put(i, initialPR);
 		}
 		graph.reverse();
-		for (int j = 0; j < no_v; j++) {
-			for (int v : graph.adj(j)) {
-				for (int i = 0; i < 1000; i++) {
+		for (int v : graph.adj(v1)) {
+			for (int i = 0; i < 1000; i++) {
 			    newPR = pr / graph.outdegree(v);
 			    pr = newPR;
 			}
 		}
-	}
 		return pr;
     }
 	public String toString() {
