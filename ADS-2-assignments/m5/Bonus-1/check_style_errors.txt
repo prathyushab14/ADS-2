@@ -5,22 +5,8 @@ Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:8:30: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:12:22: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:16:24: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:20:23: ';' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:24:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:26:27: Expected @param tag for 'gp'. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:56: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:59: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:67: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:70: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:125:33: Parameter v should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:125:37: Expected @param tag for 'v'. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:126:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:127: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\CC.java:128: Line is longer than 80 characters (found 99). [LineLength]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
