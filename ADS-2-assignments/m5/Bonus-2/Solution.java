@@ -10,15 +10,15 @@ class EdgeConnectivity {
     /**
      * count variable.
      */
-    private int   count;    // counter
+    private int   count; // counter
     /**
      * preord array of integer type.
      */
-    private int[] preord;    // pre[v] = order in which dfs examines v
+    private int[] preord; // pre[v] = order in which dfs examines v
     /**
      * lowpre array of integer type.
      */
-    private int[] lowpre;    // low[v] = lowest preorder of any vertex connected to v
+    private int[] lowpre; // low[v] = lowest preorder of any vertex connected to v
     /**
      * Constructs the object.
      *
@@ -64,12 +64,16 @@ class EdgeConnectivity {
                 if (lowpre[w] == preord[w]) {
                     bridges++;
                 }
-            }
-            else if (w != u) {
+            } else if (w != u) {
                 lowpre[v] = Math.min(lowpre[v], preord[w]);
             }
         }
     }
+    /**
+     * Gets the bridges.
+     *
+     * @return     The bridges.
+     */
     public int getBridges() {
         return bridges();
     }
