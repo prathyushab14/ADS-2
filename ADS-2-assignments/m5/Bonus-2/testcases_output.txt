@@ -3,7 +3,7 @@ Expected Output:
 5 Bridges
 
 Your Output: 
-5
+5Bridges
 ----------------------------------------
 
 ########## Testcase 1: Passed ##########
@@ -27,6 +27,6 @@ Expected Output:
 2 Bridges
 
 Your Output: 
-2
+2Bridges
 ----------------------------------------
 

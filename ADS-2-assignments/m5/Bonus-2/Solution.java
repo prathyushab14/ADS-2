@@ -59,7 +59,7 @@ class Solution {
         }
         EdgeConnectivity ec = new EdgeConnectivity(gph);
         if (ec.bridges() != 0) {
-        	System.out.println(ec.bridges);
+        	System.out.println(ec.bridges + "Bridges");
         } else {
         	System.out.println("No Bridge");
         }
