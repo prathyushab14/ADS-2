@@ -18,7 +18,8 @@ class EdgeConnectivity {
     /**
      * lowpre array of integer type.
      */
-    private int[] lowpre; // low[v] = lowest preorder of any vertex connected to v
+    private int[] lowpre; // low[v] = lowest preorder of any 
+    //vertex connected to v
     /**
      * Constructs the object.
      *

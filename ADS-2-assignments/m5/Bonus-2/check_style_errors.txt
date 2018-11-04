@@ -1,13 +1,8 @@
 Starting audit...
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:21: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 1 errors.
-Starting audit...
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-Audit done.
-Checkstyle ends with 1 errors.
-Starting audit...
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\ADS-2-assignments\m5\Bonus-2\Solution.java:21: Line is longer than 80 characters (found 82). [LineLength]
-Audit done.
-Checkstyle ends with 2 errors.
