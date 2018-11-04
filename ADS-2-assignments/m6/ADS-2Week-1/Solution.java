@@ -1,13 +1,10 @@
 import java.util.Scanner;
+import java.util.*;
 class PageRank {
+	HashMap<Integer, Double> hm = new HashMap<>();
 	Digraph graph;
 	int no_v;
 	int no_e;
-	int od;
-	int id;
-	int[] odarr;
-	double[] pagerank;
-	double[] newpagerank;
 	double initialPR;
 	PageRank() {
     }
@@ -15,23 +12,25 @@ class PageRank {
 		graph = gr;
 		no_v = gr.V();
 		no_e = gr.E();
+		initialPR = 1 / no_v;
     }
 	public double getPR(int v1) {
-		od = graph.outdegree(v1);
-		if (od == 0) {
-			return 0.0;
-		}
-		initialPR = 1 / no_e;
+		double newPR;
 		double pr = initialPR;
-		for (int u : graph.adj(v1)) {
-			for (int v : graph.adj(u)) {
-				if (v == v1) {
-					pr = initialPR / graph.outdegree(v);
-				}
+		for (int i = 0; i < no_v; i++) {
+			hm.put(i, initialPR);
+		}
+		graph.reverse();
+		for (int j = 0; j < no_v; j++) {
+			for (int v : graph.adj(j)) {
+				for (int i = 0; i < 1000; i++) {
+			    newPR = pr / graph.outdegree(v);
+			    pr = newPR;
 			}
 		}
-		return pr;
 	}
+		return pr;
+    }
 	public String toString() {
 		String str = "";
 		System.out.println(no_v + " vertices" + ", "+ no_e + " edges");
@@ -45,7 +44,7 @@ class PageRank {
         System.out.println();
         String rstr = "";
         for (int i = 0; i < no_v; i++) {
-        	rstr += i + "-" + getPR(i) +"\n";
+        	rstr += i + " - " + getPR(i) +"\n";
         }
         System.out.println(rstr);
         return "";
