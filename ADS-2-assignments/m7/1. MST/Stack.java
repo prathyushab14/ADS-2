@@ -28,7 +28,7 @@ import java.util.NoSuchElementException;
  *  out (LIFO) stack of generic items.
  *  It supports the usual <em>push</em> and <em>pop</em>
  *  operations, along with methods
- *  for peeking at the top item, testing if the stack 
+ *  for peeking at the top item, testing if the stack
  *  is empty, and iterating through
  *  the items in LIFO order.
  *  <p>
@@ -36,7 +36,7 @@ import java.util.NoSuchElementException;
  *  linked-list nodes. See {@link LinkedStack} for the version from the
  *  textbook that uses a non-static nested class.
  *  See {@link ResizingArrayStack} for a version that uses a resizing array.
- *  The <em>push</em>, <em>pop</em>, <em>peek</em>, 
+ *  The <em>push</em>, <em>pop</em>, <em>peek</em>,
  *  <em>size</em>, and <em>is-empty</em>
  *  operations all take constant time in the worst case.
  *  <p>
@@ -60,6 +60,7 @@ public class Stack<Item> implements Iterable<Item> {
     private int n;                // size of the stack
     /**
      * node class.
+     * @param Item the item.
      */
     // helper linked list class
     private static class Node<Item> {
@@ -168,6 +169,7 @@ public class Stack<Item> implements Iterable<Item> {
     }
     /**
      * class listiterator.
+     * @param Item the item.
      */
     // an iterator, doesn't implement remove() since it's optional
     private class ListIterator<Item> implements Iterator<Item> {
@@ -180,7 +182,7 @@ public class Stack<Item> implements Iterable<Item> {
          *
          * @param      first1  The first 1
          */
-        public ListIterator(Node<Item> first1) {
+        ListIterator(final Node<Item> first1) {
             current = first1;
         }
         /**

@@ -2,11 +2,11 @@
  *  Compilation:  javac Queue.java
  *  Execution:    java Queue < input.txt
  *  Dependencies: StdIn.java StdOut.java
- *  Data files:   http://algs4.cs.princeton.edu/13stacks/tobe.txt  
+ *  Data files:   http://algs4.cs.princeton.edu/13stacks/tobe.txt
  *
  *  A generic queue, implemented using a linked list.
  *
- *  % java Queue < tobe.txt 
+ *  % java Queue < tobe.txt
  *  to be or not to be (2 left on queue)
  *
  ******************************************************************************/
@@ -26,10 +26,12 @@ import java.util.NoSuchElementException;
  *  linked-list nodes. See {@link LinkedQueue} for the version from the
  *  textbook that uses a non-static nested class.
  *  See {@link ResizingArrayQueue} for a version that uses a resizing array.
- *  The <em>enqueue</em>, <em>dequeue</em>, <em>peek</em>, <em>size</em>, and <em>is-empty</em>
+ *  The <em>enqueue</em>, <em>dequeue</em>, <em>peek</em>,
+ *  <em>size</em>, and <em>is-empty</em>
  *  operations all take constant time in the worst case.
  *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/13stacks">Section 1.3</a> of
+ *  For additional documentation, see <a href="http://
+ *  algs4.cs.princeton.edu/13stacks">Section 1.3</a> of
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  *
  *  @author Robert Sedgewick
@@ -58,7 +60,7 @@ public class Queue<Item> implements Iterable<Item> {
     // helper linked list class
     /**
     * class node.
-    *
+    * @param Item the item.
     **/
     private static class Node<Item> {
         /**
@@ -104,7 +106,9 @@ public class Queue<Item> implements Iterable<Item> {
      * @throws NoSuchElementException if this queue is empty
      */
     public Item peek() {
-        if (isEmpty()) throw new NoSuchElementException("Queue underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Queue underflow");
+        }
         return first.item;
     }
 
@@ -113,13 +117,16 @@ public class Queue<Item> implements Iterable<Item> {
      *
      * @param  item the item to add
      */
-    public void enqueue(Item item) {
+    public void enqueue(final Item item) {
         Node<Item> oldlast = last;
         last = new Node<Item>();
         last.item = item;
         last.next = null;
-        if (isEmpty()) first = last;
-        else           oldlast.next = last;
+        if (isEmpty()) {
+            first = last;
+        } else {  
+            oldlast.next = last;
+        }
         n++;
     }
 
@@ -130,11 +137,15 @@ public class Queue<Item> implements Iterable<Item> {
      * @throws NoSuchElementException if this queue is empty
      */
     public Item dequeue() {
-        if (isEmpty()) throw new NoSuchElementException("Queue underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Queue underflow");
+        }
         Item item = first.item;
         first = first.next;
         n--;
-        if (isEmpty()) last = null;   // to avoid loitering
+        if (isEmpty()) {
+            last = null;   // to avoid loitering
+        }
         return item;
     }
 
@@ -150,19 +161,20 @@ public class Queue<Item> implements Iterable<Item> {
             s.append(' ');
         }
         return s.toString();
-    } 
-
+    }
     /**
-     * Returns an iterator that iterates over the items in this queue in FIFO order.
+     * Returns an iterator that iterates over the
+     * items in this queue in FIFO order.
      *
-     * @return an iterator that iterates over the items in this queue in FIFO order
+     * @return an iterator that iterates over the 
+     * items in this queue in FIFO order
      */
     public Iterator<Item> iterator()  {
-        return new ListIterator<Item>(first);  
+        return new ListIterator<Item>(first);
     }
     /**
     * class list iterator.
-    *
+    * @param Item the item.
     **/
     // an iterator, doesn't implement remove() since it's optional 
     private class ListIterator<Item> implements Iterator<Item> {
@@ -175,7 +187,7 @@ public class Queue<Item> implements Iterable<Item> {
          *
          * @param      first1  The first
          */
-        public ListIterator(final Node<Item> first1) {
+        ListIterator(final Node<Item> first1) {
             current = first1;
         }
         /**
@@ -183,14 +195,14 @@ public class Queue<Item> implements Iterable<Item> {
          *
          * @return     True if has next, False otherwise.
          */
-        public boolean hasNext() { 
-            return current != null;                     
+        public boolean hasNext() {
+            return current != null;
         }
         /**
          * remove method.
          */
-        public void remove() { 
-            throw new UnsupportedOperationException();  
+        public void remove() {
+            throw new UnsupportedOperationException();
         }
         /**
          * next item.
