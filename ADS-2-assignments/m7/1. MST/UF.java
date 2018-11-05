@@ -9,7 +9,7 @@
  *  <p>
  *  The union–find data type models connectivity among a set of <em>n</em>
  *  sites, named 0 through <em>n</em>–1.
- *  The <em>is-connected-to</em> relation must be an 
+ *  The <em>is-connected-to</em> relation must be an
  *  <em>equivalence relation</em>:
  *  <ul>
  *  <li> <em>Reflexive</em>: <em>p</em> is connected to <em>p</em>.
@@ -24,10 +24,11 @@
  *  <em>equivalence classes</em> (or <em>components</em>). In this case,
  *  two sites are in the same component if and only if they are connected.
  *  Both sites and components are identified with integers between 0 and
- *  <em>n</em>–1. 
+ *  <em>n</em>–1.
  *  Initially, there are <em>n</em> components, with each site in its
  *  own component.  The <em>component identifier</em> of a component
- *  (also known as the <em>root</em>, <em>canonical element</em>, <em>leader</em>,
+ *  (also known as the <em>root</em>, <em>canonical element</em>,
+ *  <em>leader</em>,
  *  or <em>set representative</em>) is one of the sites in the component:
  *  two sites have the same component identifier if and only if they are
  *  in the same component.
@@ -63,17 +64,28 @@
  *  {@link QuickUnionUF}, {@link QuickFindUF}, and {@link WeightedQuickUnionUF}.
  *
  *  <p>
- *  For additional documentation, see <a href="https://algs4.cs.princeton.edu/15uf">Section 1.5</a> of
+ *  For additional documentation, see <a href="https://algs4.cs.princeton.edu/15uf">
+ *  Section 1.5</a> of
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  *
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  */
-
+/**
+ * Class for uf.
+ */
 public class UF {
-
+    /**
+     * parent array.
+     */
     private int[] parent;  // parent[i] = parent of i
+    /**
+     * rank array.
+     */
     private byte[] rank;   // rank[i] = rank of subtree rooted at i (never more than 31)
+    /**
+     * count.
+     */
     private int count;     // number of components
 
     /**
@@ -84,7 +96,7 @@ public class UF {
      * @param  n the number of sites
      * @throws IllegalArgumentException if {@code n < 0}
      */
-    public UF(int n) {
+    public UF(final int n) {
         if (n < 0) throw new IllegalArgumentException();
         count = n;
         parent = new int[n];
@@ -102,13 +114,14 @@ public class UF {
      * @return the component identifier for the component containing site {@code p}
      * @throws IllegalArgumentException unless {@code 0 <= p < n}
      */
-    public int find(int p) {
+    public int find(final int p) {
+        int x = p;
         validate(p);
         while (p != parent[p]) {
             parent[p] = parent[parent[p]];    // path compression by halving
-            p = parent[p];
+            x = parent[p];
         }
-        return p;
+        return x;
     }
 
     /**
@@ -130,7 +143,7 @@ public class UF {
      * @throws IllegalArgumentException unless
      *         both {@code 0 <= p < n} and {@code 0 <= q < n}
      */
-    public boolean connected(int p, int q) {
+    public boolean connected(final int p, final int q) {
         return find(p) == find(q);
     }
   
@@ -143,7 +156,7 @@ public class UF {
      * @throws IllegalArgumentException unless
      *         both {@code 0 <= p < n} and {@code 0 <= q < n}
      */
-    public void union(int p, int q) {
+    public void union(final int p, final int q) {
         int rootP = find(p);
         int rootQ = find(q);
         if (rootP == rootQ) return;
@@ -159,10 +172,11 @@ public class UF {
     }
 
     // validate that p is a valid index
-    private void validate(int p) {
+    private void validate(final int p) {
         int n = parent.length;
         if (p < 0 || p >= n) {
-            throw new IllegalArgumentException("index " + p + " is not between 0 and " + (n-1));  
+            throw new IllegalArgumentException("index " + p
+                + " is not between 0 and " + (n - 1));
         }
     }
 }
