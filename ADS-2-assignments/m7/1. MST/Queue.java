@@ -37,17 +37,39 @@ import java.util.NoSuchElementException;
  *
  *  @param <Item> the generic type of an item in this queue
  */
+/**
+ * List of .
+ *
+ * @param      <Item>  The item
+ */
 public class Queue<Item> implements Iterable<Item> {
+    /**
+     * first item.
+     */
     private Node<Item> first;    // beginning of queue
+    /**
+     * last item.
+     */
     private Node<Item> last;     // end of queue
+    /**
+     * n variable.
+     */
     private int n;               // number of elements on queue
-
     // helper linked list class
+    /**
+    * class node.
+    *
+    **/
     private static class Node<Item> {
+        /**
+         * item.
+         */
         private Item item;
+        /**
+         * next item.
+         */
         private Node<Item> next;
     }
-
     /**
      * Initializes an empty queue.
      */
@@ -138,41 +160,50 @@ public class Queue<Item> implements Iterable<Item> {
     public Iterator<Item> iterator()  {
         return new ListIterator<Item>(first);  
     }
-
-    // an iterator, doesn't implement remove() since it's optional
+    /**
+    * class list iterator.
+    *
+    **/
+    // an iterator, doesn't implement remove() since it's optional 
     private class ListIterator<Item> implements Iterator<Item> {
+        /**
+         * current item.
+         */
         private Node<Item> current;
-
-        public ListIterator(Node<Item> first) {
-            current = first;
+        /**
+         * Constructs the object.
+         *
+         * @param      first1  The first
+         */
+        public ListIterator(final Node<Item> first1) {
+            current = first1;
         }
-
-        public boolean hasNext()  { return current != null;                     }
-        public void remove()      { throw new UnsupportedOperationException();  }
-
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
+        public boolean hasNext() { 
+            return current != null;                     
+        }
+        /**
+         * remove method.
+         */
+        public void remove() { 
+            throw new UnsupportedOperationException();  
+        }
+        /**
+         * next item.
+         *
+         * @return     item.
+         */
         public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }
-
-
-    /**
-     * Unit tests the {@code Queue} data type.
-     *
-     * @param args the command-line arguments
-     */
-/*    public static void main(String[] args) {
-        Queue<String> queue = new Queue<String>();
-        while (!StdIn.isEmpty()) {
-            String item = StdIn.readString();
-            if (!item.equals("-"))
-                queue.enqueue(item);
-            else if (!queue.isEmpty())
-                StdOut.print(queue.dequeue() + " ");
-        }
-        StdOut.println("(" + queue.size() + " left on queue)");
-    }*/
 }

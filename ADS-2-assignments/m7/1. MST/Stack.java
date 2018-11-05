@@ -10,8 +10,8 @@
  *  This version uses a static nested class Node (to save 8 bytes per
  *  Node), whereas the version in the textbook uses a non-static nested
  *  class (for simplicity).
- *  
- *  % more tobe.txt 
+ *
+ *  % more tobe.txt
  *  to be or not to - be - - that - - - is
  *
  *  % java Stack < tobe.txt
@@ -24,16 +24,20 @@ import java.util.NoSuchElementException;
 
 
 /**
- *  The {@code Stack} class represents a last-in-first-out (LIFO) stack of generic items.
- *  It supports the usual <em>push</em> and <em>pop</em> operations, along with methods
- *  for peeking at the top item, testing if the stack is empty, and iterating through
+ *  The {@code Stack} class represents a last-in-first-
+ *  out (LIFO) stack of generic items.
+ *  It supports the usual <em>push</em> and <em>pop</em>
+ *  operations, along with methods
+ *  for peeking at the top item, testing if the stack 
+ *  is empty, and iterating through
  *  the items in LIFO order.
  *  <p>
  *  This implementation uses a singly-linked list with a static nested class for
  *  linked-list nodes. See {@link LinkedStack} for the version from the
  *  textbook that uses a non-static nested class.
  *  See {@link ResizingArrayStack} for a version that uses a resizing array.
- *  The <em>push</em>, <em>pop</em>, <em>peek</em>, <em>size</em>, and <em>is-empty</em>
+ *  The <em>push</em>, <em>pop</em>, <em>peek</em>, 
+ *  <em>size</em>, and <em>is-empty</em>
  *  operations all take constant time in the worst case.
  *  <p>
  *  For additional documentation,
@@ -46,12 +50,26 @@ import java.util.NoSuchElementException;
  *  @param <Item> the generic type of an item in this stack
  */
 public class Stack<Item> implements Iterable<Item> {
+    /**
+     * first item.
+     */
     private Node<Item> first;     // top of stack
+    /**
+     * n variable.
+     */
     private int n;                // size of the stack
-
+    /**
+     * node class.
+     */
     // helper linked list class
     private static class Node<Item> {
+        /**
+         * item.
+         */
         private Item item;
+        /**
+         * next item.
+         */
         private Node<Item> next;
     }
 
@@ -86,7 +104,7 @@ public class Stack<Item> implements Iterable<Item> {
      *
      * @param  item the item to add
      */
-    public void push(Item item) {
+    public void push(final Item item) {
         Node<Item> oldfirst = first;
         first = new Node<Item>();
         first.item = item;
@@ -101,7 +119,9 @@ public class Stack<Item> implements Iterable<Item> {
      * @throws NoSuchElementException if this stack is empty
      */
     public Item pop() {
-        if (isEmpty()) throw new NoSuchElementException("Stack underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Stack underflow");
+        }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
         n--;
@@ -116,14 +136,17 @@ public class Stack<Item> implements Iterable<Item> {
      * @throws NoSuchElementException if this stack is empty
      */
     public Item peek() {
-        if (isEmpty()) throw new NoSuchElementException("Stack underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Stack underflow");
+        }
         return first.item;
     }
 
     /**
      * Returns a string representation of this stack.
      *
-     * @return the sequence of items in this stack in LIFO order, separated by spaces
+     * @return the sequence of items in this
+     * stack in LIFO order, separated by spaces
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -133,57 +156,59 @@ public class Stack<Item> implements Iterable<Item> {
         }
         return s.toString();
     }
-       
-
     /**
-     * Returns an iterator to this stack that iterates through the items in LIFO order.
+     * Returns an iterator to this stack that iterates
+     * through the items in LIFO order.
      *
-     * @return an iterator to this stack that iterates through the items in LIFO order
+     * @return an iterator to this stack that iterates
+     * through the items in LIFO order
      */
     public Iterator<Item> iterator() {
         return new ListIterator<Item>(first);
     }
-
+    /**
+     * class listiterator.
+     */
     // an iterator, doesn't implement remove() since it's optional
     private class ListIterator<Item> implements Iterator<Item> {
+        /**
+         * current item.
+         */
         private Node<Item> current;
-
-        public ListIterator(Node<Item> first) {
-            current = first;
+        /**
+         * Constructs the object.
+         *
+         * @param      first1  The first 1
+         */
+        public ListIterator(Node<Item> first1) {
+            current = first1;
         }
-
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
         public boolean hasNext() {
             return current != null;
         }
-
+        /**
+         * remove method.
+         */
         public void remove() {
             throw new UnsupportedOperationException();
         }
-
+        /**
+         * returns next item.
+         *
+         * @return     item.
+         */
         public Item next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }
-
-
-    /**
-     * Unit tests the {@code Stack} data type.
-     *
-     * @param args the command-line arguments
-     */
-   /* public static void main(String[] args) {
-        Stack<String> stack = new Stack<String>();
-        while (!StdIn.isEmpty()) {
-            String item = StdIn.readString();
-            if (!item.equals("-"))
-                stack.push(item);
-            else if (!stack.isEmpty())
-                StdOut.print(stack.pop() + " ");
-        }
-        StdOut.println("(" + stack.size() + " left on stack)");
-    }*/
 }
-

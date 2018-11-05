@@ -172,15 +172,16 @@ public class EdgeWeightedGraph {
      */
     public Iterable<Edge> noedges() {
         Bag<Edge> list = new Bag<Edge>();
-        for (int i = 0; i < v; i++) {
+        for (int i = 0; i < vertices(); i++) {
             int selfLoops = 0;
-            for (Edge e : adj(i)) {
-                if (e.other(i) > i) {
-                    list.add(e);
-                } else if (e.other(i) == i) {  // add only one copy of each self loop
+            for (Edge ed : adj(i)) {
+                if (ed.other(i) > i) {
+                    list.add(ed);
+                } else if (ed.other(i) == i) {  // add only one 
+                // copy of each self loop
                 //(self loops will be consecutive)
                     if (selfLoops % 2 == 0) {
-                        list.add(e);
+                        list.add(ed);
                     }
                     selfLoops++;
                 }
