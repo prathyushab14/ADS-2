@@ -52,12 +52,12 @@ public class Edge implements Comparable<Edge> {
      */
     public Edge(final int v1, final int w1, final double weight1) {
         if (v1 < 0) {
-            throw new IllegalArgumentException
-            ("vertex index must be a nonnegative integer");
+            throw new IllegalArgumentException(
+                "vertex index must be a nonnegative integer");
         }
         if (w1 < 0) {
-            throw new IllegalArgumentException
-            ("vertex index must be a nonnegative integer");
+            throw new IllegalArgumentException(
+                "vertex index must be a nonnegative integer");
         }
         if (Double.isNaN(weight1)) {
             throw new IllegalArgumentException("Weight is NaN");
@@ -106,7 +106,7 @@ public class Edge implements Comparable<Edge> {
     /**
      * Compares two edges by weight.
      * Note that {@code compareTo()} is not consistent with {@code equals()},
-     * which uses the reference equality implementation 
+     * which uses the reference equality implementation
      * inherited from {@code Object}.
      *
      * @param  that the other edge

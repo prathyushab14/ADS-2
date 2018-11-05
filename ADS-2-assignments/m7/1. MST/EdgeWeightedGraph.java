@@ -50,58 +50,38 @@
 public class EdgeWeightedGraph {
     private static final String NEWLINE = System.getProperty("line.separator");
 
-    private final int V;
-    private int E;
+    private final int v;
+    private int e;
     private Bag<Edge>[] adj;
     
     /**
      * Initializes an empty edge-weighted graph with {@code V} vertices and 0 edges.
      *
-     * @param  V the number of vertices
+     * @param  v1 the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public EdgeWeightedGraph(int V) {
-        if (V < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
-        this.V = V;
-        this.E = 0;
-        adj = (Bag<Edge>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
-            adj[v] = new Bag<Edge>();
+    public EdgeWeightedGraph(final int v1) {
+        if (v1 < 0) throw new IllegalArgumentException(
+            "Number of vertices must be nonnegative");
+        this.v = v1;
+        this.e = 0;
+        adj = (Bag<Edge>[]) new Bag[v1];
+        for (int i = 0; i < v1; i++) {
+            adj[i] = new Bag<Edge>();
         }
     }
-
-    // /**
-    //  * Initializes a random edge-weighted graph with {@code V} vertices and <em>E</em> edges.
-    //  *
-    //  * @param  V the number of vertices
-    //  * @param  E the number of edges
-    //  * @throws IllegalArgumentException if {@code V < 0}
-    //  * @throws IllegalArgumentException if {@code E < 0}
-    //  */
-    // public EdgeWeightedGraph(int V, int E) {
-    //     this(V);
-    //     if (E < 0) throw new IllegalArgumentException("Number of edges must be nonnegative");
-    //     for (int i = 0; i < E; i++) {
-    //         int v = StdRandom.uniform(V);
-    //         int w = StdRandom.uniform(V);
-    //         double weight = Math.round(100 * StdRandom.uniform()) / 100.0;
-    //         Edge e = new Edge(v, w, weight);
-    //         addEdge(e);
-    //     }
-    // }
-
     /**
      * Initializes a new edge-weighted graph that is a deep copy of {@code G}.
      *
-     * @param  G the edge-weighted graph to copy
+     * @param  gp the edge-weighted graph to copy
      */
-    public EdgeWeightedGraph(EdgeWeightedGraph G) {
-        this(G.V());
-        this.E = G.E();
-        for (int v = 0; v < G.V(); v++) {
+    public EdgeWeightedGraph(final EdgeWeightedGraph gp) {
+        this(gp.vertices());
+        this.e = gp.edges();
+        for (int v = 0; v < gp.vertices(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Edge> reverse = new Stack<Edge>();
-            for (Edge e : G.adj[v]) {
+            for (Edge e : gp.adj[v]) {
                 reverse.push(e);
             }
             for (Edge e : reverse) {
@@ -116,8 +96,8 @@ public class EdgeWeightedGraph {
      *
      * @return the number of vertices in this edge-weighted graph
      */
-    public int V() {
-        return V;
+    public int vertices() {
+        return v;
     }
 
     /**
@@ -125,30 +105,37 @@ public class EdgeWeightedGraph {
      *
      * @return the number of edges in this edge-weighted graph
      */
-    public int E() {
-        return E;
+    public int edges() {
+        return e;
     }
-
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
-    private void validateVertex(int v) {
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+    /**
+    * validate vertex
+    * @param v the vertex.
+    *
+    **/
+    private void validateVertex(final int v1) {
+        if (v1 < 0 || v1 >= v) {
+            throw new IllegalArgumentException(
+                "vertex " + v + " is not between 0 and " + (v - 1));
+        }
     }
 
     /**
      * Adds the undirected edge {@code e} to this edge-weighted graph.
      *
      * @param  e the edge
-     * @throws IllegalArgumentException unless both endpoints are between {@code 0} and {@code V-1}
+     * @throws IllegalArgumentException unless both
+     * endpoints are between {@code 0} and {@code V-1}
      */
-    public void addEdge(Edge e) {
-        int v = e.either();
-        int w = e.other(v);
+    public void addEdge(final Edge e1) {
+        int v = e1.either();
+        int w = e1.other(v);
         validateVertex(v);
         validateVertex(w);
-        adj[v].add(e);
-        adj[w].add(e);
-        E++;
+        adj[v].add(e1);
+        adj[w].add(e1);
+        e++;
     }
 
     /**
@@ -158,7 +145,7 @@ public class EdgeWeightedGraph {
      * @return the edges incident on vertex {@code v} as an Iterable
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public Iterable<Edge> adj(int v) {
+    public Iterable<Edge> adj(final int v) {
         validateVertex(v);
         return adj[v];
     }
@@ -167,32 +154,34 @@ public class EdgeWeightedGraph {
      * Returns the degree of vertex {@code v}.
      *
      * @param  v the vertex
-     * @return the degree of vertex {@code v}               
+     * @return the degree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
-    public int degree(int v) {
+    public int degree(final int v) {
         validateVertex(v);
         return adj[v].size();
     }
 
     /**
      * Returns all edges in this edge-weighted graph.
-     * To iterate over the edges in this edge-weighted graph, use foreach notation:
+     * To iterate over the edges in this edge-weighted graph,
+     * use foreach notation:
      * {@code for (Edge e : G.edges())}.
      *
      * @return all edges in this edge-weighted graph, as an iterable
      */
-    public Iterable<Edge> edges() {
+    public Iterable<Edge> noedges() {
         Bag<Edge> list = new Bag<Edge>();
-        for (int v = 0; v < V; v++) {
+        for (int i = 0; i < v; i++) {
             int selfLoops = 0;
-            for (Edge e : adj(v)) {
-                if (e.other(v) > v) {
+            for (Edge e : adj(i)) {
+                if (e.other(i) > i) {
                     list.add(e);
-                }
-                // add only one copy of each self loop (self loops will be consecutive)
-                else if (e.other(v) == v) {
-                    if (selfLoops % 2 == 0) list.add(e);
+                } else if (e.other(i) == i) {  // add only one copy of each self loop
+                //(self loops will be consecutive)
+                    if (selfLoops % 2 == 0) {
+                        list.add(e);
+                    }
                     selfLoops++;
                 }
             }
