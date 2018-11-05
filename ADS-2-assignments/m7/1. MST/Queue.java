@@ -2,7 +2,7 @@
  *  Compilation:  javac Queue.java
  *  Execution:    java Queue < input.txt
  *  Dependencies: StdIn.java StdOut.java
- *  Data files:   http://algs4.cs.princeton.edu/13stacks/tobe.txt
+ *  Data files:   http://algs4.cs.princeton.edu/13stacks/tobe.tx
  *
  *  A generic queue, implemented using a linked list.
  *
@@ -56,8 +56,7 @@ public class Queue<Item> implements Iterable<Item> {
     /**
      * n variable.
      */
-    private int n;               // number of elements on queue
-    // helper linked list class
+    private int n;
     /**
     * class node.
     * @param Item the item.
@@ -124,7 +123,7 @@ public class Queue<Item> implements Iterable<Item> {
         last.next = null;
         if (isEmpty()) {
             first = last;
-        } else {  
+        } else {
             oldlast.next = last;
         }
         n++;
@@ -166,7 +165,7 @@ public class Queue<Item> implements Iterable<Item> {
      * Returns an iterator that iterates over the
      * items in this queue in FIFO order.
      *
-     * @return an iterator that iterates over the 
+     * @return an iterator that iterates over the
      * items in this queue in FIFO order
      */
     public Iterator<Item> iterator()  {
@@ -176,8 +175,7 @@ public class Queue<Item> implements Iterable<Item> {
     * class list iterator.
     * @param Item the item.
     **/
-    // an iterator, doesn't implement remove() since it's optional 
-    private class ListIterator<Item> implements Iterator<Item> {
+private class ListIterator<Item> implements Iterator<Item> {
         /**
          * current item.
          */

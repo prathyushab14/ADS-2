@@ -62,7 +62,6 @@ public class Stack<Item> implements Iterable<Item> {
      * node class.
      * @param Item the item.
      */
-    // helper linked list class
     private static class Node<Item> {
         /**
          * item.
@@ -171,7 +170,6 @@ public class Stack<Item> implements Iterable<Item> {
      * class listiterator.
      * @param Item the item.
      */
-    // an iterator, doesn't implement remove() since it's optional
     private class ListIterator<Item> implements Iterator<Item> {
         /**
          * current item.
