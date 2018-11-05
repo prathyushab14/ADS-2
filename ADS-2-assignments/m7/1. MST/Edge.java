@@ -8,14 +8,15 @@
  ******************************************************************************/
 
 /**
- *  The {@code Edge} class represents a weighted edge in an 
+ *  The {@code Edge} class represents a weighted edge in an
  *  {@link EdgeWeightedGraph}. Each edge consists of two integers
  *  (naming the two vertices) and a real-value weight. The data type
  *  provides methods for accessing the two endpoints of the edge and
  *  the weight. The natural order for this data type is by
  *  ascending order of weight.
  *  <p>
- *  For additional documentation, see <a href="https://algs4.cs.princeton.edu/43mst">Section 4.3</a> of
+ *  For additional documentation, see <a href="https://
+ *  algs4.cs.princeton.edu/43mst">Section 4.3</a> of
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  *
  *  @author Robert Sedgewick
@@ -51,10 +52,12 @@ public class Edge implements Comparable<Edge> {
      */
     public Edge(final int v1, final int w1, final double weight1) {
         if (v1 < 0) {
-            throw new IllegalArgumentException("vertex index must be a nonnegative integer");
+            throw new IllegalArgumentException
+            ("vertex index must be a nonnegative integer");
         }
         if (w1 < 0) {
-            throw new IllegalArgumentException("vertex index must be a nonnegative integer");
+            throw new IllegalArgumentException
+            ("vertex index must be a nonnegative integer");
         }
         if (Double.isNaN(weight1)) {
             throw new IllegalArgumentException("Weight is NaN");
@@ -96,12 +99,10 @@ public class Edge implements Comparable<Edge> {
             return w;
         } else if (vertex == w) {
             return v;
-        }
-        else {
+        } else {
             throw new IllegalArgumentException("Illegal endpoint");
         }
     }
-
     /**
      * Compares two edges by weight.
      * Note that {@code compareTo()} is not consistent with {@code equals()},
@@ -109,7 +110,7 @@ public class Edge implements Comparable<Edge> {
      * inherited from {@code Object}.
      *
      * @param  that the other edge
-     * @return a negative integer, zero, or positive 
+     * @return a negative integer, zero, or positive
      * integer depending on whether
      *         the weight of this is less than, equal to, or greater than the
      *         argument edge
