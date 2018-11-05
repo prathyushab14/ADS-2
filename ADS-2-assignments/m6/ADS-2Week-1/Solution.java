@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.util.*;
+
 /**
  * class to find the pagerank.
  */
@@ -58,6 +59,9 @@ class PageRank {
                     + pr[ele] / gr.outdegree(ele);
                 }
                 temppr[i] = newpr;
+            }
+            if (Arrays.equals(pr, temppr)) {
+                break;
             }
             pr = temppr;
         }

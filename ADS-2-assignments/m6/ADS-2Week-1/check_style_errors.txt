@@ -284,12 +284,13 @@ Audit done.
 Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:25:8: Unused @param tag for 'gph'. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:27:28: 'gr' hides a field. [HiddenField]
-[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:27:28: Expected @param tag for 'gr'. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:114:13: Name 'no_v' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:1: Using the '.*' form of import should be avoided - java.util.*. [AvoidStarImport]
+[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:26:8: Unused @param tag for 'gph'. [JavadocMethod]
+[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:28:28: 'gr' hides a field. [HiddenField]
+[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:28:28: Expected @param tag for 'gr'. [JavadocMethod]
+[ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:118:13: Name 'no_v' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
