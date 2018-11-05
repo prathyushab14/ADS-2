@@ -262,9 +262,8 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:6:33: Parameter args should be final. [FinalParameters]
 [ERROR] D:\ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:13: Line is longer than 80 characters (found 131). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:17:35: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 8 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\ADS-2\ADS-2-assignments\m7\1. MST\Stack.java:14: Line has trailing spaces. [RegexpSingleline]

@@ -14,6 +14,7 @@ class Solution {
 			ewg.addEdge(e);
         }
         KruskalMST kmst = new KruskalMST(ewg);
-        System.out.format("%0.5f",kmst.weight());
+        //System.out.format("%0.5f",kmst.weight());
+        System.out.format("%.5f", kmst.weight());
     }
 }
