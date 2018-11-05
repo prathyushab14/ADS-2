@@ -11,10 +11,9 @@ class Solution {
 		while (sc.hasNextLine()) {
 			String[] tokens = sc.nextLine().split(" ");
 			Edge e = new Edge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]), Double.parseDouble(tokens[2]));
-			//EdgeWeightedGraph ewg = new EdgeWeightedGraph(ver);
 			ewg.addEdge(e);
         }
         KruskalMST kmst = new KruskalMST(ewg);
-        System.out.println(kmst.weight());
+        System.out.format("%0.5f",kmst.weight());
     }
 }
