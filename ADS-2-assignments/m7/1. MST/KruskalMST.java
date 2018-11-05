@@ -74,13 +74,13 @@ public class KruskalMST {
     public KruskalMST(EdgeWeightedGraph G) {
         // more efficient to build heap by passing array of edges
         MinPQ<Edge> pq = new MinPQ<Edge>();
-        for (Edge e : G.edges()) {
+        for (Edge e : G.noedges()) {
             pq.insert(e);
         }
 
         // run greedy algorithm
-        UF uf = new UF(G.V());
-        while (!pq.isEmpty() && mst.size() < G.V() - 1) {
+        UF uf = new UF(G.vertices());
+        while (!pq.isEmpty() && mst.size() < G.vertices() - 1) {
             Edge e = pq.delMin();
             int v = e.either();
             int w = e.other(v);
@@ -126,7 +126,7 @@ public class KruskalMST {
         }
 
         // check that it is acyclic
-        UF uf = new UF(G.V());
+        UF uf = new UF(G.vertices());
         for (Edge e : edges()) {
             int v = e.either(), w = e.other(v);
             if (uf.connected(v, w)) {
@@ -137,7 +137,7 @@ public class KruskalMST {
         }
 
         // check that it is a spanning forest
-        for (Edge e : G.edges()) {
+        for (Edge e : G.noedges()) {
             int v = e.either(), w = e.other(v);
             if (!uf.connected(v, w)) {
                 System.err.println("Not a spanning forest");
@@ -149,14 +149,14 @@ public class KruskalMST {
         for (Edge e : edges()) {
 
             // all edges in MST except e
-            uf = new UF(G.V());
+            uf = new UF(G.vertices());
             for (Edge f : mst) {
                 int x = f.either(), y = f.other(x);
                 if (f != e) uf.union(x, y);
             }
             
             // check that e is min weight edge in crossing cut
-            for (Edge f : G.edges()) {
+            for (Edge f : G.noedges()) {
                 int x = f.either(), y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
