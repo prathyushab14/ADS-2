@@ -17,31 +17,31 @@ final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        HashMap<String, Integer> mapping
+        HashMap<String, Integer> map
         = new HashMap<String, Integer>();
         String[] tokens = sc.nextLine().split(" ");
         int edges = Integer.parseInt(tokens[1]);
-        String[] vertices = sc.nextLine().split(" ");
-        for (int i = 0; i < vertices.length; i++) {
-            mapping.put(vertices[i], i);
+        String[] ver = sc.nextLine().split(" ");
+        for (int i = 0; i < ver.length; i++) {
+            map.put(ver[i], i);
         }
-        Edge edge;
+        Edge e;
         EdgeWeightedGraph ewg
-        = new EdgeWeightedGraph(vertices.length);
+        = new EdgeWeightedGraph(ver.length);
         for (int i = 0; i < edges; i++) {
             String[] directPath = sc.nextLine().split(" ");
-            edge = new Edge(mapping.get(directPath[0]),
-                               mapping.get(directPath[1]),
+            e = new Edge(map.get(directPath[0]),
+                               map.get(directPath[1]),
                                Double.parseDouble(directPath[2]));
-            ewg.addEdge(edge);
+            ewg.addEdge(e);
         }
         int queries = Integer.parseInt(sc.nextLine());
-        DijkstraSP d;
+        DijkstraSP dsp;
         for (int i = 0; i < queries; i++) {
-            String[] check = sc.nextLine().split(" ");
-            int source = mapping.get(check[0]);
-            d = new DijkstraSP(ewg, source);
-            System.out.println((int) d.distance(mapping.get(check[1])));
+            String[] inp = sc.nextLine().split(" ");
+            int source = map.get(inp[0]);
+            dsp = new DijkstraSP(ewg, source);
+            System.out.println((int) dsp.distance(map.get(inp[1])));
         }
     }
 }
