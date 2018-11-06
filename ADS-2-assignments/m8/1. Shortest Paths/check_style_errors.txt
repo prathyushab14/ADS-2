@@ -10,13 +10,7 @@ Starting audit...
 Audit done.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:2: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] D:\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:6:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m8\1. Shortest Paths\Solution.java:6:33: Parameter args should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
