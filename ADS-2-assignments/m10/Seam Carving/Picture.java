@@ -73,7 +73,7 @@ import javax.swing.KeyStroke;
  *  int rgb = (r << 16) + (g << 8) + (b << 0);
  * </pre></blockquote>
  *  <p>
- * 
+ *
  *  since the color of each pixel is encoded as a 32-bit <code>int</code>.
  *  <p>
  *  For additional documentation, see
@@ -86,9 +86,9 @@ import javax.swing.KeyStroke;
  *  @author Kevin Wayne
  */
 public final class Picture implements ActionListener {
-	/**
-	 * image.
-	 */
+    /**
+     * image.
+     */
     private BufferedImage image;               // the rasterized image
     /**
      * frame.
@@ -112,23 +112,24 @@ public final class Picture implements ActionListener {
      * with {@code width} columns
      * and {@code height} rows, where each pixel is black.
      *
-     * @param width the width of the picture
-     * @param height the height of the picture
+     * @param width1 the width of the picture
+     * @param height1 the height of the picture
      * @throws IllegalArgumentException if {@code width} is negative
      * @throws IllegalArgumentException if {@code height} is negative
      */
     public Picture(final int width1, final int height1) {
         if (width1  < 0) {
-        	throw new IllegalArgumentException("width must be non-negative");
+            throw new IllegalArgumentException(
+                "width must be non-negative");
         }
         if (height1 < 0) {
-        	throw new IllegalArgumentException
-        	("height must be non-negative");
+            throw new IllegalArgumentException(
+            "height must be non-negative");
         }
         this.width  = width1;
         this.height = height1;
         image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-        // set to TYPE_INT_ARGB here and in next constructor 
+        // set to TYPE_INT_ARGB here and in next constructor
         //to support transparency
     }
 
@@ -140,7 +141,8 @@ public final class Picture implements ActionListener {
      */
     public Picture(final Picture picture) {
         if (picture == null) {
-        	throw new IllegalArgumentException("constructor argument is null");
+            throw new IllegalArgumentException(
+                "constructor argument is null");
         }
         width  = picture.width();
         height = picture.height();
@@ -157,13 +159,14 @@ public final class Picture implements ActionListener {
    /**
      * Creates a picture by reading an image from a file or URL.
      *
-     * @param  filename the name of the file (.png, .gif, or .jpg) or URL.
+     * @param  filename1 the name of the file (.png, .gif, or .jpg) or URL.
      * @throws IllegalArgumentException if cannot read image
      * @throws IllegalArgumentException if {@code filename} is {@code null}
      */
     public Picture(final String filename1) {
         if (filename1 == null) {
-        	throw new IllegalArgumentException("constructor argument is null");
+            throw new IllegalArgumentException(
+                "constructor argument is null");
         }
         this.filename = filename1;
         try {
@@ -171,7 +174,8 @@ public final class Picture implements ActionListener {
             File file = new File(filename);
             if (file.isFile()) {
                 image = ImageIO.read(file);
-            } else { // now try to read from file in same directory as this .class file
+            } else { // now try to read from file in
+                //same directory as this .class file
                 URL url = getClass().getResource(filename);
                 if (url == null) {
                     url = new URL(filename);
@@ -180,15 +184,15 @@ public final class Picture implements ActionListener {
             }
 
             if (image == null) {
-                throw new IllegalArgumentException
-                ("could not read image file: " + filename);
+                throw new IllegalArgumentException(
+                "could not read image file: " + filename);
             }
 
             width  = image.getWidth(null);
             height = image.getHeight(null);
         } catch (IOException ioe) {
-            throw new IllegalArgumentException
-            ("could not open image file: " + filename, ioe);
+            throw new IllegalArgumentException(
+            "could not open image file: " + filename, ioe);
         }
     }
 
@@ -201,14 +205,14 @@ public final class Picture implements ActionListener {
      */
     public Picture(final File file) {
         if (file == null) {
-        	throw new IllegalArgumentException
-        	("constructor argument is null");
+            throw new IllegalArgumentException(
+            "constructor argument is null");
         }
         try {
             image = ImageIO.read(file);
         } catch (IOException ioe) {
-            throw new IllegalArgumentException
-            ("could not open file: " + file, ioe);
+            throw new IllegalArgumentException(
+            "could not open file: " + file, ioe);
         }
         if (image == null) {
             throw new IllegalArgumentException("could not read file: " + file);
@@ -274,9 +278,9 @@ public final class Picture implements ActionListener {
             // f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             if (filename == null) {
-            	frame.setTitle(width + "-by-" + height);
+                frame.setTitle(width + "-by-" + height);
             } else {
-            	frame.setTitle(filename);
+                frame.setTitle(filename);
             }
             frame.setResizable(false);
             frame.pack();
@@ -311,8 +315,8 @@ public final class Picture implements ActionListener {
      */
     private void validateRowIndex(final int row) {
         if (row < 0 || row >= height()) {
-            throw new IllegalArgumentException
-        ("row index must be between 0 and " + (height() - 1) + ": " + row);
+            throw new IllegalArgumentException(
+        "row index must be between 0 and " + (height() - 1) + ": " + row);
         }
     }
     /**
@@ -322,8 +326,8 @@ public final class Picture implements ActionListener {
      */
     private void validateColumnIndex(final int col) {
         if (col < 0 || col >= width()) {
-            throw new IllegalArgumentException
-        ("column index must be between 0 and " + (width() - 1) + ": " + col);
+            throw new IllegalArgumentException(
+                "column index must be between 0 and " + (width() - 1) + ": " + col);
         }
     }
 
@@ -334,7 +338,7 @@ public final class Picture implements ActionListener {
      * @param col the column index
      * @param row the row index
      * @return the color of pixel ({@code col}, {@code row})
-     * @throws IllegalArgumentException unless both 
+     * @throws IllegalArgumentException unless both
      * {@code 0 <= col < width} and {@code 0 <= row < height}
      */
     public Color get(final int col, final int row) {
@@ -346,24 +350,24 @@ public final class Picture implements ActionListener {
 
    /**
      * Returns the color of pixel ({@code col}, {@code row}) as an {@code int}.
-     * Using this method can be more efficient than 
+     * Using this method can be more efficient than
      * {@link #get(int, int)} because
      * it does not create a {@code Color} object.
      *
      * @param col the column index
      * @param row the row index
-     * @return the integer representation of the color of 
+     * @return the integer representation of the color of
      * pixel ({@code col}, {@code row})
-     * @throws IllegalArgumentException unless both 
+     * @throws IllegalArgumentException unless both
      * {@code 0 <= col < width} and {@code 0 <= row < height}
      */
     public int getRGB(final int col, final int row) {
         validateColumnIndex(col);
         validateRowIndex(row);
         if (isOriginUpperLeft) {
-        	return image.getRGB(col, row);
-        } else {                  
-        	return image.getRGB(col, height - row - 1);
+            return image.getRGB(col, row);
+        } else {
+            return image.getRGB(col, height - row - 1);
         }
     }
 
@@ -373,15 +377,17 @@ public final class Picture implements ActionListener {
      * @param col the column index
      * @param row the row index
      * @param color the color
-     * @throws IllegalArgumentException unless both 
+     * @throws IllegalArgumentException unless both
      * {@code 0 <= col < width} and {@code 0 <= row < height}
      * @throws IllegalArgumentException if {@code color} is {@code null}
      */
     public void set(final int col, final int row, final Color color) {
         validateColumnIndex(col);
         validateRowIndex(row);
-        if (color == null) throw new IllegalArgumentException
-        	("color argument is null");
+        if (color == null) {
+            throw new IllegalArgumentException(
+            "color argument is null");
+        }
         int rgb = color.getRGB();
         setRGB(col, row, rgb);
     }
@@ -392,16 +398,16 @@ public final class Picture implements ActionListener {
      * @param col the column index
      * @param row the row index
      * @param rgb the integer representation of the color
-     * @throws IllegalArgumentException unless both 
+     * @throws IllegalArgumentException unless both
      * {@code 0 <= col < width} and {@code 0 <= row < height}
      */
     public void setRGB(final int col, final int row, final int rgb) {
         validateColumnIndex(col);
         validateRowIndex(row);
         if (isOriginUpperLeft) {
-        	image.setRGB(col, row, rgb);
-        } else  {                
-        	image.setRGB(col, height - row - 1, rgb);
+            image.setRGB(col, row, rgb);
+        } else  {
+            image.setRGB(col, height - row - 1, rgb);
         }
     }
 
@@ -415,26 +421,26 @@ public final class Picture implements ActionListener {
      */
     public boolean equals(final Object other) {
         if (other == this) {
-        	return true;
+            return true;
         }
         if (other == null) {
-        	return false;
+            return false;
         }
         if (other.getClass() != this.getClass()) {
-        	return false;
+            return false;
         }
         Picture that = (Picture) other;
-        if (this.width()  != that.width()) {  
-        	return false;
+        if (this.width()  != that.width()) {
+            return false;
         }
         if (this.height() != that.height()) {
-        	return false;
+            return false;
         }
         for (int col = 0; col < width(); col++) {
             for (int row = 0; row < height(); row++) {
-                if (this.getRGB(col, row) 
-                	!= that.getRGB(col, row)) {
-                	return false;
+                if (this.getRGB(col, row)
+                    != that.getRGB(col, row)) {
+                    return false;
                 }
             }
         }
@@ -454,12 +460,12 @@ public final class Picture implements ActionListener {
         StringBuilder sb = new StringBuilder();
         final int x = 0xFFFFFF;
         sb.append(width + "-by-" + height
-        	+ " picture (RGB values given in hex)\n");
+            + " picture (RGB values given in hex)\n");
         for (int row = 0; row < height; row++) {
             for (int col = 0; col < width; col++) {
                 int rgb = 0;
                 if (isOriginUpperLeft) {
-                	rgb = image.getRGB(col, row);
+                    rgb = image.getRGB(col, row);
                 } else {
                     rgb = image.getRGB(col, height - row - 1);
                 }
@@ -478,7 +484,7 @@ public final class Picture implements ActionListener {
      */
     public int hashCode() {
         throw new UnsupportedOperationException(
-        	"hashCode() is not supported because pictures are mutable");
+            "hashCode() is not supported because pictures are mutable");
     }
 
    /**
@@ -490,8 +496,8 @@ public final class Picture implements ActionListener {
      */
     public void save(final String name) {
         if (name == null) {
-        	throw new IllegalArgumentException(
-        	"argument to save() is null");
+            throw new IllegalArgumentException(
+            "argument to save() is null");
         }
         save(new File(name));
         filename = name;
@@ -504,11 +510,13 @@ public final class Picture implements ActionListener {
      * @throws IllegalArgumentException if {@code file} is {@code null}
      */
     public void save(final File file) {
-        if (file == null) throw new IllegalArgumentException(
-        	"argument to save() is null");
+        if (file == null) {
+            throw new IllegalArgumentException(
+            "argument to save() is null");
+        }
         filename = file.getName();
         if (frame != null) {
-        	frame.setTitle(filename);
+            frame.setTitle(filename);
         }
         String suffix = filename.substring(filename.lastIndexOf('.') + 1);
         if ("jpg".equalsIgnoreCase(suffix) || "png".equalsIgnoreCase(suffix)) {
@@ -535,4 +543,3 @@ public final class Picture implements ActionListener {
         }
     }
 }
-
