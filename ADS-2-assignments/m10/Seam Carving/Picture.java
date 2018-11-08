@@ -327,7 +327,8 @@ public final class Picture implements ActionListener {
     private void validateColumnIndex(final int col) {
         if (col < 0 || col >= width()) {
             throw new IllegalArgumentException(
-                "column index must be between 0 and " + (width() - 1) + ": " + col);
+                "column index must be between 0 and "
+                + (width() - 1) + ": " + col);
         }
     }
 
