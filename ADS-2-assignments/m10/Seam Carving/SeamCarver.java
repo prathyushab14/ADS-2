@@ -41,8 +41,8 @@ public class SeamCarver {
 	    double xrgreen = pic.get(x, y + 1).getGreen();
 	    dx = Math.pow(xtred - xbred, 2) + Math.pow(xtblue - xtblue, 2) + Math.pow(xtgreen - xbgreen, 2);
 	    dy = Math.pow(xlred - xrred, 2) + Math.pow(xlblue - xrblue, 2) + Math.pow(xlgreen - xrgreen, 2);
-	    double esum = dx + dy;
-	    return Math.sqrt(esum);
+	    double esum = Math.sqrt(dx + dy);
+	    return esum;
 	}
     // sequence of indices for horizontal seam
 	public int[] findHorizontalSeam() {
