@@ -28,19 +28,19 @@ public class SeamCarver {
 	    }
 	    double dx, dy = 0;
 	    double xtred = pic.get(x - 1, y).getRed();
-	    double xtblue = pic.get(x - 1, y).getRed();
-	    double xtgreen = pic.get(x - 1, y).getRed();
+	    double xtblue = pic.get(x - 1, y).getBlue();
+	    double xtgreen = pic.get(x - 1, y).getGreen();
 	    double xbred = pic.get(x + 1, y).getRed();
-	    double xbblue = pic.get(x + 1, y).getRed();
+	    double xbblue = pic.get(x + 1, y).getBlue();
 	    double xbgreen = pic.get(x + 1, y).getGreen();
-	    double xrred = pic.get(x, y - 1).getRed();
-	    double xrblue = pic.get(x, y - 1).getRed();
-	    double xrgreen = pic.get(x, y - 1).getRed();
-	    double xlred = pic.get(x, y + 1).getRed();
-	    double xlblue = pic.get(x, y + 1).getRed();
-	    double xlgreen = pic.get(x, y + 1).getGreen();
+	    double yrred = pic.get(x, y - 1).getRed();
+	    double yrblue = pic.get(x, y - 1).getBlue();
+	    double yrgreen = pic.get(x, y - 1).getGreen();
+	    double ylred = pic.get(x, y + 1).getRed();
+	    double ylblue = pic.get(x, y + 1).getBlue();
+	    double ylgreen = pic.get(x, y + 1).getGreen();
 	    dx = Math.pow(xtred - xbred, 2) + Math.pow(xtblue - xtblue, 2) + Math.pow(xtgreen - xbgreen, 2);
-	    dy = Math.pow(xrred - xlred, 2) + Math.pow(xrblue - xlblue, 2) + Math.pow(xrgreen - xlgreen, 2);
+	    dy = Math.pow(yrred - ylred, 2) + Math.pow(yrblue - ylblue, 2) + Math.pow(yrgreen - ylgreen, 2);
 	    double esum = Math.sqrt(dx + dy);
 	    return esum;
 	}
