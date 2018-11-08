@@ -39,7 +39,7 @@ public class SeamCarver {
 	    double ylred = pic.get(x, y + 1).getRed();
 	    double ylblue = pic.get(x, y + 1).getBlue();
 	    double ylgreen = pic.get(x, y + 1).getGreen();
-	    dx = Math.pow(xtred - xbred, 2) + Math.pow(xtblue - xtblue, 2) + Math.pow(xtgreen - xbgreen, 2);
+	    dx = Math.pow(xtred - xbred, 2) + Math.pow(xtblue - xbblue, 2) + Math.pow(xtgreen - xbgreen, 2);
 	    dy = Math.pow(yrred - ylred, 2) + Math.pow(yrblue - ylblue, 2) + Math.pow(yrgreen - ylgreen, 2);
 	    double esum = Math.sqrt(dx + dy);
 	    return esum;
