@@ -46,7 +46,47 @@ public class SeamCarver {
 	}
     // sequence of indices for horizontal seam
 	public int[] findHorizontalSeam() {
-		return new int[0];
+		double[][] pathSum =new double[width()][height()];
+		int[][] parent = new int[width()][height()];
+		for(int i =0 ;i<height();i++){
+			pathSum[0][i] = 1000;
+			parent[0][i]=i;
+		}
+		for(int x= 1; x <width();x++){
+			for(int y =0 ;y<height();y++){
+				double tempSum =  pathSum[x-1][y];
+				parent[x][y] = y;
+				if(y>0 && pathSum[x-1][y-1] <tempSum){
+					tempSum = pathSum[x-1][y-1];
+					parent[x][y] = y-1;
+				}
+				if(y<height()-1 && pathSum[x-1][y+1] < tempSum){
+					tempSum = pathSum[x-1][y+1];
+					parent[x][y] = y+1;
+				}
+				pathSum[x][y]=tempSum+energy(x,y);
+			}
+		}
+		int minIndex=0;
+
+		for(int i = 1; i<height();i++){
+			if(pathSum[width()-1][i] < pathSum[width()-1][minIndex]){
+				minIndex = i;
+			}
+		}
+
+		int res [] = new int[width()];
+		res[width()-1] = minIndex;
+		for (int h = width()-2;h>=0 ;h-- ) {
+			//res[h] = parent[res[h+1]][h];	
+			res[h]= parent[h+1][minIndex];
+			minIndex=parent[h+1][minIndex];
+		}
+		return res;
+
+		
+
+		
 	}
     // sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
