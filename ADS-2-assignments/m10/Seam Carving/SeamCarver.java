@@ -50,7 +50,45 @@ public class SeamCarver {
 	}
     // sequence of indices for vertical seam
 	public int[] findVerticalSeam() {
-		return new int[0];
+		double[][] pathSum =new double[width()][height()];
+		int[][] parent = new int[width()][height()];
+		for(int i =0 ;i<width();i++){
+			pathSum[i][0] = 1000;
+			parent[i][0]=i;
+		}
+		for(int y = 1; y <height();y++){
+			for(int x =0 ;x<width();x++){
+				double tempSum =  pathSum[x][y-1];
+				parent[x][y] = x;
+				if(x>0 && pathSum[x-1][y-1] <tempSum){
+					tempSum = pathSum[x-1][y-1];
+					parent[x][y] = x-1;
+				}
+				if(x<width()-1 && pathSum[x+1][y-1] <tempSum){
+					tempSum = pathSum[x+1][y-1];
+					parent[x][y] = x+1;
+				}
+				pathSum[x][y]=tempSum+energy(x,y);
+			}
+		}
+		int minIndex=0;
+
+		for(int i = 1; i<width();i++){
+			if(pathSum[i][height()-1] < pathSum[minIndex][height()-1]){
+				minIndex = i;
+			}
+		}
+
+		int res [] = new int[height()];
+		res[height()-1] = minIndex;
+		for (int h = height()-2;h>=0 ;h-- ) {
+			//res[h] = parent[res[h+1]][h];	
+			res[h]= parent[minIndex][h+1];
+			minIndex=parent[minIndex][h+1];
+		}
+		return res;
+
+		//return new int[0];
 	}
     // remove horizontal seam from current picture
 	public void removeHorizontalSeam(int[] seam) {
