@@ -2,16 +2,16 @@
  *  Compilation:  javac PrintEnergy.java
  *  Execution:    java PrintEnergy input.png
  *  Dependencies: SeamCarver.java
- *                
+ *
  *
  *  Read image from file specified as command line argument. Print energy
- *  of each pixel as calculated by SeamCarver object. 
- * 
+ *  of each pixel as calculated by SeamCarver object.
+ *
  ******************************************************************************/
 /**
  * Class for print energy.
  */
-public class PrintEnergy {
+class PrintEnergy {
     /**
      * Constructs the object.
      */
