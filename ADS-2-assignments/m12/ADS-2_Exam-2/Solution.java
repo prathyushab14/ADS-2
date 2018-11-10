@@ -27,6 +27,18 @@ public class Solution {
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			while(sc.hasNextLine()) {
+                String[] st = sc.nextLine().split(" ");
+                int v = Integer.parseInt(st[1]);
+                int w = Integer.parseInt(st[2]);
+                for (Edge k : ewg.adj(v)) {
+                	if (k.either() == w) {
+                		System.out.println(k.weight());
+                	} 
+                }
+                System.out.println("No Path Found.");
+
+			}
 			break;
 
 		case "ViaPaths":

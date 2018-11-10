@@ -22,9 +22,11 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:11:21: Name 'no_e' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 [ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:14: Line is longer than 80 characters (found 118). [LineLength]
 [ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:26: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:34: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:30:30: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:37: Line has trailing spaces. [RegexpSingleline]
+[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:45: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:46: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 14 errors.
 Starting audit...
 Audit done.
