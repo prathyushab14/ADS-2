@@ -21,24 +21,20 @@ public class Solution {
 		    System.out.println(no_v + " vertices " + no_e + " edges");
             System.out.println(ewg);
             break;
-
-		case "DirectedPaths":
+        case "DirectedPaths":
 			// Handle the case of DirectedPaths, where two integers are given.
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
-			while(sc.hasNextLine()) {
-                String[] st = sc.nextLine().split(" ");
-                int v = Integer.parseInt(st[0]);
-                int w = Integer.parseInt(st[1]);
-                for (Edge k : ewg.adj(v)) {
-                	if (k.either() == w) {
-                		System.out.println(k.weight());
-                	} 
-                }
-                System.out.println("No Path Found.");
-
+			String[] tok = sc.nextLine().split(" ");
+			int ve = Integer.parseInt(tok[0]);
+			int ove = Integer.parseInt(tok[1]);
+			for (Edge ed : ewg.adj(ve)) {
+				if (ed.either() == ve || ed.other(ve) == ove) {
+					System.out.println(ed.weight());
+				}
 			}
+			System.out.println("No Path Found.");
 			break;
 
 		case "ViaPaths":
