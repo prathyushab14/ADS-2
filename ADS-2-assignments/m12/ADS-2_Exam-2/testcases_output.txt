@@ -10,6 +10,12 @@ Expected Output:
 
 Your Output: 
 6 vertices 6 edges
+0: Edge@2ed94a8b  Edge@38082d64  
+0: Edge@2ed94a8b  Edge@38082d64  1: Edge@dfd3711  Edge@42d3bd8b  Edge@38082d64  
+0: Edge@2ed94a8b  Edge@38082d64  1: Edge@dfd3711  Edge@42d3bd8b  Edge@38082d64  2: Edge@26ba2a48  Edge@5f2050f6  Edge@dfd3711  
+0: Edge@2ed94a8b  Edge@38082d64  1: Edge@dfd3711  Edge@42d3bd8b  Edge@38082d64  2: Edge@26ba2a48  Edge@5f2050f6  Edge@dfd3711  3: Edge@5f2050f6  Edge@2ed94a8b  
+0: Edge@2ed94a8b  Edge@38082d64  1: Edge@dfd3711  Edge@42d3bd8b  Edge@38082d64  2: Edge@26ba2a48  Edge@5f2050f6  Edge@dfd3711  3: Edge@5f2050f6  Edge@2ed94a8b  4: Edge@26ba2a48  Edge@42d3bd8b  
+0: Edge@2ed94a8b  Edge@38082d64  1: Edge@dfd3711  Edge@42d3bd8b  Edge@38082d64  2: Edge@26ba2a48  Edge@5f2050f6  Edge@dfd3711  3: Edge@5f2050f6  Edge@2ed94a8b  4: Edge@26ba2a48  Edge@42d3bd8b  5:
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########

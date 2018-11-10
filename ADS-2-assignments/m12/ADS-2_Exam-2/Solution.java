@@ -25,7 +25,7 @@ public class Solution {
                 for (Edge e : ewg.adj[v]) {
                     s.append(e + "  ");
                 }
-            System.out.println();;
+                System.out.println(s);
             }
             break;
 
