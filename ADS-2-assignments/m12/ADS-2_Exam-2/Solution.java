@@ -29,8 +29,8 @@ public class Solution {
 			// Other wise print "No Path Found."
 			while(sc.hasNextLine()) {
                 String[] st = sc.nextLine().split(" ");
-                int v = Integer.parseInt(st[1]);
-                int w = Integer.parseInt(st[2]);
+                int v = Integer.parseInt(st[0]);
+                int w = Integer.parseInt(st[1]);
                 for (Edge k : ewg.adj(v)) {
                 	if (k.either() == w) {
                 		System.out.println(k.weight());
