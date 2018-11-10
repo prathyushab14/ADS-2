@@ -10,12 +10,12 @@ Expected Output:
 
 Your Output: 
 6 vertices 6 edges
-0: Edge@2ed94a8b  Edge@38082d64  
-0: Edge@2ed94a8b  Edge@38082d64  1: Edge@dfd3711  Edge@42d3bd8b  Edge@38082d64  
-0: Edge@2ed94a8b  Edge@38082d64  1: Edge@dfd3711  Edge@42d3bd8b  Edge@38082d64  2: Edge@26ba2a48  Edge@5f2050f6  Edge@dfd3711  
-0: Edge@2ed94a8b  Edge@38082d64  1: Edge@dfd3711  Edge@42d3bd8b  Edge@38082d64  2: Edge@26ba2a48  Edge@5f2050f6  Edge@dfd3711  3: Edge@5f2050f6  Edge@2ed94a8b  
-0: Edge@2ed94a8b  Edge@38082d64  1: Edge@dfd3711  Edge@42d3bd8b  Edge@38082d64  2: Edge@26ba2a48  Edge@5f2050f6  Edge@dfd3711  3: Edge@5f2050f6  Edge@2ed94a8b  4: Edge@26ba2a48  Edge@42d3bd8b  
-0: Edge@2ed94a8b  Edge@38082d64  1: Edge@dfd3711  Edge@42d3bd8b  Edge@38082d64  2: Edge@26ba2a48  Edge@5f2050f6  Edge@dfd3711  3: Edge@5f2050f6  Edge@2ed94a8b  4: Edge@26ba2a48  Edge@42d3bd8b  5:
+0:Edge@68837a77 1.0Edge@3567135c 2.0
+0:Edge@68837a77 1.0Edge@3567135c 2.01:Edge@327471b5 4.0Edge@4157f54e 5.0Edge@3567135c 2.0
+0:Edge@68837a77 1.0Edge@3567135c 2.01:Edge@327471b5 4.0Edge@4157f54e 5.0Edge@3567135c 2.02:Edge@90f6bfd 1.0Edge@47f6473 3.0Edge@327471b5 4.0
+0:Edge@68837a77 1.0Edge@3567135c 2.01:Edge@327471b5 4.0Edge@4157f54e 5.0Edge@3567135c 2.02:Edge@90f6bfd 1.0Edge@47f6473 3.0Edge@327471b5 4.03:Edge@47f6473 3.0Edge@68837a77 1.0
+0:Edge@68837a77 1.0Edge@3567135c 2.01:Edge@327471b5 4.0Edge@4157f54e 5.0Edge@3567135c 2.02:Edge@90f6bfd 1.0Edge@47f6473 3.0Edge@327471b5 4.03:Edge@47f6473 3.0Edge@68837a77 1.04:Edge@90f6bfd 1.0Edge@4157f54e 5.0
+0:Edge@68837a77 1.0Edge@3567135c 2.01:Edge@327471b5 4.0Edge@4157f54e 5.0Edge@3567135c 2.02:Edge@90f6bfd 1.0Edge@47f6473 3.0Edge@327471b5 4.03:Edge@47f6473 3.0Edge@68837a77 1.04:Edge@90f6bfd 1.0Edge@4157f54e 5.05:
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########

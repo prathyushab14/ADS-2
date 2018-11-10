@@ -19,11 +19,11 @@ public class Solution {
 		case "Graph":
 			//Print the Graph Object.
 		    System.out.println(no_v + " vertices" + " " + no_e + " edges");
-		    StringBuilder s = new StringBuilder();
+		    String s = "";
 		    for (int v = 0; v < no_v; v++) {
-                s.append(v + ": ");
+                s += v + ":";
                 for (Edge e : ewg.adj[v]) {
-                    s.append(e + "  ");
+                    s += e + " " + e.weight(); 
                 }
                 System.out.println(s);
             }
