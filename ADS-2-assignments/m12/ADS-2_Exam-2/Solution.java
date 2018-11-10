@@ -18,7 +18,7 @@ public class Solution {
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
-		    System.out.println(no_v + " vertices" + no_e + " edges");
+		    System.out.println(no_v + " vertices " + no_e + " edges");
             System.out.println(ewg);
             break;
 
