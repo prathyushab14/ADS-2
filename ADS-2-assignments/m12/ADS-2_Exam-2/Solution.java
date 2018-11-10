@@ -52,18 +52,9 @@ public class Solution {
 			double d1 = 0.0;
 			double d2 = 0.0;
 			DijkstraUndirectedSP dp = new DijkstraUndirectedSP(ewg, sou);
-			if (dp.hasPathTo(via)) {
-                d1 = dp.distTo(via);
-                DijkstraUndirectedSP ds = new DijkstraUndirectedSP(ewg, via);
-                if (ds.hasPathTo(des)) {
-                	d2 = dp.distTo(des);
-                }
-                double d = d1 + d2;
-                System.out.println(dp.pathTo(des));
-                System.out.println(d);
-			} else {
+            if (!dp.hasPathTo(des)) {
                 System.out.println("No Path Found.");
-			}
+            }
 			break;
 		default:
 			break;
