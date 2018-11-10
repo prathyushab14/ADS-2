@@ -33,7 +33,7 @@ public class Solution {
 			if (dsp.hasPathTo(de)) {
 				System.out.println(dsp.distTo(de));
 			} else {
-				System.out.println("No Path Found");
+				System.out.println("No Path Found.");
 			}
 			break;
 
