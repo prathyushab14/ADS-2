@@ -49,6 +49,12 @@ public class Solution {
 			int sou = Integer.parseInt(inp[0]);
 			int via = Integer.parseInt(inp[1]);
 			int des = Integer.parseInt(inp[2]);
+			DijkstraUndirectedSP dp = new DijkstraUndirectedSP(ewg, sou);
+			if (dp.hasPathTo(des)) {
+				System.out.println("");
+			} else {
+                System.out.println("No Path Found.");
+			}
 			break;
 		default:
 			break;
