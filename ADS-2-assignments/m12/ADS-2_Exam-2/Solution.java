@@ -30,7 +30,7 @@ public class Solution {
 			int ve = Integer.parseInt(tok[0]);
 			int ove = Integer.parseInt(tok[1]);
 			for (Edge ed : ewg.adj(ve)) {
-				if (ed.either() == ve || ed.other(ve) == ove) {
+				if (ed.either() == ve && ed.other(ve) == ove) {
 					System.out.println(ed.weight());
 				}
 			}
