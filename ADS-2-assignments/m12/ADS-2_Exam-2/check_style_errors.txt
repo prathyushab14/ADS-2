@@ -175,20 +175,16 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:2: Missing a Javadoc comment. [JavadocType]
 [ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:2:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:3:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:3:29: Parameter args should be final. [FinalParameters]
 [ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:9:21: Name 'no_v' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:11:21: Name 'no_e' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:14: Line is longer than 80 characters (found 118). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:25: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:32: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:32:81: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:40: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:43: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:44: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:54: Line is longer than 80 characters (found 85). [LineLength]
+[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:5:21: Name 'no_v' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:7:21: Name 'no_e' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:10: Line is longer than 80 characters (found 118). [LineLength]
+[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:24: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:24:81: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] D:\ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:38: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 12 errors.
 Starting audit...
 Audit done.
