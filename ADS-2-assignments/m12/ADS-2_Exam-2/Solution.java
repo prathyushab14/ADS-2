@@ -27,15 +27,16 @@ public class Solution {
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
 			String[] tok = sc.nextLine().split(" ");
-			int ve = Integer.parseInt(tok[0]);
-			int ove = Integer.parseInt(tok[1]);
-			for (Edge ed : ewg.adj(ve)) {
-				if (ed.either() == ove && ed.other(ove) == ve) {
-					System.out.println(ed.weight());
-				}
+			int so = Integer.parseInt(tok[0]);
+			int de = Integer.parseInt(tok[1]);
+			DijkstraUndirectedSP dsp = new DijkstraUndirectedSP(ewg,so);
+			if (dsp.hasPathTo(de)) {
+				System.out.println(dsp.distTo(de));
+			} else {
+				System.out.println("No Path Found");
 			}
-			System.out.println("No Path Found.");
-			break;
+
+	
 
 		case "ViaPaths":
 			// Handle the case of ViaPaths, where three integers are given.
@@ -43,8 +44,11 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			String[] inp = sc.nextLine().split(" ");
+			int sou = Integer.parseInt(inp[0]);
+			int via = Integer.parseInt(inp[1]);
+			int des = Integer.parseInt(inp[2]);
 			break;
-
 		default:
 			break;
 		}
