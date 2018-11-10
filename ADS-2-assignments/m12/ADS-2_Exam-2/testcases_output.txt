@@ -10,12 +10,12 @@ Expected Output:
 
 Your Output: 
 6 vertices6 edges
-0: Edge@5d624da61.0 Edge@1936f0f52.0 
-0: Edge@5d624da61.0 Edge@1936f0f52.0 1: Edge@6615435c4.0 Edge@4909b8da5.0 Edge@1936f0f52.0 
-0: Edge@5d624da61.0 Edge@1936f0f52.0 1: Edge@6615435c4.0 Edge@4909b8da5.0 Edge@1936f0f52.0 2: Edge@3a034641.0 Edge@2d3fcdbd3.0 Edge@6615435c4.0 
-0: Edge@5d624da61.0 Edge@1936f0f52.0 1: Edge@6615435c4.0 Edge@4909b8da5.0 Edge@1936f0f52.0 2: Edge@3a034641.0 Edge@2d3fcdbd3.0 Edge@6615435c4.0 3: Edge@2d3fcdbd3.0 Edge@5d624da61.0 
-0: Edge@5d624da61.0 Edge@1936f0f52.0 1: Edge@6615435c4.0 Edge@4909b8da5.0 Edge@1936f0f52.0 2: Edge@3a034641.0 Edge@2d3fcdbd3.0 Edge@6615435c4.0 3: Edge@2d3fcdbd3.0 Edge@5d624da61.0 4: Edge@3a034641.0 Edge@4909b8da5.0 
-0: Edge@5d624da61.0 Edge@1936f0f52.0 1: Edge@6615435c4.0 Edge@4909b8da5.0 Edge@1936f0f52.0 2: Edge@3a034641.0 Edge@2d3fcdbd3.0 Edge@6615435c4.0 3: Edge@2d3fcdbd3.0 Edge@5d624da61.0 4: Edge@3a034641.0 Edge@4909b8da5.0 5:
+0: Edge@2ed94a8b  1.0Edge@dfd3711  2.0
+1: Edge@42d3bd8b  4.0Edge@26ba2a48  5.0Edge@dfd3711  2.0
+2: Edge@5f2050f6  1.0Edge@3b81a1bc  3.0Edge@42d3bd8b  4.0
+3: Edge@3b81a1bc  3.0Edge@2ed94a8b  1.0
+4: Edge@5f2050f6  1.0Edge@26ba2a48  5.0
+5:
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########

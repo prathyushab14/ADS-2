@@ -19,15 +19,8 @@ public class Solution {
 		case "Graph":
 			//Print the Graph Object.
 		    System.out.println(no_v + " vertices" + no_e + " edges");
-		    String s = "";
-		    for (int v = 0; v < no_v; v++) {
-		    	s += v + ": ";
-		    	for (Edge ed : ewg.adj(v)) {
-		    	    s += ed;
-		    	    s += (ed.weight() + " ");
-		    	}
-		    	System.out.println(s);
-            }
+            System.out.println(ewg);
+            break;
 
 		case "DirectedPaths":
 			// Handle the case of DirectedPaths, where two integers are given.
