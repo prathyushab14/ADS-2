@@ -10,13 +10,6 @@ Expected Output:
 
 Your Output: 
 6 vertices 6 edges
-6 6
-0: Edge@327471b5  Edge@4157f54e  
-1: Edge@90f6bfd  Edge@47f6473  Edge@4157f54e  
-2: Edge@15975490  Edge@6b143ee9  Edge@90f6bfd  
-3: Edge@6b143ee9  Edge@327471b5  
-4: Edge@15975490  Edge@47f6473  
-5:
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########

@@ -18,7 +18,7 @@ public class EdgeWeightedGraph {
     /**
      * Adj array of bags.
      */
-    private Bag<Edge>[] adj;
+    Bag<Edge>[] adj;
 
     /**
      * Initializes an empty edge-weighted graph with
@@ -171,7 +171,6 @@ public class EdgeWeightedGraph {
      */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(ver + " " + edge + NEWLINE);
         for (int v = 0; v < ver; v++) {
             s.append(v + ": ");
             for (Edge e : adj[v]) {

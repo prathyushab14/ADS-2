@@ -19,7 +19,14 @@ public class Solution {
 		case "Graph":
 			//Print the Graph Object.
 		    System.out.println(no_v + " vertices" + " " + no_e + " edges");
-		    System.out.println(ewg);
+		    StringBuilder s = new StringBuilder();
+		    for (int v = 0; v < no_v; v++) {
+                s.append(v + ": ");
+                for (Edge e : ewg.adj[v]) {
+                    s.append(e + "  ");
+                }
+            System.out.println();;
+            }
             break;
 
 		case "DirectedPaths":
