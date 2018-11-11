@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 6 vertices 6 edges
 0: 0-3 1.00000  0-1 2.00000  
@@ -10,12 +10,19 @@ Expected Output:
 
 Your Output: 
 6 vertices 6 edges
-0: 0-3 1.00000  0-1 2.00000  
-1: 1-2 4.00000  1-4 5.00000  0-1 2.00000  
-2: 2-4 1.00000  3-2 3.00000  1-2 4.00000  
-3: 3-2 3.00000  0-3 1.00000  
-4: 2-4 1.00000  1-4 5.00000  
-5:
+Exception in thread "main" java.util.IllegalFormatConversionException: d != java.lang.Double
+	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4426)
+	at java.base/java.util.Formatter$FormatSpecifier.printInteger(Formatter.java:2938)
+	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2892)
+	at java.base/java.util.Formatter.format(Formatter.java:2673)
+	at java.base/java.util.Formatter.format(Formatter.java:2609)
+	at java.base/java.lang.String.format(String.java:2897)
+	at Edge.toString(Edge.java:128)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at EdgeWeightedGraph.toString(EdgeWeightedGraph.java:177)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.io.PrintStream.println(PrintStream.java:897)
+	at Solution.main(Solution.java:18)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -34,16 +41,19 @@ Expected Output:
 
 Your Output: 
 10 vertices 11 edges
-0: 0-7 221.00000  0-4 78.00000  
-1: 1-7 158.00000  1-7 159.00000  1-6 92.00000  
-2: 2-9 237.00000  2-5 179.00000  2-4 55.00000  
-3: 3-7 205.00000  
-4: 4-5 191.00000  2-4 55.00000  0-4 78.00000  
-5: 4-5 191.00000  2-5 179.00000  
-6: 1-6 92.00000  
-7: 3-7 205.00000  1-7 158.00000  1-7 159.00000  0-7 221.00000  
-8: 
-9: 2-9 237.00000
+Exception in thread "main" java.util.IllegalFormatConversionException: d != java.lang.Double
+	at java.base/java.util.Formatter$FormatSpecifier.failConversion(Formatter.java:4426)
+	at java.base/java.util.Formatter$FormatSpecifier.printInteger(Formatter.java:2938)
+	at java.base/java.util.Formatter$FormatSpecifier.print(Formatter.java:2892)
+	at java.base/java.util.Formatter.format(Formatter.java:2673)
+	at java.base/java.util.Formatter.format(Formatter.java:2609)
+	at java.base/java.lang.String.format(String.java:2897)
+	at Edge.toString(Edge.java:128)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at EdgeWeightedGraph.toString(EdgeWeightedGraph.java:177)
+	at java.base/java.lang.String.valueOf(String.java:2951)
+	at java.base/java.io.PrintStream.println(PrintStream.java:897)
+	at Solution.main(Solution.java:18)
 ----------------------------------------
 
 ########## Testcase 2: Passed ##########
