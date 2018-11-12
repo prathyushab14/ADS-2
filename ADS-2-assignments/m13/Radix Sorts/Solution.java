@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 class Solution {
 	Solution() {
     }
@@ -11,6 +11,6 @@ class Solution {
     		str[i] = sc.nextLine();
         }
         qs.sort(str);
-        System.out.println(str);
+        System.out.println(Arrays.toString(str));
     }
 }
