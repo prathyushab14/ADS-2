@@ -6,9 +6,13 @@ public class Solution {
 		//Your code goes here...
 		Scanner sc = new Scanner(System.in);
 		String s = sc.nextLine();
-		TST tst = new TST();
-		System.out.println(tst.keysWithPrefix(s));
-		//tst.keysWithPrefix(s);
+		TST<Integer> tst = new TST<Integer>();
+		for (int i = 0; i < words.length; i++) {
+			tst.put(words[i], i);
+		}
+		for (String str : tst.keysWithPrefix(s)) {
+			System.out.println(str);
+		}
 	}
 
 	public static String[] loadWords() {
