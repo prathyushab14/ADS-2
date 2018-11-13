@@ -9,7 +9,6 @@ public class Solution {
 		TST<Integer> tst = new TST<Integer>();
 		for (int i = 0; i < words.length; i++) {
 			tst.put(words[i], i);
-			System.out.println(words[i]);
 		}
 		for (String str : tst.keysWithPrefix(s)) {
 			System.out.println(str);
