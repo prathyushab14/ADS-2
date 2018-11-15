@@ -316,4 +316,10 @@ public class TST<Value> {
             collect(x.right, prefix, i, pattern, queue);
         }
     }
+    public boolean hasPrefix(String str) {
+        if (get(str) != null) {
+            return true;
+        }
+        return false;
+    }
 }
