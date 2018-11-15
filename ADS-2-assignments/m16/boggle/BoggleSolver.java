@@ -37,9 +37,9 @@ public class BoggleSolver {
 				if (marked[i][j] == true) {
 					continue;
 				}
-				String c = "" + board.getLetter(i, j);
+				ch += "" + board.getLetter(i, j);
 				marked[i][j] = true;
-				dfs(lst, c, i, j, marked, board);
+				dfs(lst, ch, i, j, marked, board);
             }
 		}
     }
@@ -49,16 +49,16 @@ public class BoggleSolver {
 		if (word.length() == 3  || word.length() == 4) {
 			return 1;
 		}
-		if (word.length() == 5) {
+		else if (word.length() == 5) {
 			return 2;
 		}
-		if (word.length() == 6) {
+		else if (word.length() == 6) {
             return 3;
 		}
-		if (word.length() == 7) {
+		else if (word.length() == 7) {
             return 5;
 		}
-		if (word.length() >= 8) {
+		else if (word.length() >= 8) {
             return 11;
 		}
 		return 0;

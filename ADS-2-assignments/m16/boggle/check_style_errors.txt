@@ -592,15 +592,19 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:48:28: Parameter word should be final. [FinalParameters]
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:49:38: '3' is a magic number. [MagicNumber]
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:49:61: '4' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:52:38: '5' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:55:38: '6' is a magic number. [MagicNumber]
+[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:51:17: '}' at column 3 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:52:43: '5' is a magic number. [MagicNumber]
+[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:54:17: '}' at column 3 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:55:43: '6' is a magic number. [MagicNumber]
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:56:20: '3' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:58:38: '7' is a magic number. [MagicNumber]
+[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:57:17: '}' at column 3 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:58:43: '7' is a magic number. [MagicNumber]
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:59:20: '5' is a magic number. [MagicNumber]
-[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:61:38: '8' is a magic number. [MagicNumber]
+[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:60:17: '}' at column 3 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:61:43: '8' is a magic number. [MagicNumber]
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:62:20: '11' is a magic number. [MagicNumber]
 Audit done.
-Checkstyle ends with 39 errors.
+Checkstyle ends with 43 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\In.java:28: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\In.java:33: Line has trailing spaces. [RegexpSingleline]
