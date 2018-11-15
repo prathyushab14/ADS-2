@@ -21,7 +21,7 @@ public class BoggleSolver {
 
             }
 		}
-		return new Bag<String>();
+		return list;
 	}
 	public void dfs(ArrayList<String> lst, String ch, int row, int col, boolean[][] marked, BoggleBoard board) {
 		if (ch.length() >= 3 && tst.contains(ch)) {
