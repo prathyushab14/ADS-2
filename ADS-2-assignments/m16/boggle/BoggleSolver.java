@@ -25,18 +25,20 @@ public class BoggleSolver {
 	}
 	public void dfs(ArrayList<String> lst, String ch, int row, int col, boolean[][] marked, BoggleBoard board) {
 		if (ch.length() >= 3 && tst.contains(ch)) {
-			lst.add(ch);
+			if (!lst.contains(ch)) {
+			    lst.add(ch);
+			}
 		}
 		if (!tst.hasPrefix(ch)) {
             return;
 		}
 		for (int i = 0; i < board.rows(); i++) {
 			for (int j = 0; j < board.cols(); j++) {
-				if (marked[row][col] == true) {
+				if (marked[i][j] == true) {
 					continue;
 				}
-				String c = "" + board.getLetter(row, col);
-				marked[row][col] = true;
+				String c = "" + board.getLetter(i, j);
+				marked[i][j] = true;
 				dfs(lst, c, i, j, marked, board);
             }
 		}
