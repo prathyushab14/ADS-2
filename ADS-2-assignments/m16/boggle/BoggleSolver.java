@@ -46,7 +46,7 @@ public class BoggleSolver {
 					continue;
 				}
 				if ((row + i >= 0) && (row + i < board.rows()) && (col + j >= 0) && (col + j < board.cols())) {
-					dfs(lst, ch, i + row, j + row, marked, board);
+					dfs(lst, ch, i + row, j + col, marked, board);
 				}
             }
 		}
