@@ -31,12 +31,12 @@ public class BoggleSolver {
 		} else {
 			st += c;
 		}
-		if (!tst.hasPrefix(ch)) {
+		if (!tst.hasPrefix(st)) {
             return;
 		}
-		if (ch.length() >= 3 && tst.contains(ch)) {
-			if (!lst.contains(ch)) {
-			    lst.add(ch);
+		if (st.length() > 2 && tst.contains(st)) {
+			if (!lst.contains(st)) {
+			    lst.add(st);
 			}
 		}
 		marked[row][col] = true;
@@ -46,7 +46,7 @@ public class BoggleSolver {
 					continue;
 				}
 				if ((row + i >= 0) && (row + i < board.rows()) && (col + j >= 0) && (col + j < board.cols())) {
-					dfs(lst, ch, i + row, j + col, marked, board);
+					dfs(lst, st, i + row, j + col, marked, board);
 				}
             }
 		}
@@ -56,19 +56,25 @@ public class BoggleSolver {
 	// (You can assume the word contains only the uppercase letters A through Z.)
 	public int scoreOf(String word) {
 		if (tst.contains(word)) {
-			if (word.length() == 3  || word.length() == 4) {
-			    return 1;
-		    } else if (word.length() == 5) {
-			    return 2;
-		    } else if (word.length() == 6) {
-                return 3;
-            } else if (word.length() == 7) {
-                return 5;
-            } else if (word.length() >= 8) {
-                return 11;
-            } else {
+			if(word.length() >= 0 && word.length() <= 2) {
 		        return 0;
 	        }
+
+			if (word.length() >= 3  && word.length() <= 4) {
+			    return 1;
+		    } 
+		    if (word.length() == 5) {
+			    return 2;
+		    }
+		    if (word.length() == 6) {
+                return 3;
+            } 
+            if (word.length() == 7) {
+                return 5;
+            }
+            if (word.length() >= 8) {
+                return 11;
+            } 
 	    }return 0;
 	}
 }
