@@ -89,31 +89,36 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
 		String[] words = toReadFile(file);
-		for (int j = 0; j < words.length; j++) {
-			String[] tokens = words[j].split(" ");
-			for (int i = 0; i < tokens.length; i++) {
-			    if (st.contains(tokens[i])) {
-				    st.put(tokens[i], st.get(tokens[i]) + 1);
-			    } else {
-				    st.put(tokens[i], 1);
-			    }
-		    }
-		}
+		for (int i = 0; i < words.length; i++) {
+			if (st.contains(words[i])) {
+				st.put(words[i], st.get(words[i]) + 1);
+			} else {
+				st.put(words[i], 1);
+			}
+	    }
 		return st;
 	}
 }
 
 class T9 {
+	TST<Integer> tst = new TST();
 
 	public T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
-
-	}
+		for (String key : st.keys())
+		    if (!tst.contains(key)) {
+			    tst.put(key, st.get(key));
+            }
+        }
 
 	// get all the prefixes that match with given prefix.
 	public Iterable<String> getAllWords(String prefix) {
 		// your code goes here
-		return null;
+		Queue q = new Queue();
+		for (String s : tst.keysWithPrefix(prefix)) {
+			q.enqueue(s);
+        }
+		return q;
 	}
 
 	public Iterable<String> potentialWords(String t9Signature) {
