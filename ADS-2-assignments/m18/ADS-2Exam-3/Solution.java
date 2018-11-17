@@ -89,18 +89,18 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
 		String[] words = toReadFile(file);
-		for (int i = 0; i < words.length; i++) {
-			int count = 0;
-			if (!st.contains(words[i])) {
-				st.put(words[i], 1);
-			} else {
-				count++;
-				st.put(words[i], count);
-			}
+		for (int j = 0; j < words.length; j++) {
+			String[] tokens = words[j].split(" ");
+			for (int i = 0; i < tokens.length; i++) {
+			    if (st.contains(tokens[i])) {
+				    st.put(tokens[i], st.get(tokens[i]) + 1);
+			    } else {
+				    st.put(tokens[i], 1);
+			    }
+		    }
 		}
 		return st;
 	}
-
 }
 
 class T9 {
