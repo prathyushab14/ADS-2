@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 
 public class Solution {
@@ -130,20 +130,24 @@ class T9 {
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		Queue q = new Queue();
-		MaxPQ<Integer> pq = new MaxPQ();
-		for (String s : words) {
-            pq.insert(tst.get(s));
+		BinarySearchST<Integer, String> bst = new BinarySearchST();
+		for (String str : words) {
+			int freq = tst.get(str);
+			bst.put(freq, str);
 		}
-		for (int i = 0; i < 4; i++) {
-			int m = pq.delMax();
-			for (String str : words) {
-				if (m == tst.get(str)) {
-					q.enqueue(str);
-				}
-			}
+		Bag<String> bag = new Bag<String>();
+		String[] arr = new String[k];
+		for (int i = 0; i < k; i++) {
+			int j = bst.max();
+			arr[i] = bst.get(j);
+			bst.deleteMax();
 		}
-		return q;
+		Arrays.sort(arr);
+		for (int i = k; i > 0; i--) {
+			bag.add(arr[i - 1]);
+		}
+		return bag;
+
 	}
 
 	// final output
