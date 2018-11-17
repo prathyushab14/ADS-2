@@ -90,10 +90,11 @@ public class Solution {
 		// your code goes here
 		String[] words = toReadFile(file);
 		for (int i = 0; i < words.length; i++) {
-			if (st.contains(words[i])) {
-				st.put(words[i], st.get(words[i]) + 1);
+			String s = words[i].toLowerCase();
+			if (st.contains(s)) {
+				st.put(s, st.get(s) + 1);
 			} else {
-				st.put(words[i], 1);
+				st.put(s, 1);
 			}
 	    }
 		return st;
