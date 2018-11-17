@@ -403,11 +403,12 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:131:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:131:48: Parameter words should be final. [FinalParameters]
 [ERROR] D:\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:131:72: Parameter k should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:138:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:138:36: Parameter t9Signature should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:138:56: Parameter k should be final. [FinalParameters]
+[ERROR] D:\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:138:37: '4' is a magic number. [MagicNumber]
+[ERROR] D:\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:151:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:151:36: Parameter t9Signature should be final. [FinalParameters]
+[ERROR] D:\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:151:56: Parameter k should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 31 errors.
+Checkstyle ends with 32 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]

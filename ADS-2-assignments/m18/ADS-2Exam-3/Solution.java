@@ -130,7 +130,20 @@ class T9 {
 	// return all possibilities(words), find top k with highest frequency.
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		return null;
+		Queue q = new Queue();
+		MaxPQ<Integer> pq = new MaxPQ();
+		for (String s : words) {
+            pq.insert(tst.get(s));
+		}
+		for (int i = 0; i < 4; i++) {
+			int m = pq.delMax();
+			for (String str : words) {
+				if (m == tst.get(str)) {
+					q.enqueue(str);
+				}
+			}
+		}
+		return q;
 	}
 
 	// final output
