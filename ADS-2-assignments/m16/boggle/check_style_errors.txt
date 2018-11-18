@@ -1,11 +1,7 @@
 Starting audit...
-[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleBoard.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleGame.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleGame.java:4: Line has trailing spaces. [RegexpSingleline]
@@ -506,7 +502,7 @@ Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:57:9: Class 'BoggleSolver' looks like designed for extension (can be subclassed), but the method 'scoreOf' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'BoggleSolver' final or making the method 'scoreOf' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:57:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:57:28: Parameter word should be final. [FinalParameters]
-[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:59:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:59:27: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:63:46: '3' is a magic number. [MagicNumber]
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:63:69: '4' is a magic number. [MagicNumber]
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\BoggleSolver.java:65: Line has trailing spaces. [RegexpSingleline]
@@ -671,9 +667,7 @@ Checkstyle ends with 141 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\StdIn.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\StdIn.java:27: Line is longer than 80 characters (found 84). [LineLength]
@@ -807,9 +801,7 @@ Starting audit...
 Audit done.
 Checkstyle ends with 129 errors.
 Starting audit...
-[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\StdOut.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\StdRandom.java:13: Line has trailing spaces. [RegexpSingleline]
 [ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\StdRandom.java:14: Line has trailing spaces. [RegexpSingleline]
@@ -997,6 +989,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 183 errors.
 Starting audit...
-[ERROR] D:\ADS-2\ADS-2-assignments\m16\boggle\TrieST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
