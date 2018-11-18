@@ -13,7 +13,10 @@ class TrieST {
     /**
      * no of keys.
      */
-    private int N;          // number of keys in trie
+    private int n;          // number of keys in trie
+    /**
+    * class for node.
+    **/
     // R-way trie node
     private static class Node {
         /**
@@ -81,7 +84,7 @@ class TrieST {
     * @param d d
     * @param key key
     * @param x x
-    * @return x 
+    * @return x
     **/
     private Node add(final Node x, final String key, final int d) {
         Node y = x;
@@ -90,7 +93,7 @@ class TrieST {
         }
         if (d == key.length()) {
             if (!y.isString) {
-                N++;
+                n++;
             }
             y.isString = true;
         } else {
@@ -105,7 +108,7 @@ class TrieST {
      * Time complexity is O(1)
      */
     public int size() {
-        return N;
+        return n;
     }
     /**
      * Is the set empty?
@@ -142,7 +145,7 @@ class TrieST {
     * Time Complexity is O(N).
     * @param results results
     * @param prefix prefix
-    * @param x x  
+    * @param x x
     **/
     private void collect(final Node x, final StringBuilder prefix,
         final Queue<String> results) {
@@ -236,7 +239,8 @@ class TrieST {
      * @param x x
      * @return integer
     **/
-    private int longestPrefixOf(final Node x, final String query, final int d, final int length) {
+    private int longestPrefixOf(final Node x, final String query,
+        final int d, final int length) {
         int l = length;
         if (x == null) {
             return l;
@@ -263,7 +267,7 @@ class TrieST {
     /**
      * Time complexity is O(N).
      * @param d d
-     * @param key
+     * @param key key
      * @param x x
      * @return node
     **/
@@ -273,7 +277,7 @@ class TrieST {
         }
         if (d == key.length()) {
             if (x.isString) {
-                N--;
+                n--;
             }
             x.isString = false;
         } else {
@@ -284,10 +288,11 @@ class TrieST {
         if (x.isString) {
             return x;
         }
-        for (int c = 'A'; c < 'A' + R; c++)
+        for (int c = 'A'; c < 'A' + R; c++) {
             if (x.next[c - 'A'] != null) {
                 return x;
             }
+        }
         return null;
     }
     /**
